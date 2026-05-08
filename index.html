@@ -2,132 +2,91 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pixel Fisher RPG">
+<meta name="theme-color" content="#0a0a0f">
 <title>Pixel Fisher RPG</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; }
+
+  html, body {
     background: #0a0a0f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Courier New', monospace;
+    width: 100%; height: 100%;
     overflow: hidden;
+    touch-action: none;
+    font-family: 'Courier New', monospace;
+    user-select: none; -webkit-user-select: none;
   }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100dvh;
+    background: #0a0a0f;
+  }
+
+  #canvasWrapper {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
+
   #gameContainer {
     position: relative;
     width: 800px;
     height: 600px;
+    transform-origin: center center;
+    flex-shrink: 0;
   }
+
   canvas {
     display: block;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
   }
-  #ui {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    pointer-events: none;
-  }
+
   #hud {
     position: absolute;
     top: 8px; left: 8px;
     pointer-events: none;
+    z-index: 10;
   }
   .hud-box {
-    background: rgba(0,0,0,0.75);
+    background: rgba(0,0,0,0.78);
     border: 2px solid #4a7c59;
     padding: 6px 10px;
-    margin-bottom: 4px;
     color: #e8d5a3;
     font-size: 13px;
-    line-height: 1.6;
-    image-rendering: pixelated;
+    line-height: 1.7;
   }
   .hud-box .label { color: #8fc97a; font-weight: bold; }
   .bar-container {
-    width: 160px;
-    height: 10px;
+    width: 140px; height: 10px;
     background: #1a1a2e;
     border: 1px solid #333;
-    margin: 2px 0;
+    margin: 1px 0;
     display: inline-block;
     vertical-align: middle;
   }
-  .bar-fill {
-    height: 100%;
-    transition: width 0.2s;
-  }
-  .bar-xp { background: linear-gradient(90deg, #2255aa, #44aaff); }
+  .bar-fill { height: 100%; transition: width 0.2s; }
+  .bar-xp     { background: linear-gradient(90deg, #2255aa, #44aaff); }
   .bar-energy { background: linear-gradient(90deg, #aa5500, #ffaa00); }
-  #shopPanel, #inventoryPanel, #upgradesPanel {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(10,10,20,0.97);
-    border: 3px solid #4a7c59;
-    padding: 20px;
-    width: 480px;
-    max-height: 520px;
-    overflow-y: auto;
-    color: #e8d5a3;
-    font-size: 13px;
-    display: none;
-    z-index: 100;
-    pointer-events: all;
-  }
-  .panel-title {
-    color: #8fc97a;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 14px;
-    text-align: center;
-    letter-spacing: 2px;
-    text-shadow: 0 0 8px #4a7c59;
-  }
-  .fish-row, .upgrade-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 6px;
-    border-bottom: 1px solid #223322;
-    gap: 8px;
-  }
-  .fish-row:hover, .upgrade-row:hover { background: rgba(74,124,89,0.15); }
-  .fish-emoji { font-size: 22px; width: 30px; text-align: center; }
-  .fish-info { flex: 1; }
-  .fish-name { color: #c8e6c9; font-weight: bold; }
-  .fish-detail { color: #777; font-size: 11px; }
-  .sell-btn, .buy-btn, .close-btn {
-    background: #1a3a1a;
-    border: 2px solid #4a7c59;
-    color: #8fc97a;
-    padding: 4px 12px;
-    cursor: pointer;
-    font-family: 'Courier New', monospace;
-    font-size: 12px;
-    pointer-events: all;
-    transition: background 0.15s;
-  }
-  .sell-btn:hover, .buy-btn:hover { background: #2a5a2a; }
-  .sell-btn:active, .buy-btn:active { background: #3a7a3a; }
-  .close-btn {
-    display: block;
-    margin: 14px auto 0;
-    padding: 6px 24px;
-    border-color: #7c4a4a;
-    color: #c97a7a;
-  }
-  .close-btn:hover { background: #3a1a1a; }
+
   #messageLog {
     position: absolute;
     bottom: 8px; left: 8px; right: 8px;
     pointer-events: none;
+    z-index: 10;
   }
   .msg {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.72);
     border-left: 3px solid #4a7c59;
     color: #e8d5a3;
     padding: 3px 8px;
@@ -137,108 +96,239 @@
     transition: opacity 0.5s;
   }
   .msg.fade { opacity: 0; }
-  #actionBar {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-    pointer-events: all;
-  }
-  .action-btn {
-    background: rgba(10,20,10,0.9);
-    border: 2px solid #4a7c59;
-    color: #8fc97a;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-family: 'Courier New', monospace;
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: background 0.15s, border-color 0.15s;
-  }
-  .action-btn:hover { background: rgba(74,124,89,0.3); border-color: #8fc97a; }
-  .action-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-  .action-btn.active { background: rgba(74,124,89,0.5); border-color: #aff0a0; color: #aff0a0; }
-  #castBtn {
-    background: rgba(10,10,40,0.9);
-    border-color: #4a5c9c;
-    color: #7a9cff;
-    font-size: 14px;
-    padding: 10px 24px;
-  }
-  #castBtn:hover { background: rgba(74,84,156,0.3); }
-  #castBtn.casting { border-color: #ffaa00; color: #ffaa00; animation: pulse 0.5s infinite alternate; }
-  #castBtn.reeling { border-color: #ff4444; color: #ff4444; animation: pulse 0.3s infinite alternate; }
-  @keyframes pulse { from { opacity: 0.7; } to { opacity: 1; } }
-  .rarity-common { color: #aaaaaa; }
-  .rarity-uncommon { color: #55cc55; }
-  .rarity-rare { color: #5588ff; }
-  .rarity-epic { color: #aa55ff; }
-  .rarity-legendary { color: #ffaa00; }
-  .upgrade-icon { font-size: 20px; width: 30px; }
-  .upgrade-info { flex: 1; }
-  .upgrade-name { color: #c8e6c9; font-weight: bold; }
-  .upgrade-desc { color: #777; font-size: 11px; }
-  .upgrade-level { color: #ffaa55; font-size: 11px; }
+
   #notification {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%; left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0.92);
     border: 3px solid #ffaa00;
     color: #ffaa00;
-    padding: 16px 32px;
+    padding: 14px 28px;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 3px;
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.4s;
-    z-index: 200;
+    z-index: 20;
     text-align: center;
+    white-space: nowrap;
   }
-  ::-webkit-scrollbar { width: 6px; }
+
+  /* ---- CONTROL BAR ---- */
+  #controlBar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 5px;
+    padding: 8px 8px;
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    background: rgba(5,5,15,0.98);
+    border-top: 2px solid #4a7c59;
+    flex-shrink: 0;
+  }
+
+  .ctrl-btn {
+    background: rgba(10,20,10,0.92);
+    border: 2px solid #4a7c59;
+    color: #8fc97a;
+    padding: 8px 4px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    text-align: center;
+    min-height: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    line-height: 1.2;
+    touch-action: manipulation;
+    user-select: none; -webkit-user-select: none;
+  }
+  .ctrl-btn .btn-icon { font-size: 18px; pointer-events: none; }
+  .ctrl-btn .btn-label { pointer-events: none; }
+  .ctrl-btn:active { background: rgba(74,124,89,0.35); }
+
+  #castBtn {
+    background: rgba(10,10,40,0.95);
+    border-color: #4a5c9c;
+    border-width: 3px;
+    color: #7a9cff;
+    font-size: 11px;
+    min-height: 62px;
+    touch-action: none;
+  }
+  #castBtn .btn-icon { font-size: 26px; }
+  #castBtn:active { background: rgba(74,84,156,0.35); }
+  #castBtn.casting {
+    border-color: #ffaa00; color: #ffaa00;
+    background: rgba(40,28,0,0.95);
+    animation: pulse 0.45s infinite alternate;
+  }
+  #castBtn.reeling {
+    border-color: #ff5555; color: #ff5555;
+    background: rgba(40,0,0,0.95);
+    animation: pulse 0.3s infinite alternate;
+  }
+  @keyframes pulse { from { opacity: 0.65; } to { opacity: 1; } }
+
+  /* ---- PANEL OVERLAYS (fixed, outside scaled container) ---- */
+  .panel-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 900;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+  .panel-overlay.open { display: flex; }
+
+  .panel-box {
+    background: rgba(8,8,18,0.99);
+    border: 3px solid #4a7c59;
+    padding: 16px;
+    width: 100%;
+    max-width: 460px;
+    max-height: 82vh;
+    overflow-y: auto;
+    color: #e8d5a3;
+    font-size: 13px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .panel-title {
+    color: #8fc97a;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px #4a7c59;
+  }
+
+  .fish-row, .upgrade-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 4px;
+    border-bottom: 1px solid #1e3320;
+    gap: 8px;
+  }
+  .fish-emoji { font-size: 22px; width: 28px; text-align: center; flex-shrink: 0; }
+  .fish-info  { flex: 1; min-width: 0; }
+  .fish-name  { color: #c8e6c9; font-weight: bold; font-size: 13px; }
+  .fish-detail{ color: #666; font-size: 11px; }
+
+  .sell-btn, .buy-btn {
+    background: #142814;
+    border: 2px solid #4a7c59;
+    color: #8fc97a;
+    padding: 7px 8px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    text-align: center;
+    min-width: 54px;
+    min-height: 44px;
+    flex-shrink: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    line-height: 1.3;
+    touch-action: manipulation;
+  }
+  .sell-btn:active, .buy-btn:active { background: #2a5a2a; }
+
+  .close-btn {
+    display: block; width: 100%;
+    margin-top: 12px;
+    padding: 13px 16px;
+    background: #140a0a;
+    border: 2px solid #7c4a4a;
+    color: #c97a7a;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    text-align: center;
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  .close-btn:active { background: #3a1414; }
+
+  .rarity-common    { color: #aaaaaa; }
+  .rarity-uncommon  { color: #55cc55; }
+  .rarity-rare      { color: #5588ff; }
+  .rarity-epic      { color: #aa55ff; }
+  .rarity-legendary { color: #ffaa00; }
+
+  .upgrade-icon  { font-size: 20px; width: 28px; flex-shrink: 0; }
+  .upgrade-info  { flex: 1; min-width: 0; }
+  .upgrade-name  { color: #c8e6c9; font-weight: bold; }
+  .upgrade-desc  { color: #666; font-size: 11px; }
+  .upgrade-level { color: #ffaa55; font-size: 11px; }
+
+  ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: #0a0a0f; }
   ::-webkit-scrollbar-thumb { background: #4a7c59; }
 </style>
 </head>
 <body>
-<div id="gameContainer">
-  <canvas id="gameCanvas" width="800" height="600"></canvas>
-
-  <div id="hud">
-    <div class="hud-box" id="playerHud"></div>
+<div id="app">
+  <div id="canvasWrapper">
+    <div id="gameContainer">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+      <div id="hud"><div class="hud-box" id="playerHud"></div></div>
+      <div id="messageLog"></div>
+      <div id="notification"></div>
+    </div>
   </div>
 
-  <div id="actionBar">
-    <button class="action-btn" id="inventoryBtn">🎒 Ekwipunek</button>
-    <button class="action-btn" id="castBtn">🎣 Zarzuć wędkę</button>
-    <button class="action-btn" id="shopBtn">🏪 Sklep</button>
-    <button class="action-btn" id="upgradesBtn">⚔️ Ulepszenia</button>
+  <div id="controlBar">
+    <button class="ctrl-btn" id="inventoryBtn">
+      <span class="btn-icon">🎒</span>
+      <span class="btn-label">Ekwipunek</span>
+    </button>
+    <button class="ctrl-btn" id="castBtn">
+      <span class="btn-icon" id="castIcon">🎣</span>
+      <span class="btn-label" id="castLabel">Zarzuć wędkę</span>
+    </button>
+    <button class="ctrl-btn" id="shopBtn">
+      <span class="btn-icon">🏪</span>
+      <span class="btn-label">Sklep</span>
+    </button>
+    <button class="ctrl-btn" id="upgradesBtn">
+      <span class="btn-icon">⚔️</span>
+      <span class="btn-label">Ulepszenia</span>
+    </button>
   </div>
+</div>
 
-  <div id="inventoryPanel">
+<!-- Fixed panel overlays – outside scaled gameContainer -->
+<div class="panel-overlay" id="inventoryOverlay">
+  <div class="panel-box">
     <div class="panel-title">🎒 EKWIPUNEK</div>
     <div id="inventoryContent"></div>
     <button class="close-btn" onclick="closeAllPanels()">[ ZAMKNIJ ]</button>
   </div>
+</div>
 
-  <div id="shopPanel">
+<div class="panel-overlay" id="shopOverlay">
+  <div class="panel-box">
     <div class="panel-title">🏪 SKLEP RYBAKA</div>
     <div id="shopContent"></div>
     <button class="close-btn" onclick="closeAllPanels()">[ ZAMKNIJ ]</button>
   </div>
+</div>
 
-  <div id="upgradesPanel">
+<div class="panel-overlay" id="upgradesOverlay">
+  <div class="panel-box">
     <div class="panel-title">⚔️ ULEPSZENIA</div>
     <div id="upgradesContent"></div>
     <button class="close-btn" onclick="closeAllPanels()">[ ZAMKNIJ ]</button>
   </div>
-
-  <div id="messageLog"></div>
-  <div id="notification"></div>
 </div>
 
 <script src="game.js"></script>
