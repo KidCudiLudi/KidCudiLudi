@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notatki doradcy klienta – sklep zoologiczny</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🐾 Notatki doradcy klienta</h1>
+      <div class="subtitle">Baza wiedzy budowana na podstawie materiałów szkoleniowych</div>
+    </div>
+    <input type="text" id="searchInput" placeholder="Szukaj tematu, kategorii, tagu..." />
+    <button class="btn-review" id="reviewBtn">✅ Szybka powtórka – wszystkie tematy</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Kategorie</h2>
+      <ul class="category-list" id="categoryList"></ul>
+
+      <h2>Tagi</h2>
+      <div class="tag-cloud" id="tagCloud"></div>
+
+      <h2>Tematy</h2>
+      <ul class="note-list" id="noteList"></ul>
+    </aside>
+
+    <main>
+      <div id="mainContent"></div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
