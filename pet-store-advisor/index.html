@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Notatki doradcy klienta – sklep zoologiczny</title>
+  <title>Baza wiedzy doradcy klienta – Maxi Zoo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div>
-      <h1>🐾 Notatki doradcy klienta</h1>
-      <div class="subtitle">Baza wiedzy budowana na podstawie materiałów szkoleniowych</div>
+      <h1>🐾 Baza wiedzy doradcy klienta</h1>
+      <div class="subtitle">Maxi Zoo – centrum wiedzy budowane na podstawie materiałów szkoleniowych</div>
     </div>
-    <input type="text" id="searchInput" placeholder="Szukaj tematu, kategorii, tagu..." />
-    <button class="btn-review" id="reviewBtn">✅ Szybka powtórka – wszystkie tematy</button>
+    <input type="text" id="searchInput" placeholder="Szukaj produktu, marki, składnika, choroby, pasożyta... (/)" />
+    <button class="btn-review" id="reviewBtn">✅ Szybka powtórka</button>
+    <button class="btn-new" id="newNoteBtn">➕ Nowy temat</button>
+    <button class="btn-theme" id="themeToggle">🌙 Ciemny</button>
   </header>
 
   <div class="layout">
@@ -31,6 +33,16 @@
     <main>
       <div id="mainContent"></div>
     </main>
+  </div>
+
+  <div class="modal-overlay" id="noteModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="noteModalTitle">➕ Nowy temat</h2>
+        <button class="modal-close" id="noteModalClose">✕</button>
+      </div>
+      <div class="modal-body" id="noteModalBody"></div>
+    </div>
   </div>
 
   <script src="data.js"></script>

@@ -1,9 +1,13 @@
+const STORAGE_KEY_NOTES = 'maxizoo_custom_notes_v1';
+const STORAGE_KEY_THEME = 'maxizoo_theme';
+
 const state = {
   category: 'all',
   tags: new Set(),
   search: '',
   noteId: null,
   mode: 'welcome', // 'welcome' | 'note' | 'review'
+  editId: null, // id of custom note currently being edited, or null for "new"
 };
 
 const SECTION_LABELS = {
@@ -16,10 +20,107 @@ const SECTION_LABELS = {
   powtorka: '✅ Szybka powtórka',
 };
 
+const WARNING_LEVELS = {
+  red: { icon: '🔴', label: 'Niebezpieczeństwo', cls: 'warn-red' },
+  yellow: { icon: '🟡', label: 'Ważna informacja', cls: 'warn-yellow' },
+  green: { icon: '🟢', label: 'Dobre zastosowanie', cls: 'warn-green' },
+};
+
+const PRODUCT_FIELD_LABELS = {
+  producent: 'Producent',
+  marka: 'Marka',
+  kategoria: 'Kategoria produktu',
+  opis: 'Opis',
+  cechy: 'Najważniejsze cechy',
+  korzysciKlient: 'Korzyści dla klienta',
+  korzysciZwierze: 'Korzyści dla zwierzęcia',
+  dlaKogo: 'Dla kogo produkt jest przeznaczony',
+  dlaKogoNie: 'Dla kogo NIE jest przeznaczony',
+  przeciwwskazania: 'Przeciwwskazania',
+  naCoZwrocicUwage: 'Na co zwrócić uwagę',
+  najczestszeBledy: 'Najczęstsze błędy klientów',
+  pytaniaDoKlienta: 'Pytania jakie należy zadać klientowi',
+  alternatywy: 'Alternatywy',
+  produktyUzupelniajace: 'Produkty uzupełniające',
+  crossSelling: 'Cross-selling',
+  upselling: 'Upselling',
+  argumentySprzedazowe: 'Argumenty sprzedażowe',
+};
+
+const LIST_FIELDS = [
+  'cechy', 'korzysciKlient', 'korzysciZwierze', 'przeciwwskazania', 'naCoZwrocicUwage',
+  'najczestszeBledy', 'pytaniaDoKlienta', 'alternatywy', 'produktyUzupelniajace',
+  'crossSelling', 'upselling', 'argumentySprzedazowe',
+];
+
+// -------------------- persistence --------------------
+
+function loadCustomNotes() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY_NOTES);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveCustomNotes(notes) {
+  localStorage.setItem(STORAGE_KEY_NOTES, JSON.stringify(notes));
+}
+
+let CUSTOM_NOTES = loadCustomNotes();
+
+function getAllNotes() {
+  return NOTES.concat(CUSTOM_NOTES);
+}
+
+// -------------------- theme --------------------
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const btn = document.getElementById('themeToggle');
+  if (btn) btn.textContent = theme === 'dark' ? '☀️ Jasny' : '🌙 Ciemny';
+}
+
+function initTheme() {
+  const saved = localStorage.getItem(STORAGE_KEY_THEME) ||
+    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  applyTheme(saved);
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  localStorage.setItem(STORAGE_KEY_THEME, next);
+  applyTheme(next);
+}
+
+// -------------------- search / filtering --------------------
+
 function getAllTags() {
   const tags = new Set();
-  NOTES.forEach(n => n.tags.forEach(t => tags.add(t)));
+  getAllNotes().forEach(n => n.tags.forEach(t => tags.add(t)));
   return Array.from(tags).sort();
+}
+
+function flattenSearchableText(note) {
+  const parts = [note.title, note.category, note.tags.join(' ')];
+  const s = note.sections || {};
+
+  Object.keys(SECTION_LABELS).forEach(key => {
+    (s[key] || []).forEach(item => parts.push(item.text));
+  });
+  (s.zapamietaj || []).forEach(item => parts.push(item.text));
+  (s.ostrzezenia || []).forEach(item => parts.push(item.text));
+
+  const k = s.kartaProduktu;
+  if (k) {
+    parts.push(k.producent, k.marka, k.kategoria, k.opis, k.dlaKogo, k.dlaKogoNie, k.skroconaWersja);
+    LIST_FIELDS.forEach(f => parts.push((k[f] || []).join(' ')));
+    (k.faq || []).forEach(f => parts.push(f.q, f.a));
+  }
+
+  return parts.filter(Boolean).join(' ').toLowerCase();
 }
 
 function noteMatches(note) {
@@ -31,20 +132,19 @@ function noteMatches(note) {
   }
   if (state.search.trim()) {
     const q = state.search.trim().toLowerCase();
-    const haystack = (note.title + ' ' + note.tags.join(' ') + ' ' + note.category).toLowerCase();
-    if (!haystack.includes(q)) return false;
+    if (!flattenSearchableText(note).includes(q)) return false;
   }
   return true;
 }
 
 function getFilteredNotes() {
-  return NOTES.filter(noteMatches);
+  return getAllNotes().filter(noteMatches);
 }
 
 function categoryCounts() {
   const counts = {};
   CATEGORIES.forEach(c => (counts[c] = 0));
-  NOTES.forEach(n => {
+  getAllNotes().forEach(n => {
     const tmpCat = state.category;
     state.category = 'all';
     const matches = noteMatches(n);
@@ -53,6 +153,8 @@ function categoryCounts() {
   });
   return counts;
 }
+
+// -------------------- sidebar --------------------
 
 function renderSidebar() {
   const catList = document.getElementById('categoryList');
@@ -81,7 +183,7 @@ function renderSidebar() {
 
   const tagCloud = document.getElementById('tagCloud');
   tagCloud.innerHTML = getAllTags()
-    .map(t => `<span class="tag-chip ${state.tags.has(t) ? 'active' : ''}" data-tag="${t}">${t}</span>`)
+    .map(t => `<span class="tag-chip ${state.tags.has(t) ? 'active' : ''}" data-tag="${escapeHtml(t)}">${escapeHtml(t)}</span>`)
     .join('');
 
   tagCloud.querySelectorAll('.tag-chip').forEach(chip => {
@@ -107,8 +209,8 @@ function renderNoteList() {
   list.innerHTML = filtered
     .map(
       n => `<li class="${n.id === state.noteId ? 'active' : ''}" data-id="${n.id}">
-        ${n.title}
-        <span class="note-cat">${n.category}</span>
+        ${escapeHtml(n.title)}
+        <span class="note-cat">${escapeHtml(n.category)}${n.id.startsWith('custom-') ? ' · własna' : ''}</span>
       </li>`
     )
     .join('');
@@ -123,6 +225,17 @@ function renderNoteList() {
   });
 }
 
+// -------------------- rendering helpers --------------------
+
+function escapeHtml(str) {
+  if (str === undefined || str === null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 function sourceBadge(source) {
   return source === 'training'
     ? '<span class="source-badge training">szkolenie</span>'
@@ -132,7 +245,7 @@ function sourceBadge(source) {
 function renderItemList(items) {
   if (!items || items.length === 0) return '<p class="empty-msg">Brak danych.</p>';
   return `<ul>${items
-    .map(i => `<li>${sourceBadge(i.source)}${i.text}</li>`)
+    .map(i => `<li>${sourceBadge(i.source)}${escapeHtml(i.text)}</li>`)
     .join('')}</ul>`;
 }
 
@@ -143,21 +256,76 @@ function renderLegend() {
   </div>`;
 }
 
+function renderWarnings(ostrzezenia) {
+  if (!ostrzezenia || ostrzezenia.length === 0) return '';
+  const items = ostrzezenia
+    .map(w => {
+      const cfg = WARNING_LEVELS[w.level] || WARNING_LEVELS.yellow;
+      return `<li class="${cfg.cls}"><span class="warn-icon">${cfg.icon}</span><span class="warn-label">${cfg.label}:</span> ${escapeHtml(w.text)}</li>`;
+    })
+    .join('');
+  return `<div class="section-block"><ul class="warning-list">${items}</ul></div>`;
+}
+
+function renderListField(items) {
+  if (!items || items.length === 0) return '<p class="empty-msg">Brak danych.</p>';
+  return `<ul>${items.map(i => `<li>${escapeHtml(i)}</li>`).join('')}</ul>`;
+}
+
 function renderProductCard(karta) {
   if (!karta) return '';
-  return `<div class="section-block">
-    <div class="product-card">
-      <h3>🛒 Karta produktu</h3>
-      <dl>
-        <dt>Dla jakich zwierząt</dt><dd>${karta.dlaJakichZwierzat}</dd>
-        <dt>Główne zalety</dt><dd><ul>${karta.glowneZalety.map(z => `<li>${z}</li>`).join('')}</ul></dd>
-        <dt>Kiedy polecać</dt><dd>${karta.kiedyPolecac}</dd>
-        <dt>Kiedy nie polecać</dt><dd>${karta.kiedyNiePolecac}</dd>
-        <dt>Najczęstsze pytania klientów</dt><dd><ul>${karta.najczestszePytania.map(p => `<li>${p}</li>`).join('')}</ul></dd>
-        <dt>Gotowa odpowiedź dla klienta</dt><dd>${karta.gotowaOdpowiedz}</dd>
-      </dl>
-    </div>
-  </div>`;
+  let html = `<div class="section-block"><div class="product-card">`;
+  html += `<h3>🛒 Karta produktu</h3>`;
+
+  if (karta.zdjecie) {
+    html += `<img class="product-image" src="${escapeHtml(karta.zdjecie)}" alt="Zdjęcie produktu" />`;
+  }
+
+  const meta = [];
+  if (karta.producent) meta.push(`<strong>Producent:</strong> ${escapeHtml(karta.producent)}`);
+  if (karta.marka) meta.push(`<strong>Marka:</strong> ${escapeHtml(karta.marka)}`);
+  if (karta.kategoria) meta.push(`<strong>Kategoria:</strong> ${escapeHtml(karta.kategoria)}`);
+  if (meta.length) html += `<div class="product-meta">${meta.join(' &nbsp;·&nbsp; ')}</div>`;
+
+  if (karta.opis) html += `<p class="product-desc">${escapeHtml(karta.opis)}</p>`;
+
+  html += `<dl>`;
+  Object.keys(PRODUCT_FIELD_LABELS).forEach(key => {
+    if (['producent', 'marka', 'kategoria', 'opis'].includes(key)) return;
+    const val = karta[key];
+    if (!val || (Array.isArray(val) && val.length === 0)) return;
+    html += `<dt>${PRODUCT_FIELD_LABELS[key]}</dt><dd>`;
+    if (Array.isArray(val)) {
+      html += renderListField(val);
+    } else {
+      html += `<p>${escapeHtml(val)}</p>`;
+    }
+    html += `</dd>`;
+  });
+
+  if (karta.dlaKogo) {
+    html += `<dt>Dla kogo produkt jest przeznaczony</dt><dd><p>${escapeHtml(karta.dlaKogo)}</p></dd>`;
+  }
+  if (karta.dlaKogoNie) {
+    html += `<dt>Dla kogo NIE jest przeznaczony</dt><dd><p>${escapeHtml(karta.dlaKogoNie)}</p></dd>`;
+  }
+
+  if (karta.faq && karta.faq.length) {
+    html += `<dt>Najczęściej zadawane pytania</dt><dd><ul class="faq-list">`;
+    karta.faq.forEach(f => {
+      html += `<li><strong>P:</strong> ${escapeHtml(f.q)}<br><strong>O:</strong> ${escapeHtml(f.a)}</li>`;
+    });
+    html += `</ul></dd>`;
+  }
+
+  html += `</dl>`;
+
+  if (karta.skroconaWersja) {
+    html += `<div class="quick-version"><h4>⚡ Skrócona wersja do szybkiej obsługi klienta</h4><p>${escapeHtml(karta.skroconaWersja)}</p></div>`;
+  }
+
+  html += `</div></div>`;
+  return html;
 }
 
 function renderRememberCard(zapamietaj) {
@@ -175,11 +343,23 @@ function renderNoteDetail(note) {
   if (note.isDemo) {
     html += `<div class="demo-banner">📌 To jest przykładowa notatka demonstrująca format. Prześlij swoje materiały szkoleniowe, aby zastąpić ją realną treścią.</div>`;
   }
-  html += `<h2>${note.title}</h2>`;
+
+  html += `<div class="note-card-header">`;
+  html += `<h2>${escapeHtml(note.title)}</h2>`;
+  if (note.id.startsWith('custom-')) {
+    html += `<div class="note-actions">
+      <button class="btn-small" id="editNoteBtn">✏️ Edytuj</button>
+      <button class="btn-small btn-danger" id="deleteNoteBtn">🗑️ Usuń</button>
+    </div>`;
+  }
+  html += `</div>`;
+
   html += `<div class="note-meta">
-    <span class="tag-chip">${note.category}</span>
-    ${note.tags.map(t => `<span class="tag-chip">${t}</span>`).join('')}
+    <span class="tag-chip">${escapeHtml(note.category)}</span>
+    ${note.tags.map(t => `<span class="tag-chip">${escapeHtml(t)}</span>`).join('')}
   </div>`;
+
+  html += renderWarnings(note.sections.ostrzezenia);
   html += renderLegend();
 
   Object.keys(SECTION_LABELS).forEach(key => {
@@ -201,12 +381,14 @@ function renderNoteDetail(note) {
 function renderWelcome() {
   return `<div class="welcome-card">
     <h2>👋 Witaj w Twoich notatkach doradcy klienta</h2>
-    <p>To Twoja baza wiedzy budowana na podstawie materiałów szkoleniowych ze sklepu zoologicznego.</p>
+    <p>To Twoja baza wiedzy budowana na podstawie materiałów szkoleniowych ze sklepu zoologicznego Maxi Zoo.</p>
     <ul>
       <li><strong>Kategorie i tagi</strong> po lewej stronie pomogą Ci szybko znaleźć temat.</li>
       <li>Każda notatka rozdziela informacje <span class="source-badge training" style="position:static">szkolenie</span> od <span class="source-badge extra" style="position:static">rozszerzenie</span> – wiesz, co pochodzi z materiałów, a co jest dodatkowym wyjaśnieniem.</li>
+      <li>Ostrzeżenia 🔴🟡🟢 widoczne na górze karty produktu pokazują od razu niebezpieczeństwa, ważne informacje i dobre zastosowania.</li>
       <li>Przyciskiem <strong>„Szybka powtórka – wszystkie tematy”</strong> u góry zrobisz błyskawiczny przegląd przed zmianą.</li>
-      <li>Wyszukiwarka pozwala znaleźć notatkę po nazwie, kategorii lub tagu.</li>
+      <li>Wyszukiwarka przeszukuje wszystkie treści notatek (nie tylko tytuły) – wpisz np. składnik, chorobę lub nazwę produktu.</li>
+      <li>Przyciskiem <strong>„+ Nowy temat”</strong> dodasz własną notatkę / kartę produktu – zapisuje się lokalnie w tym urządzeniu/przeglądarce.</li>
     </ul>
     <p>Wybierz temat z listy po lewej, aby zobaczyć notatkę.</p>
   </div>`;
@@ -222,7 +404,7 @@ function renderReview() {
     const items = note.sections.powtorka;
     if (!items || items.length === 0) return;
     html += `<div class="review-topic">
-      <h3>${note.title}</h3>
+      <h3>${escapeHtml(note.title)}</h3>
       ${renderItemList(items)}
     </div>`;
   });
@@ -237,14 +419,262 @@ function renderMain() {
     return;
   }
   if (state.mode === 'note' && state.noteId) {
-    const note = NOTES.find(n => n.id === state.noteId);
+    const note = getAllNotes().find(n => n.id === state.noteId);
     if (note) {
       main.innerHTML = renderNoteDetail(note);
+      bindNoteDetailActions(note);
       return;
     }
   }
   main.innerHTML = renderWelcome();
 }
+
+function bindNoteDetailActions(note) {
+  const editBtn = document.getElementById('editNoteBtn');
+  const delBtn = document.getElementById('deleteNoteBtn');
+  if (editBtn) editBtn.addEventListener('click', () => openNoteForm(note));
+  if (delBtn) delBtn.addEventListener('click', () => deleteCustomNote(note.id));
+}
+
+// -------------------- add / edit note form --------------------
+
+function parseLines(text) {
+  return (text || '')
+    .split('\n')
+    .map(l => l.trim())
+    .filter(Boolean);
+}
+
+function parseWarnings(text) {
+  return parseLines(text).map(line => {
+    const m = line.match(/^(RED|YELLOW|GREEN)\s*:\s*(.+)$/i);
+    if (m) {
+      return { level: m[1].toLowerCase(), text: m[2].trim() };
+    }
+    return { level: 'yellow', text: line };
+  });
+}
+
+function parseFaq(text) {
+  const lines = parseLines(text);
+  const faq = [];
+  let current = null;
+  lines.forEach(line => {
+    const qm = line.match(/^P\s*:\s*(.+)$/i) || line.match(/^Q\s*:\s*(.+)$/i);
+    const am = line.match(/^O\s*:\s*(.+)$/i) || line.match(/^A\s*:\s*(.+)$/i);
+    if (qm) {
+      if (current && current.q && current.a) faq.push(current);
+      current = { q: qm[1].trim(), a: '' };
+    } else if (am && current) {
+      current.a = am[1].trim();
+    }
+  });
+  if (current && current.q && current.a) faq.push(current);
+  return faq;
+}
+
+function itemsToTextarea(items) {
+  return (items || []).map(i => i.text).join('\n');
+}
+
+function warningsToTextarea(items) {
+  return (items || []).map(i => `${i.level.toUpperCase()}: ${i.text}`).join('\n');
+}
+
+function faqToTextarea(items) {
+  return (items || []).map(i => `P: ${i.q}\nO: ${i.a}`).join('\n');
+}
+
+function buildNoteFormHtml(note) {
+  const s = note ? note.sections : {};
+  const k = (s && s.kartaProduktu) || {};
+  const hasCard = !!(s && s.kartaProduktu);
+
+  const categoryOptions = CATEGORIES.map(c =>
+    `<option value="${escapeHtml(c)}" ${note && note.category === c ? 'selected' : ''}>${escapeHtml(c)}</option>`
+  ).join('');
+
+  const sectionTextareas = Object.keys(SECTION_LABELS).map(key => `
+    <label class="form-label">${SECTION_LABELS[key]}<br><span class="form-hint">jedna informacja w jednej linii</span></label>
+    <textarea name="section_${key}" rows="3">${escapeHtml(itemsToTextarea(s && s[key]))}</textarea>
+  `).join('');
+
+  const listFieldTextareas = LIST_FIELDS.map(key => `
+    <label class="form-label">${PRODUCT_FIELD_LABELS[key]}<br><span class="form-hint">jedna pozycja w jednej linii</span></label>
+    <textarea name="karta_${key}" rows="2">${escapeHtml((k[key] || []).join('\n'))}</textarea>
+  `).join('');
+
+  return `
+    <form id="noteForm">
+      <label class="form-label">Tytuł tematu / produktu *</label>
+      <input type="text" name="title" required value="${escapeHtml(note ? note.title : '')}" />
+
+      <label class="form-label">Kategoria *</label>
+      <select name="category" required>${categoryOptions}</select>
+
+      <label class="form-label">Tagi<br><span class="form-hint">oddzielone przecinkami, np. psy, alergie, karma sucha</span></label>
+      <input type="text" name="tags" value="${escapeHtml(note ? note.tags.join(', ') : '')}" />
+
+      <label class="form-label">🔴🟡🟢 Ostrzeżenia<br><span class="form-hint">jedna linia = jedno ostrzeżenie, format: RED: tekst / YELLOW: tekst / GREEN: tekst</span></label>
+      <textarea name="ostrzezenia" rows="3">${escapeHtml(warningsToTextarea(s && s.ostrzezenia))}</textarea>
+
+      ${sectionTextareas}
+
+      <label class="form-label">🧩 Zapamiętaj<br><span class="form-hint">jedna informacja w jednej linii</span></label>
+      <textarea name="section_zapamietaj" rows="2">${escapeHtml(itemsToTextarea(s && s.zapamietaj))}</textarea>
+
+      <label class="form-checkbox">
+        <input type="checkbox" name="hasCard" id="hasCardCheckbox" ${hasCard ? 'checked' : ''} />
+        To jest karta produktu (dodaj pełny profil sprzedażowy)
+      </label>
+
+      <fieldset id="cardFieldset" class="card-fieldset" ${hasCard ? '' : 'hidden'}>
+        <label class="form-label">Producent</label>
+        <input type="text" name="karta_producent" value="${escapeHtml(k.producent || '')}" />
+
+        <label class="form-label">Marka</label>
+        <input type="text" name="karta_marka" value="${escapeHtml(k.marka || '')}" />
+
+        <label class="form-label">Kategoria produktu</label>
+        <input type="text" name="karta_kategoria" value="${escapeHtml(k.kategoria || '')}" />
+
+        <label class="form-label">Zdjęcie produktu (URL)<br><span class="form-hint">opcjonalnie – link do obrazka</span></label>
+        <input type="text" name="karta_zdjecie" value="${escapeHtml(k.zdjecie || '')}" />
+
+        <label class="form-label">Opis</label>
+        <textarea name="karta_opis" rows="2">${escapeHtml(k.opis || '')}</textarea>
+
+        <label class="form-label">Dla kogo produkt jest przeznaczony</label>
+        <textarea name="karta_dlaKogo" rows="2">${escapeHtml(k.dlaKogo || '')}</textarea>
+
+        <label class="form-label">Dla kogo NIE jest przeznaczony</label>
+        <textarea name="karta_dlaKogoNie" rows="2">${escapeHtml(k.dlaKogoNie || '')}</textarea>
+
+        ${listFieldTextareas}
+
+        <label class="form-label">Najczęściej zadawane pytania (FAQ)<br><span class="form-hint">format: P: pytanie / O: odpowiedź, w kolejnych liniach</span></label>
+        <textarea name="karta_faq" rows="3">${escapeHtml(faqToTextarea(k.faq))}</textarea>
+
+        <label class="form-label">⚡ Skrócona wersja do szybkiej obsługi klienta</label>
+        <textarea name="karta_skroconaWersja" rows="2">${escapeHtml(k.skroconaWersja || '')}</textarea>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">💾 Zapisz temat</button>
+        <button type="button" class="btn-secondary" id="cancelFormBtn">Anuluj</button>
+      </div>
+    </form>
+  `;
+}
+
+function openNoteForm(note) {
+  state.editId = note ? note.id : null;
+  const modal = document.getElementById('noteModal');
+  const body = document.getElementById('noteModalBody');
+  document.getElementById('noteModalTitle').textContent = note ? '✏️ Edytuj temat' : '➕ Nowy temat';
+  body.innerHTML = buildNoteFormHtml(note);
+  modal.classList.add('open');
+
+  const hasCardCheckbox = document.getElementById('hasCardCheckbox');
+  const cardFieldset = document.getElementById('cardFieldset');
+  hasCardCheckbox.addEventListener('change', () => {
+    cardFieldset.hidden = !hasCardCheckbox.checked;
+  });
+
+  document.getElementById('cancelFormBtn').addEventListener('click', closeNoteForm);
+  document.getElementById('noteForm').addEventListener('submit', e => {
+    e.preventDefault();
+    saveNoteForm(e.target);
+  });
+}
+
+function closeNoteForm() {
+  document.getElementById('noteModal').classList.remove('open');
+  state.editId = null;
+}
+
+function saveNoteForm(form) {
+  const fd = new FormData(form);
+  const title = fd.get('title').trim();
+  const category = fd.get('category');
+  const tags = fd.get('tags').split(',').map(t => t.trim()).filter(Boolean);
+
+  const sections = {
+    ostrzezenia: parseWarnings(fd.get('ostrzezenia')),
+  };
+
+  Object.keys(SECTION_LABELS).forEach(key => {
+    const lines = parseLines(fd.get(`section_${key}`));
+    sections[key] = lines.map(text => ({ text, source: 'extra' }));
+  });
+
+  const zapamietajLines = parseLines(fd.get('section_zapamietaj'));
+  sections.zapamietaj = zapamietajLines.map(text => ({ text, source: 'extra' }));
+
+  if (fd.get('hasCard')) {
+    const karta = {
+      producent: fd.get('karta_producent').trim(),
+      marka: fd.get('karta_marka').trim(),
+      kategoria: fd.get('karta_kategoria').trim(),
+      zdjecie: fd.get('karta_zdjecie').trim(),
+      opis: fd.get('karta_opis').trim(),
+      dlaKogo: fd.get('karta_dlaKogo').trim(),
+      dlaKogoNie: fd.get('karta_dlaKogoNie').trim(),
+      faq: parseFaq(fd.get('karta_faq')),
+      skroconaWersja: fd.get('karta_skroconaWersja').trim(),
+    };
+    LIST_FIELDS.forEach(key => {
+      karta[key] = parseLines(fd.get(`karta_${key}`));
+    });
+    sections.kartaProduktu = karta;
+  } else {
+    sections.kartaProduktu = null;
+  }
+
+  let id = state.editId;
+  if (id) {
+    const existing = CUSTOM_NOTES.find(n => n.id === id);
+    existing.title = title;
+    existing.category = category;
+    existing.tags = tags;
+    existing.updated = new Date().toISOString().slice(0, 10);
+    existing.sections = sections;
+  } else {
+    id = 'custom-' + Date.now();
+    CUSTOM_NOTES.push({
+      id,
+      title,
+      category,
+      tags,
+      updated: new Date().toISOString().slice(0, 10),
+      sections,
+    });
+  }
+
+  saveCustomNotes(CUSTOM_NOTES);
+  closeNoteForm();
+
+  state.noteId = id;
+  state.mode = 'note';
+  renderSidebar();
+  renderNoteList();
+  renderMain();
+}
+
+function deleteCustomNote(id) {
+  if (!confirm('Czy na pewno usunąć ten temat? Tej operacji nie można odwrócić.')) return;
+  CUSTOM_NOTES = CUSTOM_NOTES.filter(n => n.id !== id);
+  saveCustomNotes(CUSTOM_NOTES);
+  state.noteId = null;
+  state.mode = 'welcome';
+  renderSidebar();
+  renderNoteList();
+  renderMain();
+}
+
+// -------------------- init --------------------
+
+initTheme();
 
 document.getElementById('searchInput').addEventListener('input', e => {
   state.search = e.target.value;
@@ -257,6 +687,23 @@ document.getElementById('reviewBtn').addEventListener('click', () => {
   state.noteId = null;
   renderNoteList();
   renderMain();
+});
+
+document.getElementById('themeToggle').addEventListener('click', toggleTheme);
+
+document.getElementById('newNoteBtn').addEventListener('click', () => openNoteForm(null));
+
+document.getElementById('noteModalClose').addEventListener('click', closeNoteForm);
+document.getElementById('noteModal').addEventListener('click', e => {
+  if (e.target.id === 'noteModal') closeNoteForm();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== document.getElementById('searchInput')) {
+    e.preventDefault();
+    document.getElementById('searchInput').focus();
+  }
+  if (e.key === 'Escape') closeNoteForm();
 });
 
 renderSidebar();
