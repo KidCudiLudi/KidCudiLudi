@@ -807,12 +807,16 @@ const NOTES = [
         { level: 'yellow', text: 'Kiltix zawiera propoksur (karbaminian) – przy zwierzętach starszych, chorych neurologicznie lub przyjmujących inne leki przeciwpasożytnicze zalecana konsultacja z weterynarzem przed zastosowaniem.' },
       ],
       najwazniejsze: [
-        { text: 'Foresto (dla kota i psa): substancja czynna imidaklopryd + flumetryna – działanie bójcze i odstraszające. Ochrona przed pchłami i kleszczami do 8 miesięcy.', source: 'training' },
-        { text: 'Kiltix (dla psa): substancja czynna propoksur + flumetryna. Ochrona przed kleszczami i pchłami do 7 miesięcy, działanie odstraszające.', source: 'training' },
+        { text: 'Foresto (dla kota i psa): substancja czynna imidaklopryd + flumetryna – działanie bójcze i odstraszające (repelentne). Ochrona przed pchłami i kleszczami do 8 miesięcy.', source: 'training' },
+        { text: 'Kiltix (dla psa): substancja czynna propoksur + flumetryna. Ochrona przed kleszczami i pchłami do 5–7 miesięcy, działanie odstraszające.', source: 'training' },
+        { text: 'Foresto dostępna jest w dwóch rozmiarach obroży: ok. 38 cm (dla kotów i małych psów) oraz ok. 70 cm (dla psów średnich i dużych) – rozmiar dobieramy do obwodu szyi zwierzęcia.', source: 'training' },
+        { text: 'Działanie odstraszające (repelentne) Foresto i Kiltix jest istotne nie tylko ze względu na pchły/kleszcze samo w sobie, ale dlatego, że ogranicza ryzyko przeniesienia chorób odkleszczowych takich jak babeszjoza, borelioza i erlichioza – kleszcz odstraszony nie zdąży się przyczepić i ukłuć.', source: 'training' },
+        { text: 'Kiltix można stosować w domach z wieloma zwierzętami; w przypadku konieczności jednoczesnego stosowania innego preparatu przeciwpasożytniczego (np. doustnego) zalecana jest konsultacja z weterynarzem, zwłaszcza u psów z grupy ryzyka mutacji MDR1 (rasy typu collie).', source: 'training' },
       ],
       coWiedziec: [
-        { text: 'Obroże to forma o najdłuższym czasie działania (7–8 miesięcy) – dobra opcja dla klientów, którzy nie chcą pamiętać o regularnych aplikacjach.', source: 'extra' },
+        { text: 'Obroże to forma o najdłuższym czasie działania (5–8 miesięcy) – dobra opcja dla klientów, którzy nie chcą pamiętać o regularnych aplikacjach.', source: 'extra' },
         { text: 'Foresto jest dostępna w wersji dla psów i dla kotów (różne rozmiary/dawki) – Kiltix jest przeznaczony tylko dla psów.', source: 'training' },
+        { text: 'Repelentne (odstraszające) działanie obroży to ważny argument zdrowotny – nie tylko zabija pasożyty, ale zmniejsza ryzyko ukłucia i przeniesienia chorób odkleszczowych (babeszjoza, borelioza, erlichioza).', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient: "Obroża nie ogranicza ruchów zwierzęcia?" — Doradca: "Nowoczesne obroże, takie jak Foresto czy Kiltix, są lekkie i elastyczne. Ważne jest tylko prawidłowe dopasowanie – powinno dać się wsunąć dwa palce między obrożę a szyję. Co jakiś czas warto sprawdzać, czy nie obciera skóry, szczególnie u zwierząt z gęstą sierścią."', source: 'extra' },
@@ -861,8 +865,9 @@ const NOTES = [
         ],
         naCoZwrocicUwage: [
           'Prawidłowe dopasowanie (ok. 2 palce między obrożą a szyją)',
-          'Gatunek i rozmiar obroży',
+          'Gatunek i rozmiar obroży (Foresto: ok. 38 cm dla kotów/małych psów, ok. 70 cm dla psów średnich i dużych)',
           'Czy zwierzę nie ma już innego preparatu przeciwpasożytniczego z tej samej grupy substancji',
+          'Czy pies należy do ras z grupy ryzyka mutacji MDR1 (np. collie i rasy pokrewne) – przy łączeniu z innymi preparatami zalecana konsultacja z weterynarzem',
         ],
         najczestszeBledy: [
           'Zbyt ciasne/zbyt luźne dopasowanie',
@@ -1217,6 +1222,466 @@ const NOTES = [
       kartaProduktu: null,
       zapamietaj: [
         { text: 'Znajomość własnego portfolio marek (zwłaszcza marek własnych Maxi Zoo) to jeden z najszybszych sposobów na zaproponowanie Klientowi dobrze dopasowanej alternatywy w ramach budżetu.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'marka-real-nature-linie',
+    title: 'REAL NATURE – linie WILDERNESS, Original, Country Selection',
+    category: 'Żywienie i suplementacja',
+    tags: ['psy', 'koty', 'karma sucha', 'karma mokra', 'real nature', 'marka własna', 'bez zbóż'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Real Nature to marka własna Maxi Zoo, stawiająca na naturalny skład i wysoki udział mięsa w recepturach.', source: 'training' },
+        { text: 'Linia WILDERNESS: receptura bezzbożowa, z wysoką zawartością mięsa, zbliżona do naturalnej diety przodków psów i kotów.', source: 'training' },
+        { text: 'Linia Original: klasyczna receptura z udziałem zbóż, dobry stosunek jakości do ceny – baza oferty Real Nature.', source: 'training' },
+        { text: 'Linia Country Selection: receptura o ograniczonej liczbie składników (zwykle jedno źródło białka) – dobra propozycja przy podejrzeniu alergii lub nietolerancji pokarmowej.', source: 'training' },
+        { text: 'Oznaczenia typu "5 z 7" lub "6 z 7" na opakowaniach to skrót komunikujący, ile z siedmiu wyróżnionych przez markę cech (np. wysoka zawartość mięsa, brak zbóż, brak sztucznych dodatków, dodatek owoców/ziół) zawiera dany produkt – dokładną listę tych siedmiu cech warto zweryfikować na opakowaniu lub w aktualnych materiałach marketingowych.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Dawkowanie zawsze zgodnie z tabelą na opakowaniu – zależy od masy ciała, wieku i poziomu aktywności zwierzęcia.', source: 'training' },
+        { text: 'WILDERNESS – dobra propozycja dla klientów szukających diety zbliżonej do naturalnej, bezzbożowej, z wysokim udziałem mięsa.', source: 'extra' },
+        { text: 'Country Selection – warto zaproponować przy powtarzających się problemach skórnych lub trawiennych zwierzęcia, jako opcję do obserwacji (eliminacyjnie), pamiętając, że diagnoza alergii wymaga konsultacji weterynaryjnej.', source: 'extra' },
+        { text: 'Original to dobry punkt startowy dla klientów, którzy nie mają szczególnych wymagań dietetycznych i szukają sprawdzonej, klasycznej karmy w rozsądnej cenie.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient pyta o różnicę między liniami Real Nature, można wyjaśnić: Original to klasyczna receptura z udziałem zbóż i dobrym stosunkiem jakości do ceny; WILDERNESS jest bezzbożowa, z wyższą zawartością mięsa, bliższa naturalnej diecie; Country Selection ma ograniczoną liczbę składników i jedno źródło białka, co bywa pomocne przy wrażliwych żołądkach lub podejrzeniu alergii.', source: 'extra' },
+        { text: 'Gdy klient pyta, co oznacza oznaczenie 5 z 7 albo 6 z 7, można wyjaśnić, że to liczba spełnionych przez dany produkt cech z zestawu siedmiu, które marka uznaje za ważne (np. źródło mięsa, brak zbóż, naturalne dodatki) – warto pokazać dokładną listę cech na opakowaniu.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy zwierzę miało wcześniej problemy z alergiami lub nietolerancjami pokarmowymi?', source: 'extra' },
+        { text: 'Czy klient szuka karmy bezzbożowej, czy nie ma takiego wymogu?', source: 'extra' },
+        { text: 'Jaka jest masa ciała, wiek i poziom aktywności zwierzęcia (do prawidłowego dawkowania)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Dobieranie karmy na oko, bez sprawdzenia tabeli dawkowania na opakowaniu – ryzyko nadmiernego lub niedostatecznego karmienia.', source: 'extra' },
+        { text: 'Mylenie linii Original z WILDERNESS pod względem zawartości zbóż – to dwie różne receptury.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'WILDERNESS = bezzbożowa, wysoka zawartość mięsa.', source: 'training' },
+        { text: 'Original = klasyczna receptura z udziałem zbóż, dobra relacja jakości do ceny.', source: 'training' },
+        { text: 'Country Selection = ograniczona liczba składników, dobra przy podejrzeniu alergii/nietolerancji.', source: 'training' },
+        { text: '5 z 7 / 6 z 7 = liczba spełnionych cech z zestawu marki – zweryfikuj listę cech na opakowaniu.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładną treść siedmiu cech w oznaczeniu "x z 7" oraz aktualne warianty smakowe i gramatury warto zweryfikować na bieżąco w katalogu lub na opakowaniach.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'karmy-premium-brit-nd-bozita-fitfun',
+    title: 'Karmy premium – Brit, N&D (Farmina), Bozita, FIT+FUN',
+    category: 'Żywienie i suplementacja',
+    tags: ['psy', 'koty', 'karma premium', 'brit', 'farmina', 'n&d', 'bozita', 'fit+fun', 'marki'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Brit – czeska marka karm dla psów i kotów z szeroką ofertą, od podstawowej do premium; linie obejmują m.in. Brit Premium, Brit Care (formuły funkcjonalne, np. wsparcie stawów, skóry i sierści) oraz Brit Mono Protein (ograniczona liczba składników, jedno źródło białka).', source: 'training' },
+        { text: 'N&D (Nature & Diet) – linia marki Farmina (Włochy); karmy bezzbożowe lub z bardzo niską zawartością zbóż (np. tzw. ancestral grain – orkisz, owies), z wysokim udziałem świeżego mięsa lub ryby.', source: 'training' },
+        { text: 'Bozita – szwedzka marka karm, produkowana w Szwecji; znana m.in. z karm mokrych w formie pasztetu w tubie, a także karm suchych; stawia na łatwą przyswajalność i jakość składników skandynawskich.', source: 'training' },
+        { text: 'FIT+FUN – marka karm i przysmaków dla wielu gatunków zwierząt (psy, koty, a także gryzonie/małe ssaki i ptaki) – dobra propozycja dla klientów posiadających różne zwierzęta w domu.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'N&D/Farmina jest często wybierana przez klientów szukających karm grain-free lub o niskiej zawartości węglowodanów, gotowych zapłacić wyższą cenę za jakość składników.', source: 'extra' },
+        { text: 'Bozita w tubie to wygodna forma dawkowania – popularna jako dodatek do karmy suchej (urozmaicenie, nawodnienie) lub jako samodzielne karmienie mokre.', source: 'extra' },
+        { text: 'FIT+FUN warto mieć w pamięci przy obsłudze klientów posiadających gryzonie, ptaki lub inne małe zwierzęta – nie tylko psy i koty.', source: 'extra' },
+        { text: 'Brit Care i Brit Mono Protein to dobre propozycje przy specyficznych potrzebach (np. wsparcie stawów, wrażliwy układ pokarmowy, alergie) w ramach marki Brit.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient porównuje karmy premium, warto wskazać, że różnią się przede wszystkim pochodzeniem (Brit – Czechy, N&D – Włochy/Farmina, Bozita – Szwecja), zawartością zbóż (N&D zazwyczaj bezzbożowa lub z minimalną ich ilością) oraz formą (Bozita oferuje charakterystyczną formę w tubie).', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki gatunek, rasa i wielkość ma zwierzę?', source: 'extra' },
+        { text: 'Czy klient szuka karmy bezzbożowej (N&D) czy klasycznej z dobrym stosunkiem jakości do ceny (Brit Premium)?', source: 'extra' },
+        { text: 'Czy w domu są inne zwierzęta (np. gryzonie, ptaki), dla których można zaproponować FIT+FUN?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Traktowanie wszystkich karm "premium" jako identycznych – różnią się składem, źródłem białka, zawartością zbóż i przeznaczeniem (np. wsparcie stawów vs. karma podstawowa).', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Brit – Czechy, szeroka oferta dla psów i kotów (Premium, Care, Mono Protein).', source: 'training' },
+        { text: 'N&D/Farmina – Włochy, bezzbożowa/niskozbożowa, wysoka zawartość mięsa/ryby.', source: 'training' },
+        { text: 'Bozita – Szwecja, znana z karm mokrych w tubie.', source: 'training' },
+        { text: 'FIT+FUN – wielogatunkowa: psy, koty, gryzonie, ptaki.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładne receptury, warianty smakowe, gramatury i aktualne promocje tych marek warto zweryfikować na opakowaniach lub w aktualnym katalogu.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'dr-sidel-kosmetyki-pielegnacyjne',
+    title: 'Dr Sidel – kosmetyki i pielęgnacja weterynaryjna',
+    category: 'Pielęgnacja i higiena',
+    tags: ['psy', 'koty', 'pielęgnacja', 'kosmetyki', 'szampon', 'skóra', 'sierść', 'dr sidel'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Do mycia i pielęgnacji zwierząt należy stosować wyłącznie kosmetyki przeznaczone dla zwierząt – kosmetyki dla ludzi mają inne pH i mogą podrażniać skórę psa lub kota.' },
+      ],
+      najwazniejsze: [
+        { text: 'Dr Sidel to marka kosmetyków pielęgnacyjnych/groomingowych dla psów i kotów, tworzona z uwzględnieniem podejścia dermatologicznego/weterynaryjnego.', source: 'training' },
+        { text: 'Oferta obejmuje m.in. szampony, odżywki oraz pianki/spraye do pielęgnacji skóry i sierści, w tym produkty dedykowane konkretnym problemom (np. nadmierne wypadanie sierści, suchość skóry, swędzenie, nieprzyjemny zapach).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Kosmetyki o profilu dermatologicznym mają pH zbliżone do skóry zwierzęcia – mniejsze ryzyko podrażnień niż przy stosowaniu kosmetyków dla ludzi.', source: 'extra' },
+        { text: 'Przy stałych problemach skórnych (przewlekły świąd, łupież, zmiany skórne) produkty pielęgnacyjne mogą wspomagać, ale nie zastępują diagnozy i leczenia u weterynarza.', source: 'extra' },
+        { text: 'Częstotliwość kąpieli warto dopasować do typu sierści i wskazań na etykiecie – zbyt częste mycie nawet dobrym szamponem może wysuszać skórę.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient pyta, czy może użyć swojego szamponu do mycia psa lub kota, warto wyjaśnić, że kosmetyki dla ludzi mają inne pH niż skóra zwierzęcia i mogą prowadzić do podrażnień lub przesuszenia – lepiej wybrać produkt przeznaczony dla zwierząt, dopasowany do typu sierści.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki typ sierści/skóry ma zwierzę (sucha, tłusta, wrażliwa, długa, krótka)?', source: 'extra' },
+        { text: 'Czy występują objawy takie jak swędzenie, łupież, nieprzyjemny zapach lub nadmierne wypadanie sierści?', source: 'extra' },
+        { text: 'Jak często zwierzę jest kąpane i jakich kosmetyków używano do tej pory?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Używanie kosmetyków przeznaczonych dla ludzi do mycia psów lub kotów.', source: 'extra' },
+        { text: 'Zbyt częste kąpanie zwierzęcia, nawet dedykowanym szamponem, co może prowadzić do przesuszenia skóry.', source: 'extra' },
+        { text: 'Ignorowanie przewlekłych problemów skórnych i próba ich rozwiązania wyłącznie kosmetykami, bez wizyty u weterynarza.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Dr Sidel = linia pielęgnacyjna o podejściu dermatologicznym/weterynaryjnym – dobra propozycja przy problemach skórnych i przy budowaniu rutyny groomingowej.', source: 'training' },
+        { text: 'Zawsze kosmetyki dla zwierząt, nigdy dla ludzi.', source: 'extra' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładne nazwy i przeznaczenie konkretnych produktów z linii Dr Sidel warto zweryfikować na opakowaniach lub w aktualnym katalogu.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'akcesoria-marki-more-witbar-gamedog-waudog-fiboo-amiplay',
+    title: 'Marki akcesoriów – MORE, Witbar, Game Dog, Wau Dog, Fiboo, Amiplay',
+    category: 'Marki i asortyment',
+    tags: ['marki', 'akcesoria', 'zabawki', 'legowiska', 'szelki', 'suplementy', 'eko'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'MORE – marka mebli i wyposażenia wnętrz dla psów, np. stylowe legowiska i domki dopasowane estetycznie do wnętrz domowych.', source: 'training' },
+        { text: 'Witbar – marka naturalnych przysmaków/gryzaków dla psów, oparta na surowcach naturalnych (np. produkty na bazie skóry, żył, uszu).', source: 'training' },
+        { text: 'Game Dog – marka suplementów dla psów aktywnych/sportowych; linie m.in. IsoDog (suplement izotoniczny/elektrolitowy) i Flexit (suplement wspierający stawy).', source: 'training' },
+        { text: 'Wau Dog – marka akcesoriów, znana m.in. z materiału biothane (wodoodporny, łatwy do czyszczenia) używanego w szelkach, obrożach i prowadnikach.', source: 'training' },
+        { text: 'Fiboo – marka ekologicznych zabawek dla psów i kotów, wykonanych z materiałów z recyklingu (np. z butelek PET).', source: 'training' },
+        { text: 'Amiplay – polska marka zabawek i akcesoriów dla psów i kotów, z szeroką, kolorową ofertą w przystępnych cenach.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Game Dog IsoDog – suplement elektrolitowy polecany przy dużym wysiłku lub wysokich temperaturach, wspomaga nawodnienie i regenerację psa.', source: 'extra' },
+        { text: 'Game Dog Flexit – suplement wspierający stawy, polecany psom aktywnym, starszym lub rasom predysponowanym do problemów stawowych.', source: 'extra' },
+        { text: 'Wau Dog (biothane) – materiał odporny na wodę i błoto, łatwy w czyszczeniu – dobra propozycja dla psów aktywnych lub pracujących w terenie.', source: 'extra' },
+        { text: 'Fiboo – argument ekologiczny (zabawki z recyklingu) może być istotny dla klientów zwracających uwagę na środowisko.', source: 'extra' },
+        { text: 'Amiplay – dobra opcja, gdy klient szuka szerokiego wyboru akcesoriów/zabawek w przystępnej cenie.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient szuka legowiska dopasowanego do wystroju wnętrza, można zaproponować markę MORE; gdy szuka naturalnych przysmaków – Witbar; gdy pies jest sportowy i potrzebuje wsparcia nawodnienia lub stawów – Game Dog (IsoDog, Flexit); gdy klientowi zależy na łatwych w czyszczeniu akcesoriach do aktywności w terenie – Wau Dog (biothane); gdy ważny jest aspekt ekologiczny – Fiboo; a przy szukaniu szerokiego wyboru w przystępnej cenie – Amiplay.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy klient szuka mebli/legowisk dopasowanych do wnętrza domu (MORE)?', source: 'extra' },
+        { text: 'Czy pies jest aktywny sportowo lub startuje w zawodach (Game Dog)?', source: 'extra' },
+        { text: 'Czy klientowi zależy na materiałach łatwych w czyszczeniu (Wau Dog biothane) lub na rozwiązaniach ekologicznych (Fiboo)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Polecanie suplementów Game Dog (Flexit, IsoDog) bez ustalenia, czy są faktycznie potrzebne – to suplementy celowane, a nie produkty "dla każdego psa".', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'MORE = meble/legowiska. Witbar = naturalne przysmaki/gryzaki. Game Dog = suplementy (IsoDog – elektrolity, Flexit – stawy). Wau Dog = akcesoria biothane. Fiboo = zabawki eko z recyklingu. Amiplay = szeroka oferta zabawek/akcesoriów w przystępnej cenie.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładny skład suplementów Game Dog oraz aktualny zakres rozmiarowy akcesoriów Wau Dog i Amiplay warto weryfikować na bieżąco na opakowaniach/w katalogu.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'szkolenie-psa-podstawy',
+    title: 'Szkolenie psa w praktyce – podstawy dla doradcy',
+    category: 'Psy',
+    tags: ['psy', 'szkolenie', 'behawior', 'szczeniak', 'akcesoria szkoleniowe'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Podstawowe zasady skutecznego szkolenia psa: konsekwencja, krótkie sesje (kilka–kilkanaście minut) i pozytywne wzmocnienie (przysmaki, zabawa, pochwała).', source: 'training' },
+        { text: 'Najważniejsze podstawowe komendy: siad, zostań/czekaj, do nogi, leż, przywołanie.', source: 'training' },
+        { text: 'Akcesoria pomocne w szkoleniu: smakowite, małe przysmaki treningowe (łatwe do szybkiego podania), klikery, długie linki/prowadniki do pracy na przywołanie, szelki/obroże dopasowane do nauki chodzenia przy nodze.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Szczenięta najlepiej uczą się poprzez krótkie, częste powtórki – długie sesje są mniej efektywne i mogą być męczące.', source: 'extra' },
+        { text: 'Socjalizacja (kontakt z innymi psami, ludźmi, różnymi sytuacjami i otoczeniem) jest kluczowa we wczesnym okresie życia szczeniaka.', source: 'extra' },
+        { text: 'Kary fizyczne i krzyk są nieskuteczne i mogą szkodzić relacji właściciel–pies – warto promować metody oparte na pozytywnym wzmocnieniu.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient pyta, jak zacząć szkolenie szczeniaka, można podsumować: krótkie, regularne sesje (kilka minut, kilka razy dziennie), nagradzanie przysmakiem za każde poprawne zachowanie, konsekwentne używanie tych samych komend oraz duża dawka socjalizacji w pierwszych miesiącach życia.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy pies jest szczeniakiem, czy dorosłym psem zaczynającym naukę?', source: 'extra' },
+        { text: 'Jakie konkretne zachowania klient chce poprawić lub wyuczyć?', source: 'extra' },
+        { text: 'Czy klient korzystał już z jakichś akcesoriów lub metod szkoleniowych?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Stosowanie zbyt długich sesji treningowych, zwłaszcza ze szczeniakami.', source: 'extra' },
+        { text: 'Niekonsekwencja w komendach – różne słowa używane do tego samego zachowania.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Krótkie sesje, pozytywne wzmocnienie, konsekwencja.', source: 'training' },
+        { text: 'Podstawowe komendy: siad, zostań, do nogi, leż, przywołanie.', source: 'training' },
+        { text: 'Socjalizacja szczeniaka to kluczowy element wczesnego szkolenia.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Przy poważniejszych problemach behawioralnych (agresja, lęk separacyjny) warto polecić konsultację z behawiorystą lub trenerem psów – nie tylko produkty.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'potrzeby-psow-dobor-produktow',
+    title: 'Potrzeby psów – jak dobrać idealne produkty',
+    category: 'Psy',
+    tags: ['psy', 'potrzeby', 'dobór produktów', 'segmentacja', 'doradztwo'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Kluczowe kategorie potrzeb psa do uwzględnienia przy doborze produktów: żywienie (wiek, rozmiar, aktywność, ew. alergie), pielęgnacja (typ sierści), zdrowie i profilaktyka (pasożyty, stawy, zęby), aktywność i zabawa (zabawki, aktywizacja węchowa), komfort i odpoczynek (legowisko dopasowane do rozmiaru i preferencji), bezpieczeństwo i szkolenie (szelki/obroże, akcesoria treningowe).', source: 'training' },
+        { text: 'Dobór produktów powinien uwzględniać wiek psa (szczeniak/dorosły/senior), rozmiar i rasę, poziom aktywności, ewentualne problemy zdrowotne oraz środowisko życia (mieszkanie vs dom z ogrodem).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Rasy aktywne/sportowe (np. border collie, husky) mają wyższe potrzeby energetyczne i większą potrzebę aktywizacji – warto rozważyć karmę o wyższej kaloryczności oraz zabawki węchowe/interaktywne.', source: 'extra' },
+        { text: 'Psy seniorzy częściej potrzebują wsparcia stawów (suplementy), karmy lżej strawnej oraz miękkich, ortopedycznych legowisk.', source: 'extra' },
+        { text: 'Rasy z predyspozycją do problemów skórnych/alergii – warto rozważyć karmy o ograniczonej liczbie składników (np. linia Country Selection marki Real Nature).', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient nie wie, od czego zacząć dobór produktów dla nowego psa, warto przejść przez sześć obszarów potrzeb: żywienie, pielęgnacja, zdrowie i profilaktyka, aktywność i zabawa, komfort i odpoczynek, bezpieczeństwo i szkolenie – i dopytać, które z nich są dla psa najważniejsze na danym etapie życia.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki wiek, rasa/rozmiar i poziom aktywności ma pies?', source: 'extra' },
+        { text: 'Czy są jakieś zdiagnozowane problemy zdrowotne?', source: 'extra' },
+        { text: 'W jakich warunkach mieszka pies (mieszkanie, dom, ogród)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Dobór produktów wyłącznie na podstawie ceny, bez uwzględnienia realnych potrzeb zwierzęcia.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: '6 kategorii potrzeb psa: żywienie, pielęgnacja, zdrowie/profilaktyka, aktywność/zabawa, komfort/odpoczynek, bezpieczeństwo/szkolenie.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Im więcej pytań o styl życia zwierzaka, tym lepiej dopasowana oferta – to fundament profesjonalnej rozmowy doradczej.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'nowy-pupil-w-domu-checklist',
+    title: 'Nowy pupil w domu – checklist dla nowych właścicieli',
+    category: 'Inne',
+    tags: ['nowy pupil', 'checklist', 'pierwszy zakup', 'szczeniak', 'kociak', 'pakiet startowy'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Podstawowy zestaw dla nowego pupila: miski na jedzenie i wodę, karma startowa dopasowana do wieku zwierzęcia, legowisko/kojec, transporter, obroża/szelki z prowadnikiem (psy) lub kuweta i żwirek (koty), zabawki, akcesoria do pielęgnacji (szczotka, szampon) oraz – po konsultacji z weterynarzem – pierwsza profilaktyka przeciwpasożytnicza.', source: 'training' },
+        { text: 'Obsługa nowego właściciela to dobra okazja do zaproponowania pakietu startowego (cross-selling): karma + miski + legowisko + zabawka + akcesoria pielęgnacyjne.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Pierwsze dni w nowym domu są stresujące dla zwierzęcia – warto polecić spokojne, wydzielone miejsce (np. legowisko lub kojec) jako bezpieczną bazę.', source: 'extra' },
+        { text: 'Najlepiej kontynuować karmę, którą zwierzę otrzymywało wcześniej (np. od hodowcy), a zmiany wprowadzać stopniowo, by uniknąć problemów żołądkowych.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient przychodzi po zakupy dla nowego szczeniaka lub kociaka, warto przejść przez checklistę: jedzenie i miski, miejsce do spania, transport, identyfikacja/prowadzenie (obroża/szelki) lub kuweta, zabawki, pielęgnacja oraz profilaktyka zdrowotna – i zaproponować odpowiedni zestaw produktów.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki gatunek i wiek ma zwierzę oraz skąd pochodzi (hodowca, schronisko, dom tymczasowy)?', source: 'extra' },
+        { text: 'Jaką karmę zwierzę jadło dotychczas?', source: 'extra' },
+        { text: 'Czy klient ma już jakiekolwiek akcesoria, czy zaczyna od zera?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Nagła, całkowita zmiana karmy od pierwszego dnia w nowym domu.', source: 'extra' },
+        { text: 'Brak przygotowania bezpiecznego miejsca dla zwierzęcia przed przyjazdem do domu.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Pakiet startowy = karma + miski + legowisko + transporter + zabawki + pielęgnacja + (po konsultacji z weterynarzem) profilaktyka przeciwpasożytnicza.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Pierwsza wizyta nowego właściciela to świetna okazja do zbudowania długoterminowej relacji – warto wspomnieć o programie lojalnościowym i kolejnych potrzebach (karma, akcesoria, profilaktyka).', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'kot-w-domu-jezyk-kota',
+    title: 'Kot w domu – potrzeby i język kota',
+    category: 'Koty',
+    tags: ['koty', 'behawior', 'potrzeby kota', 'komunikacja', 'kuweta', 'drapak'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Koty komunikują się głównie mową ciała: pozycja uszu, ogona i źrenic, mruczenie, merdanie/uderzanie ogonem (zwykle oznacza pobudzenie lub niezadowolenie, w przeciwieństwie do psów) oraz ocieranie się/wałkowanie (oznaczanie zapachowe, oznaka zaufania).', source: 'training' },
+        { text: 'Podstawowe potrzeby kota domowego: bezpieczne, wysoko położone miejsca odpoczynku, drapaki (naturalna potrzeba drapania – pielęgnacja pazurów i oznaczanie terytorium), odpowiednia liczba i lokalizacja kuwet, zabawa odwzorowująca polowanie (np. zabawki na wędce, interaktywne) oraz dostęp do kryjówek.', source: 'training' },
+        { text: 'Koty niewychodzące (mieszkaniowe) wymagają więcej aktywizacji (zabawki, drapaki, półki, wysokie punkty obserwacyjne) niż koty wychodzące, które mają naturalną stymulację na zewnątrz.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Merdanie ogonem u kota często oznacza irytację lub pobudzenie – w przeciwieństwie do psa, u którego zwykle oznacza radość.', source: 'extra' },
+        { text: 'Zasada dotycząca kuwet: liczba kuwet powinna wynosić liczba kotów plus jedna, a kuwety powinny być umieszczone w spokojnych miejscach, z dala od misek z jedzeniem.', source: 'extra' },
+        { text: 'Zbyt mała liczba kuwet lub ich nieodpowiednia lokalizacja (hałas, brak prywatności, bliskość jedzenia) to częsta przyczyna "nieczystości" kota.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient zgłasza, że kot drapie meble lub załatwia się poza kuwetą, warto zapytać o liczbę i lokalizację kuwet oraz dostęp do drapaka – często rozwiązaniem jest dodanie kuwety (zasada: liczba kotów plus jedna) lub zapewnienie atrakcyjnego drapaka w miejscu, gdzie kot już drapie.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy kot jest wychodzący, czy mieszkaniowy (niewychodzący)?', source: 'extra' },
+        { text: 'Ile kotów jest w domu i ile kuwet jest obecnie dostępnych?', source: 'extra' },
+        { text: 'Czy kot ma dostęp do drapaka i wysokich miejsc odpoczynku?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Karanie kota za zachowania instynktowne (drapanie, polowanie na przedmioty) bez zapewnienia alternatywy, np. drapaka lub zabawek.', source: 'extra' },
+        { text: 'Zbyt mała liczba lub nieodpowiednia lokalizacja kuwet.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Zasada kuwet: liczba kotów + 1.', source: 'training' },
+        { text: 'Merdanie ogonem u kota zwykle nie oznacza radości.', source: 'training' },
+        { text: 'Koty niewychodzące potrzebują więcej aktywizacji: drapaki, zabawki, półki.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Zrozumienie języka kota pomaga zaproponować właścicielowi produkty rozwiązujące rzeczywisty problem behawioralny (np. drapanie mebli – drapak, a nie tylko spray odstraszający).', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'ochrona-przed-kleszczami-tarcza',
+    title: 'Tarcza przeciwkleszczowa – metody ochrony i złote zasady',
+    category: 'Zdrowie',
+    tags: ['psy', 'koty', 'kleszcze', 'profilaktyka', 'mdr1', 'pasożyty', 'permetryna'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [
+        { level: 'red', text: 'Psy z mutacją genu MDR1 (często rasy z grupy collie i rasy pokrewne, np. owczarek szetlandzki, border collie, australian shepherd) mogą reagować bardzo silnie na niektóre leki, w tym niektóre preparaty przeciwpasożytnicze – przed zastosowaniem nowego preparatu u takich psów zalecana jest konsultacja z weterynarzem, a w razie potrzeby test genetyczny MDR1.' },
+        { level: 'red', text: 'Preparaty przeciwkleszczowe na bazie permetryny (część produktów spot-on dla psów) są silnie toksyczne dla kotów. Nie stosować psich produktów z permetryną u kotów i pilnować, by kot nie miał bliskiego kontaktu z psem krótko po aplikacji takiego preparatu.' },
+      ],
+      najwazniejsze: [
+        { text: 'Trzy główne metody ochrony przed kleszczami: chemiczna (spot-on, tabletki, obroże – substancje czynne zabijające i/lub odstraszające kleszcze), naturalna (oleje eteryczne i inne naturalne odstraszacze – działanie zwykle słabsze i krótsze, wymaga częstszego stosowania) oraz ultradźwiękowa (urządzenia emitujące dźwięki odstraszające kleszcze/pchły – skuteczność zmienna, traktowana jako metoda dodatkowa, nie podstawowa).', source: 'training' },
+        { text: 'Złote zasady ochrony przed kleszczami: stosować profilaktykę przez cały sezon aktywności kleszczy (wiosna–jesień, w cieplejszych regionach często cały rok), regularnie sprawdzać sierść po powrocie z dworu, usuwać kleszcze możliwie szybko i prawidłowo (specjalny haczyk lub pęseta, bez ucisku odwłoka) oraz nie łączyć kilku preparatów chemicznych z tej samej grupy substancji bez konsultacji z weterynarzem.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Choroby przenoszone przez kleszcze u psów to m.in. babeszjoza, borelioza (choroba z Lyme), erlichioza i anaplazmoza – im szybciej kleszcz zostanie usunięty lub odstraszony, tym mniejsze ryzyko przeniesienia patogenu.', source: 'training' },
+        { text: 'Metody naturalne i ultradźwiękowe mogą być dobrym uzupełnieniem dla klientów preferujących ograniczenie środków chemicznych, ale w rejonach o wysokim ryzyku kleszczowym warto rekomendować metodę chemiczną jako podstawę ochrony.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient pyta, jaką metodę ochrony przed kleszczami wybrać, warto wyjaśnić, że metoda chemiczna (spot-on, tabletki, obroże) daje najsilniejszą i najbardziej przewidywalną ochronę, metody naturalne mogą być uzupełnieniem przy niskim ryzyku, a urządzenia ultradźwiękowe traktować jako dodatek, nie podstawę ochrony – zwłaszcza w rejonach z dużą liczbą kleszczy.', source: 'extra' },
+        { text: 'Gdy klient ma psa rasy z grupy collie, warto zapytać, czy znane jest mu pojęcie mutacji MDR1, i w razie wątpliwości polecić konsultację z weterynarzem przed zastosowaniem niektórych preparatów przeciwpasożytniczych.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaka rasa psa – czy zwierzę należy do ras z grupy ryzyka mutacji MDR1 (np. collie, owczarek szetlandzki, border collie, australian shepherd)?', source: 'extra' },
+        { text: 'Jaki jest tryb życia zwierzęcia – częste wyjścia do lasu, wysokiej trawy lub na działkę zwiększają ryzyko kontaktu z kleszczami?', source: 'extra' },
+        { text: 'Czy w domu są też koty (istotne ze względu na toksyczność permetryny dla kotów)?', source: 'extra' },
+        { text: 'Czy zwierzę ma już inny preparat przeciwpasożytniczy (ryzyko kumulacji substancji aktywnych)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Stosowanie preparatów na bazie permetryny u kotów lub w domach, gdzie koty mają bliski kontakt z psem zaraz po aplikacji.', source: 'extra' },
+        { text: 'Łączenie kilku preparatów z tej samej grupy chemicznej "na zapas", bez konsultacji z weterynarzem.', source: 'extra' },
+        { text: 'Stosowanie wyłącznie metod naturalnych lub ultradźwiękowych w rejonach wysokiego ryzyka kleszczowego, bez świadomości ich ograniczonej skuteczności.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: '3 metody ochrony: chemiczna (najsilniejsza), naturalna (uzupełniająca), ultradźwiękowa (dodatkowa).', source: 'training' },
+        { text: 'MDR1 – ważne przy rasach z grupy collie, sprawdzić przed podaniem niektórych leków/preparatów.', source: 'training' },
+        { text: 'Permetryna = toksyczna dla kotów.', source: 'training' },
+        { text: 'Choroby kleszczowe: babeszjoza, borelioza, erlichioza, anaplazmoza.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'W materiałach szkoleniowych jako dodatkowe źródło informacji o ochronie przeciwkleszczowej wskazano stronę tatardog.pl – warto ją zweryfikować i ewentualnie polecać klientom zainteresowanym tematem.', source: 'training' },
+      ],
+    },
+  },
+  {
+    id: 'szczeniaki-kociaki-opieka-little-friends',
+    title: 'Szczeniaki i kociaki pod troskliwą opieką – aplikacja Little Friends',
+    category: 'Inne',
+    tags: ['szczeniak', 'kociak', 'opieka', 'aplikacja', 'little friends', 'program lojalnościowy', 'żywienie'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Maxi Zoo oferuje program/aplikację Little Friends dla opiekunów szczeniąt i kociąt – obejmuje m.in. przypomnienia związane ze szczepieniami i odrobaczaniem, porady dotyczące pielęgnacji i żywienia w pierwszych miesiącach życia oraz oferty dopasowane do wieku zwierzęcia.', source: 'training' },
+        { text: 'Pierwsze miesiące życia szczeniaka/kociaka są kluczowe dla: żywienia (karmy typu junior/kitten o zwiększonej gęstości energetycznej i innym profilu składników mineralnych wspierających rozwój), socjalizacji, harmonogramu szczepień i odrobaczania (wg wskazań weterynarza) oraz budowania nawyków pielęgnacyjnych (czyszczenie uszu, obcinanie pazurków, szczotkowanie).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Aplikacja Little Friends może być dobrym dodatkowym argumentem przy obsłudze klientów z nowym szczeniakiem lub kociakiem – wartość wykraczająca poza sam produkt.', source: 'extra' },
+        { text: 'Karmy typu junior/kitten różnią się od karm dla dorosłych zwierząt wyższą gęstością energetyczną i innym profilem składników mineralnych (np. wapń/fosfor), co jest istotne dla prawidłowego rozwoju układu kostnego.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient ma nowego szczeniaka lub kociaka, warto zapytać o wiek zwierzęcia, ustalić, czy karma jest dopasowana do etapu rozwoju (junior/kitten), oraz wspomnieć o aplikacji Little Friends jako dodatkowym wsparciu w opiece (przypomnienia, porady).', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Ile miesięcy ma szczeniak lub kociak?', source: 'extra' },
+        { text: 'Czy klient ma już ustalony z weterynarzem harmonogram szczepień i odrobaczania?', source: 'extra' },
+        { text: 'Czy klient korzysta już z aplikacji lub programu lojalnościowego Maxi Zoo?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Podawanie karmy przeznaczonej dla dorosłych zwierząt młodym szczeniakom/kociakom – niedopasowany profil energetyczny i mineralny.', source: 'extra' },
+        { text: 'Brak informacji o aplikacji Little Friends przy obsłudze klientów z nowym pupilem.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Little Friends = program/aplikacja dla opiekunów szczeniąt i kociąt (przypomnienia, porady, oferty dopasowane do wieku).', source: 'training' },
+        { text: 'Karmy junior/kitten mają inny profil energetyczny i mineralny niż karmy dla dorosłych zwierząt.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładny zakres funkcji aplikacji Little Friends (czy jest to osobna aplikacja, czy część programu App&Friends) warto zweryfikować na bieżąco.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'na-co-zwrocic-uwage-obsluga',
+    title: 'Na co zwrócić uwagę podczas obsługi klienta',
+    category: 'Obsługa klienta i sprzedaż',
+    tags: ['obsługa klienta', 'sprzedaż', 'wskazówki', 'komunikacja'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Kluczowe elementy dobrej obsługi: aktywne słuchanie potrzeb klienta, zadawanie pytań doprecyzowujących przed zaproponowaniem produktu, dopasowanie języka i tonu do klienta, dbałość o pełną informację (skład, przeciwwskazania, dawkowanie) oraz domknięcie rozmowy propozycją dodatkowych produktów (cross-/upselling) tylko wtedy, gdy jest to faktycznie uzasadnione potrzebami klienta.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Zwracanie uwagi na sygnały od klienta (np. ograniczony budżet, pierwszy raz ze zwierzęciem danego typu, problem zdrowotny zwierzęcia) pozwala lepiej dopasować ofertę i budować zaufanie.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Dobrym wzorcem rozmowy jest: najpierw zadać pytania o sytuację i potrzeby klienta i zwierzęcia, następnie zaproponować rozwiązanie wraz z pełną informacją o produkcie (w tym ewentualnych przeciwwskazaniach), a na końcu, jeśli to uzasadnione, zaproponować produkty uzupełniające.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki jest cel zakupu i jakie są oczekiwania klienta?', source: 'extra' },
+        { text: 'Czy klient ma określony budżet, o którym warto pamiętać przy doborze produktów?', source: 'extra' },
+        { text: 'Czy klient jest nowym właścicielem zwierzęcia danego typu, czy ma już doświadczenie?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Zbyt szybkie przejście do sprzedaży konkretnego produktu bez rozpoznania potrzeb klienta.', source: 'extra' },
+        { text: 'Ignorowanie sygnałów o ograniczonym budżecie klienta i proponowanie zbyt drogich produktów.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Słuchaj, pytaj, dopasuj, informuj w pełni, proponuj dodatki tylko gdy uzasadnione.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dobra obsługa to nie tylko sprzedaż – to budowanie zaufania, które przekłada się na powroty klienta do sklepu.', source: 'extra' },
       ],
     },
   },
