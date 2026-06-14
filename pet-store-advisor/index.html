@@ -18,18 +18,14 @@
     <button class="btn-theme" id="themeToggle">🌙 Ciemny</button>
   </header>
 
+  <nav class="category-bar" id="categoryBar"></nav>
+
+  <div class="tag-bar">
+    <button class="tag-toggle" id="tagToggle">🏷️ Tagi <span class="tag-toggle-arrow">▾</span></button>
+    <div class="tag-cloud" id="tagCloud" hidden></div>
+  </div>
+
   <div class="layout">
-    <aside class="sidebar">
-      <h2>Kategorie</h2>
-      <ul class="category-list" id="categoryList"></ul>
-
-      <h2>Tagi</h2>
-      <div class="tag-cloud" id="tagCloud"></div>
-
-      <h2>Tematy</h2>
-      <ul class="note-list" id="noteList"></ul>
-    </aside>
-
     <main>
       <div id="mainContent"></div>
     </main>

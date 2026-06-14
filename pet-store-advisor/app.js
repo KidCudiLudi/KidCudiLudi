@@ -6,8 +6,22 @@ const state = {
   tags: new Set(),
   search: '',
   noteId: null,
-  mode: 'welcome', // 'welcome' | 'note' | 'review'
+  mode: 'welcome', // 'welcome' | 'topics' | 'note' | 'review'
   editId: null, // id of custom note currently being edited, or null for "new"
+};
+
+const CATEGORY_ICONS = {
+  'Psy': '🐶',
+  'Koty': '🐱',
+  'Akwarystyka': '🐠',
+  'Terrarystyka': '🦎',
+  'Gryzonie i ptaki': '🐹',
+  'Żywienie i suplementacja': '🍖',
+  'Pielęgnacja i higiena': '🧼',
+  'Zdrowie': '💊',
+  'Obsługa klienta i sprzedaż': '🛍️',
+  'Marki i asortyment': '🏷️',
+  'Inne': '📦',
 };
 
 const SECTION_LABELS = {
@@ -154,33 +168,41 @@ function categoryCounts() {
   return counts;
 }
 
-// -------------------- sidebar --------------------
+// -------------------- category bar / tags --------------------
 
-function renderSidebar() {
-  const catList = document.getElementById('categoryList');
+function renderCategoryBar() {
+  const bar = document.getElementById('categoryBar');
   const counts = categoryCounts();
   const totalCount = Object.values(counts).reduce((a, b) => a + b, 0);
 
-  let html = `<li class="${state.category === 'all' ? 'active' : ''}" data-cat="all">
-    <span>Wszystkie tematy</span><span class="count">${totalCount}</span>
-  </li>`;
+  let html = `<div class="cat-card ${state.category === 'all' ? 'active' : ''}" data-cat="all">
+    <span class="cat-icon">📋</span>
+    <span class="cat-name">Wszystkie</span>
+    <span class="cat-count">${totalCount}</span>
+  </div>`;
 
   CATEGORIES.forEach(cat => {
     if (counts[cat] === 0 && state.category !== cat) return;
-    html += `<li class="${state.category === cat ? 'active' : ''}" data-cat="${cat}">
-      <span>${cat}</span><span class="count">${counts[cat] || 0}</span>
-    </li>`;
+    html += `<div class="cat-card ${state.category === cat ? 'active' : ''}" data-cat="${escapeHtml(cat)}">
+      <span class="cat-icon">${CATEGORY_ICONS[cat] || '📦'}</span>
+      <span class="cat-name">${escapeHtml(cat)}</span>
+      <span class="cat-count">${counts[cat] || 0}</span>
+    </div>`;
   });
-  catList.innerHTML = html;
+  bar.innerHTML = html;
 
-  catList.querySelectorAll('li').forEach(li => {
-    li.addEventListener('click', () => {
-      state.category = li.dataset.cat;
-      renderSidebar();
-      renderNoteList();
+  bar.querySelectorAll('.cat-card').forEach(card => {
+    card.addEventListener('click', () => {
+      state.category = card.dataset.cat;
+      state.noteId = null;
+      state.mode = 'topics';
+      renderCategoryBar();
+      renderMain();
     });
   });
+}
 
+function renderTagCloud() {
   const tagCloud = document.getElementById('tagCloud');
   tagCloud.innerHTML = getAllTags()
     .map(t => `<span class="tag-chip ${state.tags.has(t) ? 'active' : ''}" data-tag="${escapeHtml(t)}">${escapeHtml(t)}</span>`)
@@ -191,35 +213,55 @@ function renderSidebar() {
       const tag = chip.dataset.tag;
       if (state.tags.has(tag)) state.tags.delete(tag);
       else state.tags.add(tag);
-      renderSidebar();
-      renderNoteList();
+      if (state.mode === 'welcome') state.mode = 'topics';
+      renderCategoryBar();
+      renderTagCloud();
+      renderMain();
     });
   });
 }
 
-function renderNoteList() {
-  const list = document.getElementById('noteList');
+function renderTagToggleLabel() {
+  const btn = document.getElementById('tagToggle');
+  const count = state.tags.size;
+  btn.innerHTML = `🏷️ Tagi${count ? ` (${count})` : ''} <span class="tag-toggle-arrow">${document.getElementById('tagCloud').hidden ? '▾' : '▴'}</span>`;
+}
+
+// -------------------- topic grid --------------------
+
+function renderTopicGrid() {
   const filtered = getFilteredNotes();
+  const heading = state.category === 'all' ? 'Wszystkie tematy' : state.category;
+
+  let html = `<div class="topic-grid-wrap"><h2 class="topic-grid-title">${escapeHtml(heading)}</h2>`;
 
   if (filtered.length === 0) {
-    list.innerHTML = `<li class="empty-msg">Brak notatek dla wybranych filtrów.</li>`;
-    return;
+    html += `<p class="empty-msg">Brak notatek dla wybranych filtrów.</p></div>`;
+    return html;
   }
 
-  list.innerHTML = filtered
+  html += `<div class="topic-grid">`;
+  html += filtered
     .map(
-      n => `<li class="${n.id === state.noteId ? 'active' : ''}" data-id="${n.id}">
-        ${escapeHtml(n.title)}
-        <span class="note-cat">${escapeHtml(n.category)}${n.id.startsWith('custom-') ? ' · własna' : ''}</span>
-      </li>`
+      n => `<div class="topic-card" data-id="${n.id}">
+        <div class="topic-card-icon">${CATEGORY_ICONS[n.category] || '📦'}</div>
+        <div class="topic-card-body">
+          <div class="topic-card-title">${escapeHtml(n.title)}</div>
+          <div class="topic-card-cat">${escapeHtml(n.category)}${n.id.startsWith('custom-') ? ' · własna' : ''}</div>
+          <div class="topic-card-tags">${n.tags.slice(0, 4).map(t => `<span class="tag-chip-mini">${escapeHtml(t)}</span>`).join('')}</div>
+        </div>
+      </div>`
     )
     .join('');
+  html += `</div></div>`;
+  return html;
+}
 
-  list.querySelectorAll('li[data-id]').forEach(li => {
-    li.addEventListener('click', () => {
-      state.noteId = li.dataset.id;
+function bindTopicGrid() {
+  document.querySelectorAll('.topic-card[data-id]').forEach(card => {
+    card.addEventListener('click', () => {
+      state.noteId = card.dataset.id;
       state.mode = 'note';
-      renderNoteList();
       renderMain();
     });
   });
@@ -344,6 +386,8 @@ function renderNoteDetail(note) {
     html += `<div class="demo-banner">📌 To jest przykładowa notatka demonstrująca format. Prześlij swoje materiały szkoleniowe, aby zastąpić ją realną treścią.</div>`;
   }
 
+  html += `<button class="btn-back" id="backToTopicsBtn">← Wróć do tematów</button>`;
+
   html += `<div class="note-card-header">`;
   html += `<h2>${escapeHtml(note.title)}</h2>`;
   if (note.id.startsWith('custom-')) {
@@ -383,14 +427,15 @@ function renderWelcome() {
     <h2>👋 Witaj w Twoich notatkach doradcy klienta</h2>
     <p>To Twoja baza wiedzy budowana na podstawie materiałów szkoleniowych ze sklepu zoologicznego Maxi Zoo.</p>
     <ul>
-      <li><strong>Kategorie i tagi</strong> po lewej stronie pomogą Ci szybko znaleźć temat.</li>
+      <li><strong>Kategorie u góry</strong> – kliknij kafelek kategorii, aby zobaczyć jej tematy.</li>
       <li>Każda notatka rozdziela informacje <span class="source-badge training" style="position:static">szkolenie</span> od <span class="source-badge extra" style="position:static">rozszerzenie</span> – wiesz, co pochodzi z materiałów, a co jest dodatkowym wyjaśnieniem.</li>
       <li>Ostrzeżenia 🔴🟡🟢 widoczne na górze karty produktu pokazują od razu niebezpieczeństwa, ważne informacje i dobre zastosowania.</li>
       <li>Przyciskiem <strong>„Szybka powtórka – wszystkie tematy”</strong> u góry zrobisz błyskawiczny przegląd przed zmianą.</li>
       <li>Wyszukiwarka przeszukuje wszystkie treści notatek (nie tylko tytuły) – wpisz np. składnik, chorobę lub nazwę produktu.</li>
+      <li>Przycisk <strong>🏷️ Tagi</strong> rozwija listę tagów do dodatkowego filtrowania.</li>
       <li>Przyciskiem <strong>„+ Nowy temat”</strong> dodasz własną notatkę / kartę produktu – zapisuje się lokalnie w tym urządzeniu/przeglądarce.</li>
     </ul>
-    <p>Wybierz temat z listy po lewej, aby zobaczyć notatkę.</p>
+    <p>Wybierz kategorię powyżej, aby zobaczyć jej tematy.</p>
   </div>`;
 }
 
@@ -426,14 +471,25 @@ function renderMain() {
       return;
     }
   }
+  if (state.mode === 'topics') {
+    main.innerHTML = renderTopicGrid();
+    bindTopicGrid();
+    return;
+  }
   main.innerHTML = renderWelcome();
 }
 
 function bindNoteDetailActions(note) {
   const editBtn = document.getElementById('editNoteBtn');
   const delBtn = document.getElementById('deleteNoteBtn');
+  const backBtn = document.getElementById('backToTopicsBtn');
   if (editBtn) editBtn.addEventListener('click', () => openNoteForm(note));
   if (delBtn) delBtn.addEventListener('click', () => deleteCustomNote(note.id));
+  if (backBtn) backBtn.addEventListener('click', () => {
+    state.noteId = null;
+    state.mode = 'topics';
+    renderMain();
+  });
 }
 
 // -------------------- add / edit note form --------------------
@@ -656,8 +712,8 @@ function saveNoteForm(form) {
 
   state.noteId = id;
   state.mode = 'note';
-  renderSidebar();
-  renderNoteList();
+  renderCategoryBar();
+  renderTagCloud();
   renderMain();
 }
 
@@ -666,9 +722,9 @@ function deleteCustomNote(id) {
   CUSTOM_NOTES = CUSTOM_NOTES.filter(n => n.id !== id);
   saveCustomNotes(CUSTOM_NOTES);
   state.noteId = null;
-  state.mode = 'welcome';
-  renderSidebar();
-  renderNoteList();
+  state.mode = 'topics';
+  renderCategoryBar();
+  renderTagCloud();
   renderMain();
 }
 
@@ -678,15 +734,22 @@ initTheme();
 
 document.getElementById('searchInput').addEventListener('input', e => {
   state.search = e.target.value;
-  renderSidebar();
-  renderNoteList();
+  state.noteId = null;
+  state.mode = state.search.trim() ? 'topics' : (state.category !== 'all' ? 'topics' : 'welcome');
+  renderCategoryBar();
+  renderMain();
 });
 
 document.getElementById('reviewBtn').addEventListener('click', () => {
   state.mode = 'review';
   state.noteId = null;
-  renderNoteList();
   renderMain();
+});
+
+document.getElementById('tagToggle').addEventListener('click', () => {
+  const cloud = document.getElementById('tagCloud');
+  cloud.hidden = !cloud.hidden;
+  renderTagToggleLabel();
 });
 
 document.getElementById('themeToggle').addEventListener('click', toggleTheme);
@@ -706,6 +769,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeNoteForm();
 });
 
-renderSidebar();
-renderNoteList();
+renderCategoryBar();
+renderTagCloud();
+renderTagToggleLabel();
 renderMain();
