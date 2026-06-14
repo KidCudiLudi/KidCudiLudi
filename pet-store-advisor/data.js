@@ -700,7 +700,7 @@ const NOTES = [
     id: 'produkt-tabletki-frontpro-adtab',
     title: 'Tabletki przeciw pchłom i kleszczom – Frontpro, AdTab Pies, AdTab Kot',
     category: 'Zdrowie',
-    tags: ['psy', 'koty', 'pasożyty', 'pchły', 'kleszcze', 'tabletki', 'frontpro', 'adtab', 'afoksolaner', 'izoksazolina', 'karta produktu'],
+    tags: ['psy', 'koty', 'pasożyty', 'pchły', 'kleszcze', 'tabletki', 'frontpro', 'adtab', 'afoksolaner', 'izoksazolina', 'lotilaner', 'elanco', 'karta produktu'],
     updated: '2026-06-14',
     sections: {
       ostrzezenia: [
@@ -710,14 +710,18 @@ const NOTES = [
       najwazniejsze: [
         { text: 'Tabletki przeciw pchłom i kleszczom działają systemowo – pasożyt musi ukłuć zwierzę, aby preparat zadziałał.', source: 'extra' },
         { text: 'Frontpro (dla psów): substancja czynna afoksolaner. Smaczna tabletka do rozgryzania i żucia, którą pies zjada w kilka sekund – działa szybko, zabijając pchły i kleszcze na zewnątrz i wewnątrz przez pełny miesiąc; zabija pchły, zanim złożą jaja. Można podawać niezależnie od posiłku. Dostępny w czterech wygodnych rozmiarach, bezpieczny dla psów od 8. tygodnia życia i od masy ciała 2 kg.', source: 'training' },
-        { text: 'AdTab Pies / AdTab Kot: substancja czynna izoksazolina. AdTab to mała, smaczna tabletka do rozgryzania i żucia o atrakcyjnym smaku, która szybko zwalcza kleszcze i pchły – zaczyna działać już po kilku godzinach od podania, a działanie utrzymuje się przez cały miesiąc. Lek odpowiedni dla wszystkich psów w wieku od 8 tygodni i o odpowiedniej masie ciała (kgAdTab dobierane do wagi zwierzęcia).', source: 'training' },
+        { text: 'AdTab Pies / AdTab Kot: substancja czynna lotilaner – nowoczesna substancja z grupy izoksazolin. AdTab to mała, smaczna tabletka do rozgryzania i żucia o atrakcyjnym smaku, która działa natychmiastowo (zabija pchły w ciągu ok. 8 godzin, kleszcze w ciągu ok. 24 godzin od podania) oraz utrzymuje pełne działanie bójcze przez cały miesiąc. Lek odpowiedni dla wszystkich psów i kotów w wieku od 8 tygodni i o odpowiedniej masie ciała (rozmiar tabletki dobierany do wagi zwierzęcia).', source: 'training' },
+        { text: 'Lotilaner ma okres półtrwania ok. tygodnia – dzięki temu nawet jeśli kolejna dawka zostanie podana z niewielkim opóźnieniem, organizm zwierzęcia nie jest "przeciążony" substancją aktywną.', source: 'training' },
+        { text: 'W badaniach klinicznych producenta (Elanco) niemal 100% zwierząt dobrowolnie przyjęło tabletkę AdTab ze względu na jej smakowitość (oznaczenie "Easy to Give Approved").', source: 'training' },
         { text: 'Frontpro: dawkowanie wg przedziałów wagowych (orientacyjnie: 2–4 kg, 4–10 kg, 10–25 kg, 25–50 kg) – kleszcze do 5 tygodni, pchły do 4–5 tygodni.', source: 'training' },
         { text: 'AdTab Pies: dawkowanie wg przedziałów wagowych (orientacyjnie: 1,3–2,5 kg, 5,1–12 kg, 12–25 kg, 25–50 kg) – pchły i kleszcze do 4 tygodni.', source: 'training' },
         { text: 'AdTab Kot: pchły i kleszcze do 4 tygodni. Można podać z karmą lub bez.', source: 'training' },
+        { text: 'AdTab, Foresto, Advantix i Kiltix to produkty jednego producenta (Elanco) – warto pamiętać, że to "rodzina" produktów przeciwpasożytniczych o różnych formach (tabletki, obroże, krople) i różnych profilach bezpieczeństwa (np. tylko AdTab i Foresto mają wersje dla kotów; Advantix i Kiltix tylko dla psów).', source: 'training' },
       ],
       coWiedziec: [
         { text: 'Tabletki to dobre rozwiązanie dla zwierząt, które często się kąpią/pływają, nie tolerują aplikacji na skórę lub żyją z małymi dziećmi (brak substancji na sierści do "rozsmarowania").', source: 'extra' },
         { text: 'AdTab to jedna z niewielu linii tabletek dostępnych zarówno dla psów, jak i kotów – ale w wersjach gatunkowo-specyficznych (różne dawki/postaci), nie wolno ich zamieniać.', source: 'extra' },
+        { text: '4 argumenty dla opiekuna za AdTab: tabletka jest smaczna (zwierzę zjada ją chętnie i dobrowolnie), działa bardzo szybko (eliminuje pchły i kleszcze w ciągu kilku-kilkudziesięciu godzin), jest wygodna (jedna tabletka = miesiąc ochrony, bez aplikacji na skórę) oraz bezpieczna (dawkowanie precyzyjnie dopasowane do wagi zwierzęcia, krótki okres półtrwania substancji).', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient: "Mój pies/kot nie lubi kropli na skórę, jest coś w tabletkach?" — Doradca: "Tak, np. AdTab albo Frontpro (dla psów) – tabletkę można podać z jedzeniem, działa ok. 4–5 tygodni na pchły i kleszcze, bez konieczności aplikacji na skórę."', source: 'extra' },
@@ -1747,6 +1751,102 @@ const NOTES = [
       kartaProduktu: null,
       zapamietaj: [
         { text: 'Dokładne nazwy poszczególnych produktów w liniach PREMIERE oraz pełną listę diet SELECT GOLD MEDICA i ich dostępność dla psów (czy tylko dla kotów) warto zweryfikować na opakowaniach/w aktualnym katalogu.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'select-gold-medica-przeglad-diet',
+    title: 'SELECT GOLD MEDICA – przegląd diet weterynaryjnych dla psów i kotów',
+    category: 'Zdrowie',
+    tags: ['psy', 'koty', 'dieta weterynaryjna', 'select gold medica', 'żywienie lecznicze', 'nerki', 'cukrzyca', 'wątroba', 'stawy', 'serce', 'kamica', 'hipoalergia', 'odchudzanie', 'rekonwalescencja'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Wszystkie diety SELECT GOLD MEDICA to karmy weterynaryjne wspomagające leczenie konkretnych schorzeń – każda powinna być stosowana po diagnozie i pod nadzorem lekarza weterynarii, a nie wybierana samodzielnie przez klienta na podstawie podejrzeń.' },
+        { level: 'yellow', text: 'Wiele diet (np. nerkowa, moczanowa, odchudzająca) nie powinno być podawane zwierzętom rosnącym, ciężarnym lub karmiącym – sprawdź przeciwwskazania konkretnej diety przed sprzedażą.' },
+      ],
+      najwazniejsze: [
+        { text: 'Dieta w cukrzycy (DIABETES): reguluje poziom cukru we krwi – niska zawartość łatwo przyswajalnych węglowodanów/niski indeks glikemiczny, regulacja zawartości glukozy. Przeciwwskazania: szczenięta/kocięta w okresie wzrostu, ciąża/laktacja; przy niedowadze w cukrzycy może być potrzebna inna dieta wskazana przez weterynarza.', source: 'training' },
+        { text: 'Dieta na zdrowe stawy (JOINT): wspiera zdrowie stawów – zawiera glukozaminę i chondroitynę oraz naturalne kwasy tłuszczowe omega-3 (EPA/DHA) wspomagające funkcje stawów i działanie przeciwzapalne.', source: 'training' },
+        { text: 'Dieta wątrobowa (LIVER): wspiera pracę wątroby – ograniczona zawartość miedzi, wysokiej jakości łatwo przyswajalne białko. Brak przeciwwskazań.', source: 'training' },
+        { text: 'Dieta w chorobach nerek (RENAL / RENAL EARLY STAGE): wspomaga pracę nerek – obniżona zawartość fosforu, kontrolowana zawartość wysokiej jakości białka. Przeciwwskazania: zwierzęta rosnące, ciężarne, karmiące.', source: 'training' },
+        { text: 'Dieta w kamicy moczowej (URINARY STONE / CYSTINE): pomaga zapobiegać i rozpuszczać kamienie struwitowe, kontroluje pH moczu. Przeciwwskazania: wzrost, ciąża, laktacja.', source: 'training' },
+        { text: 'Dieta odchudzająca (OBESITY): niska gęstość energetyczna, wysoka zawartość błonnika wspomagająca uczucie sytości – wsparcie redukcji masy ciała. Przeciwwskazania: zwierzęta rosnące, ciężarne, karmiące, kocięta/szczenięta.', source: 'training' },
+        { text: 'Dieta odchudzająca z regulacją cukrzycy (OBESITY-DIABETES): połączenie wsparcia redukcji masy ciała z regulacją poziomu glukozy we krwi – dla zwierząt z otyłością i cukrzycą jednocześnie.', source: 'training' },
+        { text: 'Dieta hipoalergiczna (HYPOALLERGENIC / SKIN / PLUS): oparta na hydrolizowanym białku o niskiej masie molekularnej, ograniczająca reakcje alergiczne i wspierająca układ odpornościowy; wariant PLUS dodatkowo wzmacnia barierę skórną naturalnymi kwasami tłuszczowymi (EPA/DHA). Brak przeciwwskazań.', source: 'training' },
+        { text: 'Dieta rekonwalescencyjna (CONVALESCENCE): wysoka wartość energetyczna oraz wysoka zawartość białka i tłuszczu wspomagająca odzyskiwanie sił po zabiegach, chorobie, niedożywieniu lub hospitalizacji. Przeciwwskazania: niewydolność nerek/wątroby, hiperlipidemia, ciężkie zaburzenia trawienia. Podawać do momentu odzyskania pełnej kondycji zwierzęcia.', source: 'training' },
+        { text: 'Dieta lekkostrawna (GASTROINTESTINAL): receptury o wysokiej przyswajalności i niskiej zawartości tłuszczu dla zwierząt z zaburzeniami trawienia; dostępne warianty celowane: niskotłuszczowa, niskokaloryczna, niskocukrowa oraz na zaparcia (zwiększona zawartość błonnika, łagodne źródła węglowodanów, zwiększona zawartość elektrolitów kompensujących straty przy wymiotach/biegunce). Brak przeciwwskazań.', source: 'training' },
+        { text: 'Dieta w chorobach serca (HEART): niska zawartość sodu, wspiera pracę serca u zwierząt z niewydolnością krążenia.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Większość diet weterynaryjnych ma jasno określone przeciwwskazania dotyczące zwierząt młodych (w okresie wzrostu) oraz ciężarnych/karmiących – wynika to z innych potrzeb żywieniowych tych grup, niezwiązanych z leczeniem konkretnej choroby.', source: 'extra' },
+        { text: 'Diety "lekkostrawne" (gastrointestinal) mają kilka wariantów celowanych pod konkretny problem (niskotłuszczowa, niskokaloryczna, niskocukrowa, na zaparcia) – wybór wariantu powinien wynikać z zaleceń weterynarza, a nie tylko z nazwy "lekkostrawna".', source: 'extra' },
+        { text: 'Diety łączone (np. odchudzająca + cukrzyca) są przeznaczone dla zwierząt z więcej niż jednym schorzeniem jednocześnie – to dobry przykład, dlaczego wybór diety powinien być indywidualny i konsultowany.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient pyta, kiedy podawać pupilowi karmę weterynaryjną, warto wyjaśnić, że tego typu karmy stanowią element wsparcia/leczenia dietetycznego przy konkretnej diagnozie postawionej przez lekarza weterynarii i powinny być stosowane pod jego nadzorem – nie są przeznaczone do samodzielnego, profilaktycznego stosowania bez wskazania.', source: 'training' },
+        { text: 'Gdy klient opisuje objawy (np. "mój pies dużo pije i je, ale chudnie" albo "kot ma problemy z oddawaniem moczu"), nie należy samodzielnie diagnozować i dobierać diety MEDICA – warto polecić wizytę u weterynarza, a po diagnozie pomóc w wyborze odpowiedniej diety z linii.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy zwierzę ma diagnozę postawioną przez lekarza weterynarii i czy weterynarz zalecił konkretny typ diety?', source: 'extra' },
+        { text: 'Czy zwierzę jest w okresie wzrostu, ciąży lub laktacji (istotne ze względu na przeciwwskazania wielu diet MEDICA)?', source: 'extra' },
+        { text: 'Czy zwierzę ma więcej niż jedno schorzenie (np. otyłość + cukrzyca) – wtedy może być potrzebna dieta łączona.', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Samodzielne dopasowywanie diety MEDICA na podstawie opisu objawów przez klienta, bez diagnozy weterynaryjnej.', source: 'extra' },
+        { text: 'Sprzedanie diety nerkowej/odchudzającej/moczanowej szczenięciu, kociakowi lub zwierzęciu w ciąży/laktacji – większość tych diet ma takie przeciwwskazania.', source: 'extra' },
+        { text: 'Mylenie wariantów diety lekkostrawnej (niskotłuszczowa/niskokaloryczna/niskocukrowa/na zaparcia) – każdy ma inny cel.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'SELECT GOLD MEDICA = linia diet weterynaryjnych: cukrzyca, stawy, wątroba, nerki, kamica moczowa, odchudzanie (+ wariant z cukrzycą), hipoalergiczna (+ PLUS), rekonwalescencyjna, lekkostrawna (4 warianty), serce.', source: 'training' },
+        { text: 'Zawsze: diagnoza i zalecenie weterynarza przed sprzedażą diety MEDICA.', source: 'training' },
+        { text: 'Częste przeciwwskazanie: zwierzęta rosnące, ciężarne, karmiące – sprawdź dla konkretnej diety.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładną dostępność poszczególnych diet dla psów vs. kotów oraz numery wariantów/gramatury warto zweryfikować w aktualnym katalogu SELECT GOLD MEDICA.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'marka-select-gold-vital-health',
+    title: 'SELECT GOLD – karma codzienna z formułą Vital Health',
+    category: 'Żywienie i suplementacja',
+    tags: ['psy', 'koty', 'karma sucha', 'karma mokra', 'select gold', 'vital health', 'marka', 'probiotyki'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'SELECT GOLD to marka karm codziennych dla psów i kotów, oparta na formule "Vital Health", z hasłem "Miłość jest warta złota".', source: 'training' },
+        { text: 'Formuła Vital Health: składniki probiotyczne wspierające zdrową florę jelitową, brak dodatku cukru i soli, brak sztucznych konserwantów, barwników i substancji aromatyzujących; receptury opracowywane przy współpracy z lekarzami weterynarii i ekspertami żywienia, produkcja w Niemczech.', source: 'training' },
+        { text: 'Oferta jest podzielona wg etapu życia i indywidualnych potrzeb zwierzęcia: koncepcje żywieniowe dla najmłodszych pupili (kitten/junior), karmy dla zwierząt dorosłych (adult), dla seniorów, dla zwierząt z wrażliwym układem pokarmowym oraz dla zwierząt z nadwagą.', source: 'training' },
+        { text: 'Marka oferuje też pomoc w doborze karmy w formie pytań/tabel typu "Która karma jest odpowiednia dla mojego psa/kota?" – ułatwia to dopasowanie produktu do konkretnej sytuacji życiowej zwierzęcia (wiek, ciąża/laktacja, wrażliwość pokarmowa, nadwaga).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'SELECT GOLD (linia podstawowa/Vital Health) to karmy dla zdrowych zwierząt na różnych etapach życia – w przeciwieństwie do SELECT GOLD MEDICA, która to linia diet weterynaryjnych dla zwierząt chorych.', source: 'extra' },
+        { text: 'Argument "produkcja w Niemczech" oraz "współpraca z lekarzami weterynarii" mogą być istotne dla klientów zwracających uwagę na jakość i pochodzenie karmy.', source: 'extra' },
+        { text: 'Brak dodatku cukru/soli oraz sztucznych dodatków (konserwanty, barwniki, aromaty) to dobry argument dla klientów poszukujących "czystszego" składu w karmie codziennej, ale niewymagających diety weterynaryjnej.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient pyta o różnicę między SELECT GOLD a SELECT GOLD MEDICA, warto wyjaśnić, że SELECT GOLD to karma codzienna dla zdrowych zwierząt na różnych etapach życia (formuła Vital Health: probiotyki, bez cukru/soli, bez sztucznych dodatków), a SELECT GOLD MEDICA to linia diet weterynaryjnych wspomagających leczenie konkretnych schorzeń, stosowanych pod nadzorem lekarza weterynarii.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki etap życia ma zwierzę (kitten/junior, adult, senior)?', source: 'extra' },
+        { text: 'Czy zwierzę ma wrażliwy układ pokarmowy lub nadwagę?', source: 'extra' },
+        { text: 'Czy zwierzę jest zdrowe (SELECT GOLD), czy ma zdiagnozowane schorzenie wymagające diety weterynaryjnej (SELECT GOLD MEDICA)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Mylenie linii SELECT GOLD (karma codzienna) z SELECT GOLD MEDICA (diety weterynaryjne) – to różne linie o różnym przeznaczeniu.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'SELECT GOLD = karma codzienna, formuła Vital Health (probiotyki, bez cukru/soli/sztucznych dodatków, produkcja w Niemczech), oferta wg etapu życia i potrzeb.', source: 'training' },
+        { text: 'SELECT GOLD MEDICA = diety weterynaryjne (osobna linia, osobna notatka w bazie).', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładny podział wariantów (kitten/junior/adult/senior/sensitive/light) i ich dostępność dla psów i kotów warto zweryfikować w aktualnym katalogu.', source: 'extra' },
       ],
     },
   },
