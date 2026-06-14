@@ -450,23 +450,28 @@ const NOTES = [
     id: 'produkt-frontline-linia',
     title: 'Frontline – linia produktów (Spot-On, Combo, Spray)',
     category: 'Zdrowie',
-    tags: ['psy', 'koty', 'pasożyty', 'pchły', 'kleszcze', 'wszy', 'fipronil', 'frontline', 'karta produktu', 'OTC'],
+    tags: ['psy', 'koty', 'pasożyty', 'pchły', 'kleszcze', 'wszy', 'fipronil', 'frontline', 'fiprex', 'tri-act', 'karta produktu', 'OTC'],
     updated: '2026-06-14',
     sections: {
       ostrzezenia: [
-        { level: 'yellow', text: 'Zawsze dopasuj wariant produktu (Spot-On / Combo / Spray) do gatunku (pies/kot) i sprawdź minimalny wiek/wagę na etykiecie konkretnego opakowania – różne warianty mają różne zakresy.' },
+        { level: 'yellow', text: 'Zawsze dopasuj wariant produktu (Spot-On / Combo / Tri-Act / Spray) do gatunku (pies/kot) i sprawdź minimalny wiek/wagę na etykiecie konkretnego opakowania – różne warianty mają różne zakresy.' },
         { level: 'yellow', text: 'Po aplikacji spot-on nie kąpać zwierzęcia przez czas wskazany na etykiecie (zwykle kilka dni) – kąpiel zmniejsza skuteczność.' },
+        { level: 'red', text: 'Frontline Tri-Act zawiera oprócz fipronilu również permetrynę i jest przeznaczony WYŁĄCZNIE dla psów – nie stosować u kotów (ryzyko poważnego zatrucia, tak jak w przypadku innych preparatów z permetryną, np. Advantix).' },
       ],
       najwazniejsze: [
-        { text: 'Frontline to linia preparatów na bazie fipronilu do zwalczania pcheł, kleszczy i wszy u psów i kotów. Dostępna w wariantach: Spot-On (krople), Combo (krople + regulator rozwoju insektów), Spray.', source: 'training' },
+        { text: 'Frontline to linia preparatów na bazie fipronilu do zwalczania pcheł, kleszczy i wszy u psów i kotów. Dostępna w wariantach: Spot-On (krople), Combo (krople + regulator rozwoju insektów), Tri-Act (krople z dodatkiem permetryny – tylko dla psów), Spray.', source: 'training' },
         { text: 'Frontline Spot-On dla psa: zwalcza pchły i kleszcze ok. 5 tygodni, wszy do 63 dni. Frontline Spot-On dla kota: pchły i kleszcze do 4 tygodni, wszy do 42 dni.', source: 'training' },
-        { text: 'Frontline Combo (pies/kot): substancja czynna fipronil + (S)-metopren – dodatkowo przerywa cykl rozwoju pcheł w środowisku (jaja, larwy), efekt do ok. 8 tygodni.', source: 'training' },
+        { text: 'Frontline Combo (pies/kot): substancja czynna fipronil + (S)-metopren – połączenie dwóch substancji czynnych działających łącznie, eliminujących wszystkie etapy cyklu rozwojowego pchły (jaja, larwy, dorosłe pchły); skuteczność potwierdzona licznymi badaniami laboratoryjnymi i klinicznymi. Dostępny w pięciu formulacjach, w tym dla kotów.', source: 'training' },
+        { text: 'Frontline Tri-Act (tylko dla psów): roztwór do nakrapiania zawierający fipronil i permetrynę – leczy i zapobiega inwazji pcheł i/lub kleszczy oraz dodatkowo działa odstraszająco na komary, kąsające muchy i meszki (działanie repelentne). Wysoka skuteczność przy niskiej toksyczności dla zwierzęcia i jego otoczenia (w tym ludzi), ale TYLKO dla psów. Dostępny w pięciu formulacjach wg wagi psa.', source: 'training' },
         { text: 'Frontline Spray (pies i kot): substancja czynna fipronil, ochrona przed pchłami i kleszczami do 60 dni. Dawkowanie ok. 3–6 ml/kg (orientacyjnie ok. 6–8 pompek na kota).', source: 'training' },
+        { text: 'Fiprex to inna linia produktów na bazie fipronilu (roztwór do nakrapiania dla psów i kotów) – działa bójczo na pchły w ciągu 24–48h, wnika w głąb skóry i równomiernie rozprzestrzenia się w warstwie lipidowej, a następnie jest uwalniany z gruczołów łojowych, tworząc warstwę zabezpieczającą przed ponowną inwazją pchłami przez okres do 3 miesięcy (kleszcze – ok. 3–5 tygodni). Dostępny w formulacjach m.in. Fiprex S 75 mg/0,67 ml (psy do 10 kg), Fiprex M 150 mg/2 ml (psy 10–20 kg) i Fiprex L 300 mg/4 ml (psy większe).', source: 'training' },
       ],
       coWiedziec: [
         { text: 'Dawkowanie kropli dla psów podzielone jest na przedziały wagowe (orientacyjnie: 2–10 kg, 10–20 kg, 20–40 kg, 40–60 kg) – każdy przedział to inna pipeta.', source: 'training' },
         { text: 'Dawkowanie dla kotów Frontline Spot-On/Combo: zwykle jeden rozmiar pipety, od 8. tygodnia życia i min. 1 kg wagi.', source: 'training' },
         { text: 'Combo to "Spot-On plus" – dodatkowy składnik (metopren) działa na jaja i larwy pcheł w otoczeniu zwierzęcia (legowisko, dom), co realnie ogranicza nawroty inwazji.', source: 'extra' },
+        { text: 'Fiprex to produkt o podobnym mechanizmie działania (fipronil) jak Frontline Spot-On – może być propozycją alternatywną/cenową dla klienta, ale tak jak przy każdym preparacie należy dopasować formulację (S/M/L) do wagi psa lub odpowiedni wariant dla kota.', source: 'extra' },
+        { text: 'Frontline Tri-Act to opcja "rozszerzona" względem Combo – dodatkowo chroni przed komarami i muchami/meszkami (działanie repelentne), ale ze względu na permetrynę jest dostępny tylko dla psów (podobnie jak Advantix).', source: 'extra' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient: "Czym różni się Combo od Spot-On?" — Doradca: "Spot-On zwalcza pchły i kleszcze na zwierzęciu. Combo robi to samo, ale dodatkowo zawiera składnik, który niszczy jaja i larwy pcheł w domu – jeśli mieli Państwo problem z nawracającymi pchłami, Combo pomoże przerwać ten cykl."', source: 'extra' },
@@ -482,13 +487,15 @@ const NOTES = [
         { text: 'Użycie pipety w niewłaściwym przedziale wagowym (np. pipeta dla małego psa zastosowana u dużego).', source: 'extra' },
         { text: 'Kąpanie zwierzęcia zbyt szybko po aplikacji spot-on.', source: 'extra' },
         { text: 'Pomylenie wariantów Spot-On i Combo – przy nawracających inwazjach pcheł warto polecić Combo (działanie na jaja/larwy), nie sam Spot-On.', source: 'extra' },
+        { text: 'Zastosowanie Frontline Tri-Act u kota – produkt zawiera permetrynę i jest przeznaczony tylko dla psów.', source: 'extra' },
       ],
       dodatkowe: [
         { text: 'Fipronil (Frontline) to inny mechanizm działania niż permetryna (np. Advantix) – produkty na bazie fipronilu są generalnie uznawane za bezpieczniejsze przy ewentualnym kontakcie pies–kot, ale zawsze trzeba stosować wariant zarejestrowany dla danego gatunku.', source: 'extra' },
       ],
       powtorka: [
-        { text: 'Frontline = fipronil (+ metopren w Combo).', source: 'training' },
-        { text: 'Spot-On – krople na pchły/kleszcze/wszy. Combo – Spot-On + działanie na jaja/larwy pcheł w domu. Spray – do 60 dni ochrony, dla psów i kotów.', source: 'training' },
+        { text: 'Frontline = fipronil (+ metopren w Combo, + permetryna w Tri-Act).', source: 'training' },
+        { text: 'Spot-On – krople na pchły/kleszcze/wszy. Combo – Spot-On + działanie na jaja/larwy pcheł w domu. Tri-Act – Combo-podobny + permetryna (komary/muchy), TYLKO psy. Spray – do 60 dni ochrony, dla psów i kotów.', source: 'training' },
+        { text: 'Fiprex = inna linia na bazie fipronilu, formulacje S/M/L wg wagi psa, działanie do 3 miesięcy na pchły i 3–5 tyg. na kleszcze.', source: 'training' },
         { text: 'Zawsze dopasuj wariant do gatunku i przedział wagowy.', source: 'extra' },
         { text: 'Nie kąpać kilka dni po aplikacji spot-on.', source: 'extra' },
       ],
@@ -499,11 +506,13 @@ const NOTES = [
         zdjecie: '',
         opis: 'Linia produktów na bazie fipronilu do zwalczania pcheł, kleszczy i wszy u psów i kotów. Warianty Spot-On (krople), Combo (krople + metopren – działanie na jaja/larwy pcheł) oraz Spray (dla psów i kotów).',
         cechy: [
-          'Substancja czynna: fipronil (działanie owadobójcze i roztoczobójcze); w Combo dodatkowo (S)-metopren',
+          'Substancja czynna: fipronil (działanie owadobójcze i roztoczobójcze); w Combo dodatkowo (S)-metopren, w Tri-Act dodatkowo permetryna',
           'Spot-On dla psa: pchły/kleszcze ok. 5 tygodni, wszy do 63 dni',
           'Spot-On dla kota: pchły i kleszcze do 4 tygodni, wszy do 42 dni',
           'Combo: dodatkowo przerywa rozwój pcheł w środowisku (jaja/larwy) do ok. 8 tygodni',
+          'Tri-Act (tylko psy): dodatkowo działanie repelentne na komary i kąsające muchy/meszki',
           'Spray: ochrona do 60 dni, dawkowanie ok. 3–6 ml/kg',
+          'Fiprex (osobna linia, fipronil): formulacje S/M/L wg wagi psa, ochrona do 3 miesięcy (pchły) i 3–5 tygodni (kleszcze)',
         ],
         korzysciKlient: [
           'Jeden producent, kilka wariantów – łatwo dopasować formę i zakres działania',
@@ -541,6 +550,8 @@ const NOTES = [
           'Frontpro (tabletki – afoksolaner, dla psów)',
           'Foresto / Kiltix (obroże)',
           'Advantix (krople dla psów – inny skład, zawiera permetrynę, tylko dla psów)',
+          'Fiprex (krople – fipronil, podobny mechanizm do Frontline Spot-On)',
+          'Frontline Tri-Act (krople – fipronil + permetryna, dodatkowo komary/muchy, tylko dla psów)',
         ],
         produktyUzupelniajace: [
           'Szampon przeciw pasożytom',
@@ -586,8 +597,9 @@ const NOTES = [
         { level: 'yellow', text: 'Nie stosować u szczeniąt poniżej wieku/wagi wskazanej na etykiecie.' },
       ],
       najwazniejsze: [
-        { text: 'Advantix to preparat spot-on dla psów na bazie imidaklopridu (działanie na pchły) i permetryny (działanie na kleszcze, komary, muchy, działanie repelentne).', source: 'training' },
-        { text: 'Ochrona przed pchłami i komarami ok. 4 tygodnie, przed kleszczami ok. 4 tygodnie. Dawkowanie wg przedziałów wagowych psa.', source: 'training' },
+        { text: 'Advantix to preparat spot-on dla psów na bazie imidaklopridu (działanie na pchły) i permetryny (działanie na kleszcze, komary, muchy i muchówki zwane meszkami, działanie repelentne – odstraszające).', source: 'training' },
+        { text: 'Ochrona przed pchłami i komarami ok. 4 tygodnie, przed kleszczami ok. 4 tygodnie. Dawkowanie wg przedziałów wagowych psa. Produkt dostępny w czterech formulacjach (wg masy ciała psa).', source: 'training' },
+        { text: 'Dzięki działaniu odstraszającemu Advantix ogranicza ryzyko ukłucia psa przez kleszcza i zmniejsza ryzyko zarażenia groźnymi chorobami przenoszonymi przez kleszcze, takimi jak babeszjoza, borelioza i anaplazmoza.', source: 'training' },
       ],
       coWiedziec: [
         { text: 'Działanie repelentne (odstraszające) permetryny ogranicza liczbę ukłuć komarów i kleszczy, co zmniejsza ryzyko przenoszenia chorób takich jak babeszjoza czy dirofilarioza.', source: 'extra' },
@@ -697,9 +709,11 @@ const NOTES = [
       ],
       najwazniejsze: [
         { text: 'Tabletki przeciw pchłom i kleszczom działają systemowo – pasożyt musi ukłuć zwierzę, aby preparat zadziałał.', source: 'extra' },
-        { text: 'Frontpro (dla psów): substancja czynna afoksolaner. Działanie: zwalcza kleszcze do 5 tygodni, pchły do 4–5 tygodni. Dawkowanie wg przedziałów wagowych (orientacyjnie: 2–4 kg, 4–10 kg, 10–25 kg, 25–50 kg).', source: 'training' },
-        { text: 'AdTab Pies: substancja czynna izoksazolina. Działanie: zwalcza pchły i kleszcze do 4 tygodni. Dawkowanie wg przedziałów wagowych (orientacyjnie: 1,3–2,5 kg, 5,1–12 kg, 12–25 kg, 25–50 kg).', source: 'training' },
-        { text: 'AdTab Kot: substancja czynna izoksazolina. Działanie: zwalcza pchły i kleszcze do 4 tygodni. Można podać z karmą lub bez.', source: 'training' },
+        { text: 'Frontpro (dla psów): substancja czynna afoksolaner. Smaczna tabletka do rozgryzania i żucia, którą pies zjada w kilka sekund – działa szybko, zabijając pchły i kleszcze na zewnątrz i wewnątrz przez pełny miesiąc; zabija pchły, zanim złożą jaja. Można podawać niezależnie od posiłku. Dostępny w czterech wygodnych rozmiarach, bezpieczny dla psów od 8. tygodnia życia i od masy ciała 2 kg.', source: 'training' },
+        { text: 'AdTab Pies / AdTab Kot: substancja czynna izoksazolina. AdTab to mała, smaczna tabletka do rozgryzania i żucia o atrakcyjnym smaku, która szybko zwalcza kleszcze i pchły – zaczyna działać już po kilku godzinach od podania, a działanie utrzymuje się przez cały miesiąc. Lek odpowiedni dla wszystkich psów w wieku od 8 tygodni i o odpowiedniej masie ciała (kgAdTab dobierane do wagi zwierzęcia).', source: 'training' },
+        { text: 'Frontpro: dawkowanie wg przedziałów wagowych (orientacyjnie: 2–4 kg, 4–10 kg, 10–25 kg, 25–50 kg) – kleszcze do 5 tygodni, pchły do 4–5 tygodni.', source: 'training' },
+        { text: 'AdTab Pies: dawkowanie wg przedziałów wagowych (orientacyjnie: 1,3–2,5 kg, 5,1–12 kg, 12–25 kg, 25–50 kg) – pchły i kleszcze do 4 tygodni.', source: 'training' },
+        { text: 'AdTab Kot: pchły i kleszcze do 4 tygodni. Można podać z karmą lub bez.', source: 'training' },
       ],
       coWiedziec: [
         { text: 'Tabletki to dobre rozwiązanie dla zwierząt, które często się kąpią/pływają, nie tolerują aplikacji na skórę lub żyją z małymi dziećmi (brak substancji na sierści do "rozsmarowania").', source: 'extra' },
@@ -909,7 +923,7 @@ const NOTES = [
     id: 'odrobaczanie-psy-koty',
     title: 'Preparaty odrobaczające – Drontal, Prinpet, Hipra',
     category: 'Zdrowie',
-    tags: ['psy', 'koty', 'pasożyty', 'odrobaczanie', 'glisty', 'tasiemiec', 'drontal', 'prinpet', 'szczenięta', 'kocięta'],
+    tags: ['psy', 'koty', 'pasożyty', 'odrobaczanie', 'glisty', 'tasiemiec', 'drontal', 'prinpet', 'dronspot', 'szczenięta', 'kocięta', 'zoonozy'],
     updated: '2026-06-14',
     sections: {
       ostrzezenia: [
@@ -917,14 +931,17 @@ const NOTES = [
         { level: 'yellow', text: 'Zawsze sprawdzaj minimalny wiek i wagę zwierzęcia – preparaty dla szczeniąt/kociąt mają inne dawkowanie niż dla zwierząt dorosłych.' },
       ],
       najwazniejsze: [
-        { text: 'Drontal dla psów: tabletki odrobaczające podawane doustnie. Można stosować od 2.–3. tygodnia życia (w zależności od wariantu produktu – sprawdź konkretne opakowanie). 2 szt. w opakowaniu, dawkowanie wg wagi.', source: 'training' },
-        { text: 'Drontal dla kotów: tabletki odrobaczające, od 6. tygodnia życia i min. 1 kg wagi. Dawkowanie: 1 tabletka na 4 kg masy ciała.', source: 'training' },
-        { text: 'Prinpet: preparat w formie kropli/pasty dla kociąt, bezpieczny od 6. tygodnia życia. Dobra alternatywa dla małych kociąt, które mają trudności z połknięciem tabletki. 2 szt. w opakowaniu.', source: 'training' },
-        { text: 'Hipra: lek przeciwpasożytniczy dla psów w formie tabletek, 2 szt. w opakowaniu.', source: 'training' },
+        { text: 'Drontal dla psów: tabletki odrobaczające podawane doustnie. Można stosować od 2.–3. tygodnia życia (w zależności od wariantu produktu – sprawdź konkretne opakowanie). Dostępne warianty m.in. Drontal Dog Flavour 150/144/50 mg (2 tabletki w opakowaniu) oraz Drontal Plus Flavour 35 kg – wariant w wyższej dawce dla dużych psów (powyżej 35 kg).', source: 'training' },
+        { text: 'Drontal dla kotów: tabletki odrobaczające 230 mg/90 mg, od 6. tygodnia życia i min. 1 kg wagi. Dawkowanie: 1 tabletka na 4 kg masy ciała.', source: 'training' },
+        { text: 'Tabletki Drontal mają kształt małej kostki i zawierają substancję smakową, co ułatwia podanie zwierzęciu.', source: 'training' },
+        { text: 'Drontal skutecznie działa na wszystkie powszechnie występujące typy robaków jelitowych (glisty, tasiemce, nicienie).', source: 'training' },
+        { text: 'Niektóre gatunki tasiemców i nicieni mogą przenosić się na człowieka i wywoływać poważne choroby (pasożyty zoonotyczne) – odrobaczanie zwierzęcia jest więc ważne nie tylko dla samego zwierzęcia, ale i dla jego właścicieli.', source: 'training' },
+        { text: 'Dronspot to preparat odrobaczający dla kotów w postaci kropli do nakrapiania na skórę (spot-on) – pierwszy lek do odrobaczania kotów w tej formie, o statusie OTC (dostępny bez recepty w sklepach zoologicznych). Dostępny w formulacjach m.in. 30 mg/7,5 mg, 60 mg/15 mg i 96 mg/24 mg, dawkowanych wg masy ciała kota. Skuteczny przeciwko tasiemcom i nicieniom.', source: 'training' },
       ],
       coWiedziec: [
         { text: 'Standardowy schemat odrobaczania (wiedza ogólna, zawsze warto polecić konsultację z weterynarzem przy ustalaniu harmonogramu): szczenięta/kocięta odrobaca się częściej, np. co 2 tygodnie do ok. 3. miesiąca życia, później co 1–3 miesiące u młodych zwierząt, a u zdrowych dorosłych zwykle co 3 miesiące (częściej u zwierząt polujących/wychodzących).', source: 'extra' },
         { text: 'Prinpet w formie kropli/pasty jest łatwiejszy do podania małym kociętom niż tabletka – dobra propozycja, gdy klient zgłasza trudności z podaniem tabletki.', source: 'training' },
+        { text: 'Dronspot to dobra alternatywa dla kotów, którym trudno podać tabletkę – preparat aplikuje się na skórę, podobnie jak krople na pchły/kleszcze, ale działa na pasożyty wewnętrzne (odrobaczanie).', source: 'extra' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient: "Mój kociak ma 7 tygodni, czy mogę go odrobaczyć?" — Doradca: "Tak, w tym wieku można już zastosować preparaty przeznaczone dla małych kociąt, np. Prinpet w formie kropli – łatwiej podać niż tabletkę. Tabletki typu Drontal dla kotów są zalecane od 6. tygodnia życia i min. 1 kg wagi."', source: 'extra' },
@@ -944,14 +961,17 @@ const NOTES = [
       ],
       dodatkowe: [],
       powtorka: [
-        { text: 'Drontal (pies) – tabletki, od 2.–3. tyg. życia, dawkowanie wg wagi.', source: 'training' },
-        { text: 'Drontal (kot) – tabletki, od 6. tyg. życia i 1 kg wagi, 1 tabl./4 kg.', source: 'training' },
+        { text: 'Drontal (pies) – tabletki w kształcie kostki, od 2.–3. tyg. życia, dawkowanie wg wagi; wariant Plus Flavour 35 kg dla dużych psów.', source: 'training' },
+        { text: 'Drontal (kot) – tabletki 230 mg/90 mg, od 6. tyg. życia i 1 kg wagi, 1 tabl./4 kg.', source: 'training' },
         { text: 'Prinpet – krople/pasta dla małych kociąt od 6. tyg. życia – łatwiejsze podanie niż tabletka.', source: 'training' },
+        { text: 'Dronspot – krople (spot-on) odrobaczające dla kotów, OTC, dawkowanie wg wagi.', source: 'training' },
+        { text: 'Niektóre robaki są zoonotyczne – mogą zarażać ludzi, więc odrobaczanie chroni całą rodzinę.', source: 'training' },
         { text: 'Odrobaczanie ≠ ochrona przed pchłami/kleszczami – to dwa różne tematy profilaktyki.', source: 'extra' },
       ],
       kartaProduktu: null,
       zapamietaj: [
         { text: 'Odrobaczanie wewnętrzne i ochrona przed pchłami/kleszczami (zewnętrzne) to DWIE różne rzeczy – klient może potrzebować obu produktów.', source: 'extra' },
+        { text: 'Dla kotów, którym trudno podać tabletkę, Dronspot (spot-on) jest dobrą alternatywą dla Drontal/Prinpet w formie doustnej.', source: 'extra' },
       ],
     },
   },
@@ -1682,6 +1702,51 @@ const NOTES = [
       kartaProduktu: null,
       zapamietaj: [
         { text: 'Dobra obsługa to nie tylko sprzedaż – to budowanie zaufania, które przekłada się na powroty klienta do sklepu.', source: 'extra' },
+      ],
+    },
+  },
+  {
+    id: 'marka-premiere-select-gold-medica',
+    title: 'PREMIERE – żywienie dopasowane do potrzeb, linia weterynaryjna SELECT GOLD MEDICA',
+    category: 'Żywienie i suplementacja',
+    tags: ['psy', 'koty', 'karma sucha', 'karma mokra', 'premiere', 'select gold medica', 'dieta weterynaryjna', 'marka własna'],
+    updated: '2026-06-14',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Karmy z linii SELECT GOLD MEDICA to diety weterynaryjne – przed podaniem pupilowi tego typu karmy konieczne jest zasięgnięcie porady specjalisty (lekarza weterynarii).' },
+      ],
+      najwazniejsze: [
+        { text: 'PREMIERE to marka karm dla psów i kotów z hasłem "Żywienie idealnie dopasowane do potrzeb Twojego pupila" – oferta podzielona na linie odpowiadające różnym potrzebom żywieniowym.', source: 'training' },
+        { text: 'Linie PREMIERE dla psów: BELT MEAT (karma sucha o wysokiej zawartości mięsa), SENSITIVE (dla psów o wrażliwym układzie pokarmowym), SOFT (karma o miękkiej konsystencji) oraz MOUSSE (karma mokra w formie musu).', source: 'training' },
+        { text: 'Linie PREMIERE dla kotów obejmują analogicznie karmę suchą, karmę mokrą typu MEDIKA/SOFT MOUSSE oraz dedykowane formuły smakowe (np. ragout, pasztet).', source: 'training' },
+        { text: 'Hasło "100% w misce/czarce" – produkty PREMIERE komunikowane są jako zawierające tylko składniki, jakich potrzebuje pupil, bez zbędnych dodatków.', source: 'training' },
+        { text: 'SELECT GOLD MEDICA – linia karm weterynaryjnych dla kotów wspomagających leczenie, opracowana z udziałem ekspertyzy weterynaryjnej i potwierdzona badaniami. Obejmuje diety specjalistyczne: dieta w cukrzycy, dieta rekonwalescencyjna, dieta w kamicy moczowej, dieta odchudzająca, dieta w chorobach nerek, dieta wątrobowa, dieta lekkostrawna, dieta hipoalergiczna.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Karmy SELECT GOLD MEDICA to przykład diet weterynaryjnych – ich zastosowanie powinno wynikać z diagnozy/zalecenia lekarza weterynarii, a nie z samodzielnego wyboru klienta na podstawie objawów.', source: 'training' },
+        { text: 'Linia PREMIERE jest pozycjonowana jako oferta "dla wszystkich pupili" – dobry punkt wyjścia dla klientów szukających karmy dopasowanej do konkretnej potrzeby (np. wrażliwy żołądek – SENSITIVE), bez konieczności sięgania po dietę weterynaryjną.', source: 'extra' },
+        { text: 'Przy wprowadzaniu nowej karmy (w tym diety weterynaryjnej) zmiany należy wprowadzać stopniowo, mieszając nową karmę ze starą przez kilka–kilkanaście dni, aby uniknąć problemów trawiennych.', source: 'extra' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Gdy klient pyta o różnicę między PREMIERE a SELECT GOLD MEDICA, warto wyjaśnić, że PREMIERE to karmy "dopasowane do potrzeb" dla zdrowych zwierząt (np. wrażliwy żołądek, karma w musie, wysoka zawartość mięsa), natomiast SELECT GOLD MEDICA to diety weterynaryjne wspomagające leczenie konkretnych schorzeń, które powinny być stosowane po konsultacji z lekarzem weterynarii.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy zwierzę jest zdrowe, czy ma zdiagnozowany problem zdrowotny wymagający diety weterynaryjnej?', source: 'extra' },
+        { text: 'Jeśli klient szuka diety weterynaryjnej (np. SELECT GOLD MEDICA) – czy ma zalecenie/diagnozę od lekarza weterynarii?', source: 'extra' },
+        { text: 'Jaki jest główny problem/potrzeba zwierzęcia (wrażliwy żołądek, niska aktywność, preferencja konsystencji karmy)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedanie karmy z linii SELECT GOLD MEDICA klientowi bez ustalenia, czy zwierzę ma faktyczne zalecenie weterynaryjne do takiej diety.', source: 'extra' },
+        { text: 'Nagła, jednorazowa zmiana karmy na nową (w tym dietę weterynaryjną) bez okresu przejściowego.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'PREMIERE = karmy "dopasowane do potrzeb" dla zdrowych zwierząt: BELT MEAT, SENSITIVE, SOFT, MOUSSE (psy) i analogiczne linie dla kotów.', source: 'training' },
+        { text: 'SELECT GOLD MEDICA = diety weterynaryjne dla kotów (cukrzyca, rekonwalescencja, kamica moczowa, odchudzanie, choroby nerek, wątroba, lekkostrawna, hipoalergiczna) – wymagają konsultacji z weterynarzem.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Dokładne nazwy poszczególnych produktów w liniach PREMIERE oraz pełną listę diet SELECT GOLD MEDICA i ich dostępność dla psów (czy tylko dla kotów) warto zweryfikować na opakowaniach/w aktualnym katalogu.', source: 'extra' },
       ],
     },
   },
