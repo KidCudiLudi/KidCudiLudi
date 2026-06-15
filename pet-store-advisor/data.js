@@ -1850,4 +1850,212 @@ const NOTES = [
       ],
     },
   },
+
+  {
+    id: 'cykl-zycia-pchel-i-kleszczy',
+    title: 'Cykl życia pcheł i kleszczy – dlaczego zwalczanie to nie jednorazowa akcja',
+    category: 'Zdrowie',
+    tags: ['psy', 'koty', 'pchły', 'kleszcze', 'pasożyty', 'cykl życia', 'profilaktyka', 'środowisko'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Sezon na kleszcze i pchły zaczyna się, gdy temperatura otoczenia trwale przekracza ok. 7°C. Od tej temperatury kleszcze stają się aktywne, a w niskich temperaturach pchły mogą wpadać w odrętwienie zimowe. Jednak w mieszkaniach z ogrzewaniem pchły mogą pozostawać aktywne cały rok.' },
+      ],
+      najwazniejsze: [
+        { text: 'Tylko około 5% populacji pcheł wraz z jajami żyje na żywicielu (czyli na zwierzęciu). Pozostałe ~95% rozprzestrzenia się na pchły, jaja, larwy i poczwarki, które są niewidoczne w otoczeniu żywiciela – legowiskach, drapakach, jaskiniach, dywanach, kocach, ręcznikach dla psów, wycieraczkach.', source: 'training' },
+        { text: 'Dlatego zwalczanie pasożytów ma realną szansę powodzenia tylko wtedy, gdy oprócz bezpośredniego leczenia zwierzęcia i stosowania środków zapobiegawczych usunie się pchły i ich stadia rozwojowe ze środowiska, w którym zwierzę żyje.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Cykl życia pchły: jajo → larwa → kokon (poczwarka) → dorosła pchła. Z jaj wykluwają się larwy pcheł, które żyją w środowisku żywiciela (np. w szczelinach podłogi lub w dywanie). W tak zwanym stadium poczwarki larwa przędzie kokon, w którym w ciągu kilku dni wyrasta na dorosłego osobnika.', source: 'training' },
+        { text: 'Po uwolnieniu się z kokonu dorosła pchła poszukuje odpowiedniego żywiciela, aby rozpocząć wysysanie krwi – i cykl rozwojowy zaczyna się od początku.', source: 'training' },
+        { text: 'Już po 48 godzinach od pierwszego wyssania krwi samica pchły zaczyna składać jaja. Jaja pcheł nie przyklejają się do sierści, dlatego łatwo wypadają i wypadają w całym środowisku zwierząt domowych – stąd inwazja rozprzestrzenia się tak szybko po całym domu.', source: 'training' },
+        { text: 'Cykl życia kleszcza przebiega w każdej fazie rozwoju (larwa → nimfa → kleszcz dorosły, składający jaja) – w każdej z tych faz kleszcz potrzebuje odpowiedniego żywiciela, aby przejść do kolejnego etapu rozwoju.', source: 'training' },
+        { text: 'Ponieważ kleszcze mogą przenosić różne patogeny, należy sprawdzać czworonogi po każdym spacerze pod kątem obecności kleszczy. Kleszcze najbardziej lubią się przyczepiać: w uszach i wokół nich, na głowie i gardle, pomiędzy łapami, między palcami łap oraz pod ogonem.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Dałem psu/kotu krople na pchły, ale wciąż je widzę – czy produkt nie działa?" — Doradca: "Sam preparat na zwierzęciu to tylko jeden element. Aż 95% populacji pcheł – jaja, larwy i poczwarki – żyje nie na zwierzęciu, ale w jego otoczeniu: w legowisku, na dywanie, w szczelinach podłogi. Dopóki nie wyczyścimy też środowiska, nowe pchły będą się ciągle wykluwać i przeskakiwać na zwierzę."', source: 'extra' },
+        { text: 'Warto też wyjaśnić klientowi, że jaja pcheł odpadają z sierści zwierzęcia w całym domu – więc nawet jeśli zwierzę rzadko wychodzi, problem i tak może dotyczyć całego mieszkania (np. po kontakcie z innym zarażonym zwierzęciem lub przeniesieniu jaj/larw na ubraniu).', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy poza zwierzęciem zauważyli Państwo pchły/swędzenie u innych domowników?', source: 'extra' },
+        { text: 'Jak długo trwa problem – czy to dopiero zauważona inwazja, czy powtarzający się problem?', source: 'extra' },
+        { text: 'Czy stosowali Państwo już jakieś środki na zwierzęciu, a jeśli tak – czy sprzątali też legowiska, dywany i tekstylia?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Traktowanie problemu pcheł/kleszczy wyłącznie jako "problemu zwierzęcia" i ignorowanie środowiska (legowisko, dywany, samochód, ulubione miejsca odpoczynku) – to najczęstsza przyczyna nawracających inwazji.', source: 'extra' },
+        { text: 'Założenie, że jednorazowe podanie preparatu rozwiąże problem od razu – cykl rozwojowy pcheł trwa, więc nowe osobniki mogą wykluwać się z jaj/poczwarek jeszcze przez jakiś czas.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Tylko ~5% pcheł żyje na zwierzęciu, ~95% (jaja, larwy, poczwarki) jest w środowisku.', source: 'training' },
+        { text: 'Cykl pchły: jajo → larwa → kokon/poczwarka → dorosła pchła szukająca żywiciela.', source: 'training' },
+        { text: 'Samica pchły zaczyna składać jaja już 48h po pierwszym wyssaniu krwi.', source: 'training' },
+        { text: 'Kleszcze lubią: uszy, głowę i gardło, między łapami i palcami łap, pod ogonem.', source: 'training' },
+        { text: 'Sezon kleszczy/pcheł zaczyna się od ok. 7°C, ale w ogrzewanych domach pchły mogą być aktywne cały rok.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Skuteczne zwalczanie pasożytów = leczenie zwierzęcia + profilaktyka + odkażenie środowiska. Pominięcie jednego z tych elementów to najczęstsza przyczyna nawrotów – warto przy sprzedaży preparatu na pchły/kleszcze zawsze wspomnieć o sprzątaniu otoczenia.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: '3-kroki-zwalczania-pchel-i-kleszczy',
+    title: '3 kroki przeciw pchłom i kleszczom – jak dobrać produkty',
+    category: 'Zdrowie',
+    tags: ['psy', 'koty', 'pchły', 'kleszcze', 'pasożyty', 'obroża', 'spot-on', 'spray', 'szampon', 'puder', 'biocydy', 'środowisko'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Podczas pracy z substancjami niebezpiecznymi (w tym wieloma preparatami przeciw pchłom i kleszczom) należy przestrzegać wskazówek dotyczących bezpieczeństwa i zagrożeń oraz symboli na etykiecie. Produkt należy stosować zgodnie z instrukcją użycia. Wiele produktów to biocydy – zawsze przed użyciem przeczytaj informacje na etykiecie.' },
+        { level: 'yellow', text: 'W przypadku podejrzenia inwazji pasożytów zwierzę powinno najpierw zostać pokazane weterynarzowi – ważne jest ustalenie zakresu inwazji i jej leczenia, a niektóre produkty z handlu (bez recepty) różnią się skutecznością od produktów weterynaryjnych. Należy też wykluczyć choroby współistniejące.' },
+      ],
+      najwazniejsze: [
+        { text: 'Skuteczne zwalczanie pcheł i kleszczy opiera się na 3 krokach: 1) leczenie inwazji – natychmiastowe zwalczenie pasożytów bezpośrednio na zwierzęciu, 2) środki zapobiegawcze – ochrona preparatem o długotrwałym działaniu, 3) środowisko zwierzęcia bez pasożytów – odkażenie legowisk, tekstyliów i otoczenia.', source: 'training' },
+        { text: 'Krok 1 (leczenie inwazji): miejscowe zwalczenie pcheł można zrealizować za pomocą produktu przeciw kleszczom i pchłom, szamponu przeciw pchłom lub sprayu przeciw pchłom. Kleszcze usuwamy pęsetą, specjalną kartą lub haczykiem do kleszczy – chwytając możliwie blisko skóry/głowy kleszcza i wyciągając prosto, bez ściskania odwłoka. Uwaga: nie zapomnij też odrobaczyć zwierzęcia – pchły mogą być nosicielami tasiemców.', source: 'training' },
+        { text: 'Krok 2 (środki zapobiegawcze): ochrona preparatem o długotrwałym działaniu – obroża przeciw pchłom/kleszczom lub krople Spot On. Wśród produktów zapobiegawczych warto rozróżniać: produkty zabijające pasożyty, repelenty (odstraszające, profilaktyczne – uwaga, repelenty często są biocydami) oraz produkty pielęgnacyjne bez insektycydów.', source: 'training' },
+        { text: 'Krok 3 (środowisko bez pasożytów): w przypadku inwazji pcheł należy codziennie prać w wysokiej temperaturze odzież i tekstylia zwierzęcia, dokładnie odkurzać dywany i meble tapicerowane oraz zmywać podłogi – pamiętając też o ulubionych miejscach zwierzęcia i o samochodzie. Do odkażenia środowiska służą: spraye do otoczenia/przeciw pasożytom oraz generatory mgły, które docierają też do trudno dostępnych miejsc (uwaga: często to biocydy!).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Spray do otoczenia / spray przeciw pchłom (kontaktowy): dostępne w handlu pojemniki ze sprayem, którym można spryskać konkretne miejsca (np. legowisko, tapicerkę). Zalety: szybkie zabijanie pasożytów, duży wybór różnych produktów. Wady: możliwa odporność pasożytów na substancję, zagrożenia dla zdrowia i reakcje alergiczne, ograniczona skuteczność w wysokiej temperaturze (powyżej 25°C działanie może być krótsze). UWAGA: niebezpieczne dla innych zwierząt domowych i osób w otoczeniu – pomieszczenie po spryskaniu należy wywietrzyć.', source: 'training' },
+        { text: 'Generator mgły: urządzenie wytwarzające mgłę środka przeciw pchłom, która umieszcza substancję czynną nawet w trudno dostępnych zakamarkach mieszkania. Zalety: prosty w użyciu, efekt może działać nawet do 6 miesięcy w danym pomieszczeniu, dociera też do innych insektów. Wady: możliwa odporność pasożytów na substancję, szkodliwy dla zdrowia – podczas i krótko po użyciu należy opuścić pomieszczenie, możliwe reakcje alergiczne, ograniczona skuteczność w temperaturze powyżej 25°C. UWAGA: niebezpieczne dla innych zwierząt domowych i osób w otoczeniu.', source: 'training' },
+        { text: 'Obroża przeciw pchłom i/lub kleszczom: Zalety – łatwa obsługa, długotrwała ochrona (często kilka miesięcy), cicha (w odróżnieniu od sprayu, który u niektórych zwierząt wywołuje strach), może zapobiegać inwazji, dostępna jako biocyd lub bez związków chemicznych, zwierzę wychodzące z domu nie wygląda na "bezpańskie". Wady – nie zwalcza ostro trwającej inwazji (to produkt głównie zapobiegawczy), skuteczność bywa krytykowana, możliwe skutki uboczne (np. podrażnienia skóry), u kotów wychodzących istnieje ryzyko zaczepienia obroży o przedmioty podczas wspinania.', source: 'training' },
+        { text: 'Krople Spot On: roztwór nakrapia się pipetą najczęściej w okolicy karku/szyi, bezpośrednio na skórę – ilość należy dostosować do masy ciała zwierzęcia. Zalety – działają przeciw kleszczom i pchłom, niewidoczna ochrona, łatwa aplikacja, długotrwałe działanie (zwykle kilka tygodni), część preparatów znieczęca także inne insekty. Wady – to środek chemiczny, może być toksyczny przy nieprawidłowym użyciu, zwierzę nie powinno wchodzić do wody przez 3–7 dni od aplikacji, możliwe działania uboczne, częściowo krytykowana skuteczność.', source: 'training' },
+        { text: 'Spray przeciw pchłom i/lub kleszczom (na zwierzęciu): sierść należy rozchylić, spryskać pod włos i dobrze nawilżyć, a następnie dokładnie wetrzeć w sierść. Zalety – natychmiastowa ochrona, dobra alternatywa dla obroży przeciw pchłom, można stosować na całej powierzchni ciała, dobry do zabiegów punktowych i odstraszania. Wady – środek może zostać wchłonięty przez skórę podczas pielęgnacji sierści i może wywoływać działania uboczne.', source: 'training' },
+        { text: 'Szampon przeciw pchłom: Zalety – natychmiastowo zabija pchły i ich jaja, łatwa obsługa, dostępny szeroko, środek czyszczący, pielęgnacja i zwalczanie pasożytów w jednym kąpaniu. Wady – jest przede wszystkim odpowiedni dla zwierząt, które i tak trzeba kąpać (dlatego najczęściej dla psów), brak długotrwałego działania – po wyschnięciu sierści nie chroni przed nową inwazją.', source: 'training' },
+        { text: 'Puder przeciw kleszczom i/lub pchłom: Zalety – bezgłośne dozowanie, bezwonny, działa natychmiast, możliwość dokładnego odmierzania dawki. Wady – pył może powodować problemy z oddychaniem, najlepiej stosować na zewnątrz, w miejscach osłoniętych od wiatru; bardziej odpowiedni dla psów (koty mogą spożyć puder podczas pielęgnacji); zazwyczaj traktowany bardziej jako alternatywa dla innych produktów, jeśli te nie osiągnęły pożądanego efektu.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Co kupić, żeby raz na zawsze pozbyć się pcheł?" — Doradca: "Najlepsze efekty daje połączenie 3 kroków: najpierw szybko zwalczamy pchły na zwierzęciu (np. spray lub szampon przeciw pchłom), potem zabezpieczamy zwierzę przed nowymi pasożytami na dłużej (obroża albo krople Spot On), a na koniec odkażamy otoczenie – legowisko, dywany, samochód – sprayem do otoczenia albo generatorem mgły. Pominięcie ostatniego kroku to najczęstsza przyczyna, że pchły wracają."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy to pierwsza inwazja, czy problem nawraca (wtedy warto bardziej zwrócić uwagę na krok 3 – środowisko)?', source: 'extra' },
+        { text: 'Czy w domu są inne zwierzęta lub małe dzieci (istotne przy wyborze sprayu/generatora mgły ze względu na bezpieczeństwo)?', source: 'extra' },
+        { text: 'Czy zwierzę jest często kąpane (szampon przeciw pchłom może być wtedy dobrym dodatkowym rozwiązaniem)?', source: 'extra' },
+        { text: 'Czy zwierzę przebywa głównie w domu, czy często wychodzi na zewnątrz (wpływa na wybór obroży vs. spot-on oraz na ryzyko kleszczowe)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż tylko jednego produktu (np. tylko obroży) przy aktywnej inwazji – obroża to środek zapobiegawczy (krok 2), nie leczy bieżącej inwazji (krok 1).', source: 'extra' },
+        { text: 'Brak informacji o kroku 3 (środowisko) – klient stosuje preparat na zwierzęciu, ale pchły wracają, bo jaja/larwy/poczwarki pozostają w legowisku i tekstyliach.', source: 'extra' },
+        { text: 'Stosowanie sprayu do otoczenia lub generatora mgły bez wywietrzenia pomieszczenia lub w obecności innych zwierząt/osób – ryzyko podrażnień i zatruć.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: '3 kroki: 1) leczenie inwazji na zwierzęciu, 2) środki zapobiegawcze (obroża/spot-on), 3) odkażenie środowiska (pranie, odkurzanie, spray do otoczenia/generator mgły).', source: 'training' },
+        { text: 'Wiele produktów przeciw pchłom/kleszczom to biocydy – stosować zgodnie z etykietą, ostrożnie wobec innych zwierząt i osób.', source: 'training' },
+        { text: 'Obroża i spot-on = profilaktyka długoterminowa; szampon, spray na zwierzę i puder = szybkie zwalczenie bieżącej inwazji.', source: 'extra' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Przy sprzedaży preparatu przeciw pchłom/kleszczom warto zaproponować klientowi komplet: 1 produkt na bieżącą inwazję (krok 1), 1 produkt zapobiegawczy (krok 2) i przypomnieć o sprzątaniu środowiska (krok 3) – to realna szansa na cross-selling i jednocześnie najlepsza rada dla klienta.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'miski-dla-psow-i-kotow',
+    title: 'Miski dla psów i kotów – wielkość, ilość i materiał',
+    category: 'Żywienie i suplementacja',
+    tags: ['psy', 'koty', 'miski', 'akcesoria', 'materiał', 'obsługa klienta'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Każdy pies i każdy kot powinien mieć przynajmniej jedną własną miskę na karmę i jedną własną miskę na wodę. W przypadku karmienia mieszanego (karma mokra i sucha), które jest częściej stosowane u kotów, zwierzę powinno mieć nawet trzecią miskę.', source: 'training' },
+        { text: 'Dobór miski zależy od trzech czynników: wielkości (dopasowanej do zwierzęcia), ilości (ile misek potrzebuje zwierzę) i materiału (kwestia gustu i praktyczności).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'U psów wielkość miski zależy przede wszystkim od wielkości, wagi i rasy psa – te czynniki determinują nie tylko ilość karmy, ale też ile miejsca potrzeba w misce, by pysk psa mógł się w niej swobodnie i dostatecznie szeroko otwierać. U ras z długimi uszami (np. cocker spaniel) uszy mogą wpadać do miski – istnieją specjalne miski zaprojektowane, by temu zapobiegać.', source: 'training' },
+        { text: 'Jako orientacyjną miarę wielkości miski dla psa przyjmuje się ok. czterokrotną objętość karmy podawanej na jeden posiłek.', source: 'training' },
+        { text: 'U kotów wybór miski zależy podobnie od wielkości i wagi, a w niewielkim stopniu od rasy. Wiele kotów woli płaskie, szerokie naczynia, które zapewniają łatwy dostęp do karmy – jeśli kot musi cały czas dotykać wąsami wysokich brzegów miski, może to mu przeszkadzać. Dlatego miski dla kotów powinny być raczej szerokie i niezbyt głębokie.', source: 'training' },
+        { text: 'Ogólna zasada: każde zwierzę chętniej je z trochę większej miski niż ze zbyt małej – dotyczy to zarówno karmy, jak i wody. Miska na wodę powinna być zawsze pełna, więc nawet dla małych zwierząt nie warto kupować wyjątkowo małej miski na wodę.', source: 'training' },
+        { text: 'Orientacyjnie: miski o pojemności większej niż ok. 200 ml przewidziane są zazwyczaj dla psów, mniejsze nadają się dla kotów i mniejszych psów. U kotów warto dodatkowo zwrócić uwagę na głębokość miski (patrz wyżej).', source: 'training' },
+        { text: 'Materiał miski – tworzywo sztuczne: lekkie i poręczne, często z gumowym pierścieniem zapobiegającym przesuwaniu, tanie, dobre do domu, czasem w ramce melaminowej lub jako miska podwójna, przydatne w podróży.', source: 'training' },
+        { text: 'Materiał miski – stal nierdzewna: bardzo higieniczna, można myć w zmywarce, łatwa do czyszczenia, duża trwałość; podobnie jak plastikowe – czasem w ramce melaminowej lub jako miska podwójna, przydatna w podróży.', source: 'training' },
+        { text: 'Materiał miski – ceramika: dobrze nadaje się do mycia w zmywarce, często dostępna w różnych wzorach, najczęściej ciężka i wyposażona w antystoper na spodzie dla lepszej przyczepności.', source: 'training' },
+        { text: 'Materiał miski – silikon: szczególnie lekki, niektóre modele można złożyć/zwinąć (np. linia Dogs Creek), bardzo przydatny w podróży; do tego warto polecić bidon/butelkę do picia, której wieczko może służyć jako miska/podstawka dla psa.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Jaką miskę wybrać dla mojego psa/kota?" — Doradca: "Wielkość miski dopasowujemy do wielkości zwierzęcia i porcji – orientacyjnie miska powinna mieć ok. 4 razy więcej miejsca niż jedna porcja karmy. Dla kotów lepsze są płytsze i szersze miski, żeby wąsy nie dotykały brzegów. Materiał to już kwestia wygody – stal nierdzewna i ceramika są najbardziej higieniczne i nadają się do zmywarki, plastik i silikon są lekkie i dobre w podróży."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaka rasa, wielkość i waga zwierzęcia (oraz czy ma długie uszy)?', source: 'extra' },
+        { text: 'Czy zwierzę jest karmione mieszanie (karma mokra + sucha) – wtedy warto rozważyć trzecią miskę?', source: 'extra' },
+        { text: 'Czy miska będzie używana w domu, czy też w podróży/na zewnątrz (wpływa na wybór materiału – silikon, plastik składany)?', source: 'extra' },
+        { text: 'Jakie są preferencje co do mycia (zmywarka) i estetyki (wzory ceramiczne, kolory)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż jednej, zbyt małej miski uniwersalnej "na wszystko" – zwierzę powinno mieć osobną miskę na karmę i osobną na wodę (a przy karmieniu mieszanym czasem trzecią).', source: 'extra' },
+        { text: 'Polecenie głębokiej, wąskiej miski kotu, który ma problem z "wąsowym stresem" przy jedzeniu – lepsza jest miska płytka i szeroka.', source: 'extra' },
+        { text: 'Nieuwzględnienie ras z długimi uszami przy doborze miski dla psa – warto zaproponować miskę z wysoką krawędzią / wąskim otworem.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Minimum: 1 miska na karmę + 1 miska na wodę dla każdego zwierzęcia; przy karmieniu mieszanym nawet 3 miski.', source: 'training' },
+        { text: 'Wielkość miski dla psa ≈ 4x porcja karmy; miska na wodę zawsze powinna być pełna.', source: 'training' },
+        { text: 'Koty preferują miski płytkie i szerokie (wąsy).', source: 'training' },
+        { text: 'Materiały: plastik (lekki, tani), stal nierdzewna (higieniczna, do zmywarki), ceramika (estetyczna, antystoper), silikon (lekki, składany, do podróży).', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Przy sprzedaży karmy warto dopytać, czy klient ma odpowiednio dopasowane miski – to częsty, łatwy temat do cross-sellingu (np. miska z wysoką krawędzią dla psa z długimi uszami, miska antystresowa dla kota).', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'akcesoria-do-jedzenia-i-picia',
+    title: 'Akcesoria do jedzenia i picia – specjalne miski, fontanny i pojemniki na karmę',
+    category: 'Żywienie i suplementacja',
+    tags: ['psy', 'koty', 'miski', 'akcesoria', 'fontanna', 'pojemnik na karmę', 'obsługa klienta'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Podwyższona miska ("bufet") nie jest zalecana dla każdego psa – u zwierząt predysponowanych do skrętu żołądka (np. duże rasy o głębokiej klatce piersiowej) jedzenie z podwyższonej pozycji może zwiększać ryzyko tej groźnej choroby. W razie wątpliwości warto skonsultować wybór z weterynarzem.' },
+      ],
+      najwazniejsze: [
+        { text: 'Poza standardowymi miskami na rynku dostępne są akcesoria rozwiązujące konkretne problemy: miski dla psów z długimi uszami, podwyższone "bufety", miski zapobiegające zbyt szybkiemu jedzeniu (tzw. antystresowe/lapcowaniu), miski przeciw chlapaniu, podkładki pod miski, hermetyczne pojemniki na karmę oraz fontanny do pojenia.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Miska dla psów z długimi uszami: ma bardzo wysoko umieszczoną krawędź/wąski otwór, dzięki czemu długie uszy (np. u cocker spaniela) nie wpadają do miski podczas jedzenia.', source: 'training' },
+        { text: 'Bufet dla psa (podwyższona miska): podwyższona pozycja podczas jedzenia bywa polecana dla dużych psów, ponieważ ułatwia transport karmy do żołądka i może być korzystna przy niektórych problemach zdrowotnych (np. związanych z przełykiem). Z drugiej strony, dla większości psów jedzenie z podłogi jest naturalne i nie powoduje problemów – a podwyższona pozycja może u niektórych ras zwiększać ryzyko skrętu żołądka, dlatego nie jest to rozwiązanie "dla każdego".', source: 'training' },
+        { text: 'Miska zapobiegająca zbyt szybkiemu jedzeniu ("antystresowa"/utrudniająca łapczywe jedzenie): ma specjalne wypustki/labirynt w misce, które zmuszają zwierzę do jedzenia wolniej, zamiast jednorazowo łapczywie pochłaniać całą porcję. Dostępna w różnych wersjach i materiałach, np. ceramicznych.', source: 'training' },
+        { text: 'Miska zapobiegająca chlapaniu: zaprojektowana specjalnie do podróżowania ze zwierzętami – zmniejsza ryzyko wylewania, rozlewania i chlapania wody nawet o 90%. Kluczową rolę odgrywa umieszczona wewnątrz ruchoma płytka, która amortyzuje wstrząsy (hamowanie, zakręty, uderzenie miską o podłoże). Cztery zapięcia na rzep na spodzie miski zapewniają stabilne mocowanie na prawie każdej powierzchni, a samą miskę łatwo rozłożyć do umycia i z powrotem złożyć.', source: 'training' },
+        { text: 'Podkładki pod miski: ułatwiają czyszczenie miejsca karmienia, ponieważ zatrzymują rozbryzgi wody i okruchy karmy, które normalnie zostawałyby na podłodze wokół misek.', source: 'training' },
+        { text: 'Pojemnik na karmę: umożliwia hermetyczne zamknięcie suchej karmy, dzięki czemu zapobiega utracie jej wartości odżywczych i jakości (np. przez kontakt z powietrzem, wilgocią czy zapachami). Dostępne są pojemniki o różnych kształtach i wielkościach, dopasowane do różnych opakowań karmy.', source: 'training' },
+        { text: 'Fontanna do pojenia: zachęca zwierzęta (zwłaszcza koty) do picia większej ilości wody, dzięki utrzymywaniu jej świeżości i ciągłemu ruchowi. Wbudowany filtr oczyszcza wodę z włosów i zanieczyszczeń – filtr należy wymieniać co kilka tygodni, a samą wodę uzupełniać/zmieniać najlepiej codziennie, żeby np. sierść nie uszkodziła pompy. Różne strumienie/poziomy wody pozwalają dopasować fontannę do preferencji konkretnego zwierzęcia.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Mój kot pije za mało wody" — Doradca: "Koty często chętniej piją wodę, która się rusza i jest świeża – fontanna do pojenia z filtrem może realnie zwiększyć ilość wypijanej wody, co jest ważne dla profilaktyki chorób układu moczowego. Warto tylko pamiętać o regularnej wymianie filtra i wody."', source: 'extra' },
+        { text: 'Klient: "Mój pies zjada całą miskę w kilka sekund" — Doradca: "To dobry moment, żeby zaproponować miskę spowalniającą jedzenie – z wypustkami utrudniającymi szybkie pochłanianie porcji. Pomaga to też zmniejszyć ryzyko przejedzenia i wzdęć."', source: 'extra' },
+        { text: 'Klient: "Często podróżuję z psem/kotem i woda się wylewa" — Doradca: "Polecam miskę zapobiegającą chlapaniu – ma ruchomą płytkę amortyzującą wstrząsy i mocowanie na rzep, więc nawet podczas jazdy czy hamowania woda zostaje w misce."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy zwierzę ma tendencję do zbyt szybkiego jedzenia / wymiotowania po posiłku?', source: 'extra' },
+        { text: 'Czy zwierzę pije zbyt mało wody (zwłaszcza koty)?', source: 'extra' },
+        { text: 'Czy klient często podróżuje ze zwierzęciem (przyda się miska przeciw chlapaniu)?', source: 'extra' },
+        { text: 'Czy karma jest przechowywana w oryginalnym opakowaniu, czy klient chciałby pojemnik hermetyczny do jej przechowywania?', source: 'extra' },
+        { text: 'Czy pies jest rasą predysponowaną do skrętu żołądka (jeśli klient pyta o "bufet"/podwyższoną miskę)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Polecanie podwyższonej miski ("bufetu") każdemu dużemu psu bez wzmianki o ryzyku skrętu żołądka u ras predysponowanych.', source: 'extra' },
+        { text: 'Brak wzmianki o konieczności regularnej wymiany filtra i wody w fontannie do pojenia – bez tego fontanna może wręcz pogorszyć jakość wody.', source: 'extra' },
+        { text: 'Sprzedaż miski przeciw chlapaniu jako rozwiązania na "łapczywe jedzenie" – to inny produkt (miska spowalniająca jedzenie) o innym przeznaczeniu.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Miska z wysoką krawędzią – dla psów z długimi uszami (np. cocker spaniel).', source: 'training' },
+        { text: 'Bufet (podwyższona miska) – dla niektórych dużych psów, ale ryzyko skrętu żołądka u ras predysponowanych.', source: 'training' },
+        { text: 'Miska spowalniająca jedzenie – wypustki/labirynt, zwalnia tempo jedzenia.', source: 'training' },
+        { text: 'Miska przeciw chlapaniu – ruchoma płytka, redukcja rozlewania nawet o 90%, mocowanie na rzep, do podróży.', source: 'training' },
+        { text: 'Pojemnik na karmę – hermetyczne zamknięcie, chroni wartość odżywczą i jakość karmy.', source: 'training' },
+        { text: 'Fontanna do pojenia – zachęca do picia (zwłaszcza koty), filtr wymieniany co kilka tygodni, woda zmieniana najlepiej codziennie.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Te akcesoria to dobre tematy do cross-sellingu przy zakupie karmy lub miski podstawowej – warto dopytać o konkretne problemy klienta (zbyt szybkie jedzenie, mało picia, podróże, przechowywanie karmy), zamiast proponować wszystko na raz.', source: 'extra' },
+      ],
+    },
+  },
 ];
