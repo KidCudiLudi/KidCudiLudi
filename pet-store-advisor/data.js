@@ -2058,4 +2058,155 @@ const NOTES = [
       ],
     },
   },
+
+  {
+    id: 'zabawki-dla-kotow',
+    title: 'Zabawki dla kotów – dlaczego są ważne i jak je dobrać',
+    category: 'Koty',
+    tags: ['koty', 'zabawki', 'aktywność', 'kocimiętka', 'waleriana', 'matatabi', 'obsługa klienta'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Koty, podobnie jak dzieci, muszą być zajęte w wystarczającym stopniu. Kot z natury bardzo lubi się bawić i tę cechę charakteru należy odpowiednio uwzględniać. Szczególnie młode kocięta lubią poszaleć na łonie natury, ale chcą mieć także w domu odpowiednie zabawki.', source: 'training' },
+        { text: '5 głównych argumentów przemawiających za zakupem zabawek dla kotów: trening mózgu, ruch, relaks, wzmacnianie więzi (z opiekunem) oraz zwalczanie stresu.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Odgłosy trzasków, szelestu lub piszczenia inspirują koty i rozwijają ich zdolności motoryczne. Znudzony kot ma natomiast tendencję do zrywania tapet, drapania mebli i niszczenia innych przedmiotów – to częsty sygnał, że zwierzęciu brakuje stymulacji.', source: 'training' },
+        { text: 'Wystarczająca ilość ruchu jest szczególnie ważna dla zdrowia kociąt – odpowiednie do tego celu są przede wszystkim piłki i podobne zabawki do aportowania/podawania.', source: 'training' },
+        { text: 'Dla kotów zasadnicze znaczenie mają też odpowiednie zajęcia umysłowe. Dzięki odpowiednim akcesoriom można wspierać zdolności poznawcze zwierzęcia, a poprzez wspólną zabawę umacniać więź między człowiekiem a kotem.', source: 'training' },
+        { text: 'Dobór zabawki wg wieku i charakteru: dla młodych i żywotnych kotów najlepsze są przede wszystkim piłki, myszki i wędki dla kotów. Powściągliwość starszych kotów i spokojniejszych ras można przezwyciężyć za pomocą artykułów stymulujących, takich jak kocimiętka lub waleriana. Zabawki rozwijające inteligencję nadają się zasadniczo do wszystkich ras kotów i grup wiekowych.', source: 'training' },
+        { text: 'To, która zabawka jest najbardziej odpowiednia dla kota, zależy od różnych czynników – znaczenie mają wiek, stan zdrowia, kondycja, a także rasa. Rasy żywotne, takie jak koty syjamskie czy europejskie krótkowłose, są szczególnie ciekawe, aktywne i pełne temperamentu, dlatego ważna jest dla nich intensywna zabawa, a zabawka powinna być do tego dostosowana.', source: 'training' },
+        { text: 'Nawet starsze koty potrzebują regularnej aktywności – ich ruchy stają się spokojniejsze i mniej dynamiczne niż u kociąt, ale ze względów zdrowotnych nadal ważna jest odpowiednia ilość ruchu. Kilka minut "treningu" wystarczy, bo liczy się jakość, nie czas. Koty mniej chętne do zabawy można zachęcić np. przekąską dla kotów lub zabawką z kocimiętką.', source: 'training' },
+        { text: 'Zabawki z kocimiętką, walerianą lub matatabi (rośliny zawierające olejki eteryczne, na które reaguje wiele – choć nie wszystkie – koty) sprzyjają zainteresowaniu zabawą lub przytulaniem i są dobrym rozwiązaniem zarówno dla aktywnych kotów, jak i dla bardziej spokojnych "pieszczochów". Aby kot nie znudził się zbyt szybko taką zabawką, warto podawać ją do zabawy tylko kilka razy w tygodniu.', source: 'training' },
+        { text: 'Nagrody po zabawie: po dłuższej grze odpowiednia nagroda w postaci ulubionej przekąski lub odmierzonej porcji suchej karmy może połączyć zabawkę z pozytywnym bodźcem. Sprytne kocięta szybko zauważają, że gonią za zabawką bez nagrody, i mogą stracić zainteresowanie – smakołyk w misce po zabawie sprawia, że kot jest zadowolony i zabawa może trwać dalej.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Mój kot drapie meble i tapety – co robić?" — Doradca: "To często oznacza, że kotu brakuje stymulacji. Warto wprowadzić regularną, krótką zabawę – wystarczy kilka minut dziennie – z zabawką do polowania (np. wędka, myszka) i ewentualnie dodać zabawkę z kocimiętką lub walerianą dla urozmaicenia."', source: 'extra' },
+        { text: 'Klient: "Mój starszy kot już się nie bawi" — Doradca: "To normalne, że starsze koty są spokojniejsze, ale nadal warto je zachęcać do krótkiej, kilkuminutowej aktywności – np. zabawką z kocimiętką albo wędką – bo to wspiera ich zdrowie i kondycję."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki jest wiek i temperament kota – kociak/młody i żywotny, czy starszy i spokojniejszy?', source: 'extra' },
+        { text: 'Czy kot ma dostęp do ogrodu/zewnętrza, czy żyje wyłącznie w mieszkaniu (wpływa na zapotrzebowanie na ruch i stymulację)?', source: 'extra' },
+        { text: 'Czy kot reaguje na kocimiętkę/walerianę/matatabi (nie każdy kot reaguje tak samo)?', source: 'extra' },
+        { text: 'Czy zauważają Państwo u kota objawy znudzenia (drapanie mebli, zrywanie tapet)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż jednej zabawki "na zawsze" bez rotacji – koty (podobnie jak np. zabawki z kocimiętką) szybko się nudzą tym samym przedmiotem, warto rotować zabawki i ograniczać dostęp do tych z roślinami stymulującymi.', source: 'extra' },
+        { text: 'Ignorowanie potrzeb aktywności starszych kotów – mniejsza aktywność nie znaczy brak potrzeby ruchu.', source: 'extra' },
+        { text: 'Zapominanie o nagrodzie/przysmaku po zabawie – bez pozytywnego wzmocnienia kot może szybciej stracić zainteresowanie zabawkami do polowania.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: '5 argumentów za zabawkami dla kota: trening mózgu, ruch, relaks, wzmacnianie więzi, zwalczanie stresu.', source: 'training' },
+        { text: 'Młode/żywotne koty → piłki, myszki, wędki. Starsze/spokojne → kocimiętka, waleriana, matatabi. Zabawki na inteligencję → dla wszystkich.', source: 'training' },
+        { text: 'Zabawki z roślinami stymulującymi (kocimiętka, waleriana, matatabi) – podawać tylko kilka razy w tygodniu, by kot się nie znudził.', source: 'training' },
+        { text: 'Nagroda (przekąska/karma) po zabawie wzmacnia pozytywne skojarzenie z zabawką.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Znudzenie kota = częsta przyczyna "problemów z zachowaniem" (drapanie, zrywanie tapet) – warto to wykorzystać jako argument przy proponowaniu zabawek, nie tylko jako "dodatek", ale jako rozwiązanie konkretnego problemu klienta.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'zabawki-dla-psow-kategorie',
+    title: 'Zabawki dla psów – 6 kategorii i system sygnalizacji POS',
+    category: 'Psy',
+    tags: ['psy', 'zabawki', 'aportowanie', 'inteligencja', 'żucie', 'lizanie', 'POS', 'obsługa klienta'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Pasty/maty do lizania bywają bogate w tłuszcz i energię – mimo że psy je uwielbiają, powinno się je podawać oszczędnie i w małych ilościach. Smakołyki i przysmaki podawane regularnie należy uwzględnić w ogólnej dawce pokarmowej zwierzęcia, aby nie przekroczyć dziennego zapotrzebowania na energię – w razie wątpliwości pomoże dietetyk weterynaryjny.' },
+      ],
+      najwazniejsze: [
+        { text: 'Asortyment zabawek dla psów dzieli się na 6 głównych kategorii, które razem odpowiadają na potrzeby wszystkich psów: Rzucanie, Inteligencja, Żucie i szarpanie, Motywacja (piszczące), Przytulność, Lizanie.', source: 'training' },
+        { text: 'System sygnalizacji POS (oznaczenia na opakowaniach zabawek) pokazuje od razu dwie informacje: dla jakiego rozmiaru psa (XS–XL) i dla jakiej intensywności żucia (delikatnie / energicznie / bardzo energicznie) zabawka jest odpowiednia.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Rzucanie: zabawki do aportowania – przeznaczone do rzucania i przynoszenia przez psa, dostępne w różnej kolorystyce i z różnych materiałów, dopasowane do warunków atmosferycznych. Odpowiednie dla zwinnych psów, które potrzebują się wybiegać. Przykłady: piłka dla psów, frisbee, linka (dummy), wyrzutnia piłek.', source: 'training' },
+        { text: 'Inteligencja: zabawki rozwijające inteligencję obejmują wszystko, co zapewnia ćwiczenie zdolności umysłowych zwierzęcia – np. wypełnione przysmakami lub karmą, stanowią ekscytujące wyzwanie dla każdego psa. Zabawki te można łączyć z przysmakami/karmą, co dodatkowo wydłuża zabawę i angażuje psa.', source: 'training' },
+        { text: 'Żucie i szarpanie: kategoria szczególnie odpowiednia dla psów o silnym instynkcie żucia. Żucie wspomaga pielęgnację zębów i pomaga zaspokoić naturalną potrzebę żucia – np. sznurki do aportu z naturalnego kauczuku, zabawki do żucia z kości lub przysmaki ze skóry wołowej. Przy wyborze warto zwrócić uwagę, jak intensywnie i jak długo dany pies żuje.', source: 'training' },
+        { text: 'Motywacja (zabawki piszczące): odpowiednie zarówno dla dorosłych psów, jak i młodych psów i szczeniąt. Kategoria szczególnie polecana dla psów o niskiej motywacji, które niechętnie akceptują inne zabawki – wbudowane efekty dźwiękowe aktywują się, gdy pies gryzie zabawkę, co zachęca go do dłuższej zabawy.', source: 'training' },
+        { text: 'Przytulność: kategoria odpowiednia dla psów, które lubią się przytulać, nosić "zdobycz" przy sobie i delikatnie ją żuć – np. rozmaite pluszaki.', source: 'training' },
+        { text: 'Lizanie: lizanie wywołuje u psów uczucie szczęścia za sprawą endorfin. Realizuje się to np. za pomocą pasty lub maty do lizania, z której pies musi wydobyć smakołyk za pomocą języka. Ze względu na wysoką zawartość tłuszczu i energii w wielu pastach, należy podawać je oszczędnie i uwzględniać w dziennej dawce pokarmowej psa.', source: 'training' },
+        { text: 'System sygnalizacji POS – rozmiary psów: XS (np. chihuahua), S (np. maltańczyk), M (np. border collie), L (np. duże psy rasy golden retriever, labrador), XL (np. berneński pies pasterski, bokser). Intensywność żucia: psy, które żują delikatnie / energicznie / bardzo energicznie – im intensywniej pies żuje, tym bardziej wytrzymała powinna być zabawka.', source: 'training' },
+        { text: 'To, jak długo i czym lubi się bawić pies, zawsze zależy od indywidualnych preferencji danej rasy lub skłonności konkretnego psa. Niektóre psy najbardziej lubią przez cały dzień szaleć na zewnątrz, innym więcej radości sprawia tropienie i "główkowanie" (zabawki na inteligencję/węch).', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Mój pies rozgryza każdą zabawkę w kilka minut" — Doradca: "Warto sprawdzić oznaczenie POS na opakowaniu – pokazuje ono, dla jakiej intensywności żucia (delikatnie/energicznie/bardzo energicznie) i wielkości psa (XS–XL) dana zabawka jest przeznaczona. Dla psów żujących bardzo energicznie polecam kategorię \'Żucie i szarpanie\' z bardziej wytrzymałych materiałów."', source: 'extra' },
+        { text: 'Klient: "Mój pies się nudzi w domu" — Doradca: "Dobrym rozwiązaniem są zabawki z kategorii \'Inteligencja\', np. wypełnione przysmakami – angażują psa umysłowo na dłużej niż zwykła zabawka do rzucania."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki rozmiar i rasa psa (pomaga dopasować rozmiar zabawki wg systemu POS XS–XL)?', source: 'extra' },
+        { text: 'Jak intensywnie pies żuje – delikatnie, energicznie czy bardzo energicznie?', source: 'extra' },
+        { text: 'Czego najbardziej potrzebuje pies – ruchu na zewnątrz (Rzucanie), stymulacji umysłowej (Inteligencja), zaspokojenia instynktu żucia (Żucie i szarpanie), czy po prostu chce się przytulać (Przytulność)?', source: 'extra' },
+        { text: 'Czy pies jest niezbyt zmotywowany do zabawy – wtedy warto rozważyć zabawki piszczące jako zachętę?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż zabawki przeznaczonej dla psów żujących delikatnie psu, który żuje bardzo energicznie – zabawka szybko zostanie zniszczona, a fragmenty mogą stanowić zagrożenie (ryzyko zadławienia/połknięcia).', source: 'extra' },
+        { text: 'Brak uwzględnienia dziennej dawki kalorii z past/mat do lizania i przysmaków używanych w zabawkach na inteligencję – przy regularnym stosowaniu mogą znacząco zwiększać dzienne spożycie energii.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: '6 kategorii zabawek dla psów: Rzucanie, Inteligencja, Żucie i szarpanie, Motywacja (piszczące), Przytulność, Lizanie.', source: 'training' },
+        { text: 'System POS na opakowaniu = rozmiar psa (XS–XL) + intensywność żucia (delikatnie/energicznie/bardzo energicznie).', source: 'training' },
+        { text: 'Pasty do lizania i przysmaki z zabawek na inteligencję = kalorie, które trzeba uwzględnić w diecie psa.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Oznaczenia POS na zabawkach to praktyczne narzędzie sprzedażowe – pokazując klientowi, jak je odczytać, ułatwiamy mu samodzielny, bezpieczny wybór i budujemy zaufanie do doradcy.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'aktywnosc-i-potrzeby-ruchowe-zwierzat',
+    title: 'Aktywność, zabawa i potrzeby ruchowe psów – ile ruchu naprawdę potrzebują',
+    category: 'Psy',
+    tags: ['psy', 'aktywność', 'zabawki', 'inteligencja', 'labirynt na karmę', 'zachowanie', 'obsługa klienta'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Dzięki odpowiednim zabawkom psy klientów pozostają w dobrej formie. Psy potrzebujące dużo ruchu i ćwiczeń są szczególnie zadowolone z zabawek przeznaczonych do zabawy na zewnątrz – zwłaszcza gdy pies przebywa w mieszkaniu bez ogrodu, dłuższe spacery przeplatane zabawą stają się codzienną atrakcją. Odpowiednia ilość ruchu nie tylko sprawia psu radość, ale sprzyja zdrowiu i znacznie zmniejsza ryzyko otyłości i chorób z nią związanych.', source: 'training' },
+        { text: 'Psy potrzebują przede wszystkim wyzwań, które pobudzają ich ciekawość i kreatywność. Do tego celu nadaje się zabawka rozwijająca inteligencję, nagradzająca psa smakołykiem za prawidłowe "rozwiązanie" – przykładem jest labirynt na karmę, z którego pies musi wydobyć jedzenie, np. poprzez szukanie i manipulację elementami.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: '"Kto nie jest aktywny, ten się starzeje" – dotyczy to też psów. Młode psy chętnie dokazują i gonią za piłkami, a ruchy starszych psów stają się spokojniejsze i mniej dynamiczne. Mimo to, ze względów zdrowotnych, odpowiednia ilość ruchu jest ważna także dla starszych psów – warto zachęcać je do aktywności za pomocą odpowiednio dostosowanych zabawek.', source: 'training' },
+        { text: 'Wielu właścicieli chce zapewnić psu jak najwięcej zajęć, aby się "nie nudził" – jednak nie powinniśmy przenosić naszych ludzkich potrzeb na psa. Psy śpią nawet 18 godzin na dobę (z kilkudniowymi przerwami / w kilku fazach) i dlatego stale potrzebują też fazy odpoczynku, w której mogą się zregenerować. Psy nie znają "nudy" jako ludzkiego odczucia.', source: 'training' },
+        { text: 'Jeśli potrzeby psa – odpowiednia ilość ruchu na świeżym powietrzu, kontakt z innymi przedstawicielami gatunku oraz wystarczające urozmaicenie – nie są spełnione, zwierzę zwykle szuka "zajęć zastępczych", np. gryzie wszystko w domu, oddaje kał/mocz w nieodpowiednich miejscach itp. Wniosek: ważne jest zapewnienie psu możliwości zaspokajania jego naturalnych potrzeb, ale również wystarczającej ilości czasu i spokoju na sen i odpoczynek – przerwy na odpoczynek są równie ważną częścią potrzeb zwierzęcia jak aktywność.', source: 'training' },
+        { text: '5 obszarów, które dobrze dobrane zabawki dla psów powinny wspierać: ruch i zdrowie, trening (umysłowy), pielęgnacja zębów i zaspokojenie instynktu gryzienia, wzmacnianie więzi (z opiekunem), relaks.', source: 'training' },
+        { text: 'Prosty przykład normy aktywności (zależnej od rasy, wieku, poziomu sprawności fizycznej i indywidualnych potrzeb psa): ok. 2 godziny dziennie wysokiej aktywności fizycznej (np. jazda na rowerze, pływanie, zajęcia z agility) w połączeniu z odpowiednią ilością aktywności umysłowej (tropienie, zabawy w szukanie itp.), rozłożone na kilka sesji w ciągu dnia z przerwami pomiędzy nimi.', source: 'training' },
+        { text: 'Aktywność umysłową można łączyć z aktywnością fizyczną (np. w sportach z psem) albo wykonywać niezależnie od wysiłku fizycznego – wtedy pies musi skoncentrować się umysłowo na swoim zadaniu (np. labirynt na karmę, zabawki na inteligencję). Wiele zależy od wcześniejszego treningu i przyzwyczajeń psa – zawsze warto zaczynać od małych kroków.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Mój pies w domu gryzie meble i wszystko niszczy" — Doradca: "To często sygnał, że psu brakuje ruchu, kontaktu z innymi psami lub urozmaicenia w ciągu dnia – takie zachowania to \'zajęcia zastępcze\'. Warto zwiększyć liczbę spacerów/zabaw na zewnątrz i wprowadzić zabawki na inteligencję, np. labirynt na karmę, żeby zaspokoić potrzebę eksploracji w bezpieczny sposób."', source: 'extra' },
+        { text: 'Klient: "Czuję się winny, że pies tyle śpi, gdy jestem w pracy" — Doradca: "To zupełnie normalne – psy śpią nawet do 18 godzin na dobę i potrzebują tego czasu na regenerację. Ważniejsze jest to, żeby czas, gdy pies jest aktywny, był dobrze wykorzystany – nawet krótki, intensywny spacer lub zabawa z labiryntem na karmę mogą wystarczyć."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaka rasa, wiek i poziom sprawności fizycznej psa – jakie jest jego orientacyjne dzienne zapotrzebowanie na ruch?', source: 'extra' },
+        { text: 'Czy pies ma dostęp do ogrodu, czy mieszka w mieszkaniu i potrzebuje więcej zorganizowanych spacerów/zabaw?', source: 'extra' },
+        { text: 'Czy zauważają Państwo u psa "zajęcia zastępcze" – nadmierne gryzienie, niszczenie przedmiotów, oddawanie kału/moczu w domu?', source: 'extra' },
+        { text: 'Czy pies ma już zabawki na inteligencję (np. labirynt na karmę) – jeśli nie, to dobry temat do zaproponowania?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Traktowanie "zachowań zastępczych" (gryzienie, niszczenie) jako "złego charakteru" psa, bez zauważenia, że to sygnał niezaspokojonych potrzeb ruchowych/umysłowych.', source: 'extra' },
+        { text: 'Przesadne dokładanie psu zajęć przez cały dzień, "żeby się nie nudził" – psy potrzebują też dużo odpoczynku (do 18h snu), nadmierna stymulacja może być przeciążająca.', source: 'extra' },
+        { text: 'Ignorowanie potrzeb ruchowych starszych psów – mniejsza intensywność nie znaczy brak potrzeby ruchu i zabawy.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Niezaspokojone potrzeby (ruch, kontakt z innymi psami, urozmaicenie) → "zajęcia zastępcze" (gryzienie, niszczenie, nieczystość w domu).', source: 'training' },
+        { text: 'Psy śpią nawet do 18h/dobę – odpoczynek to też ważna potrzeba, nie tylko aktywność.', source: 'training' },
+        { text: 'Orientacyjna norma: ok. 2h dziennie aktywności fizycznej + aktywność umysłowa (np. labirynt na karmę, tropienie), rozłożone na kilka sesji z przerwami.', source: 'training' },
+        { text: '5 obszarów wspieranych przez dobre zabawki: ruch i zdrowie, trening, pielęgnacja zębów/instynkt gryzienia, wzmacnianie więzi, relaks.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Zachowania problemowe psa (gryzienie, niszczenie, nieczystość) to częsty punkt wejścia do rozmowy o zabawkach na inteligencję i większej ilości ruchu – warto to łączyć przy obsłudze klienta, nie traktować jako odrębnych tematów.', source: 'extra' },
+      ],
+    },
+  },
 ];
