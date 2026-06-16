@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --background: #FDF9F6;
+  --foreground: #3D2B1F;
+  --rose: #D4726A;
+  --rose-light: #E8A4A0;
+  --rose-pale: #F5E8E7;
+  --nude: #F5EDE8;
+  --nude-dark: #E8D5C4;
+  --cream: #FDF9F6;
+  --gold: #C9A96E;
+  --gold-light: #E8D5A3;
+  --brown: #8B6F5E;
+  --brown-dark: #3D2B1F;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--nude); }
+::-webkit-scrollbar-thumb { background: var(--rose-light); border-radius: 3px; }
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.6s ease forwards; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+/* Custom utilities */
+.text-rose { color: var(--rose); }
+.text-gold { color: var(--gold); }
+.text-brown { color: var(--brown); }
+.text-brown-dark { color: var(--brown-dark); }
+.bg-rose { background-color: var(--rose); }
+.bg-nude { background-color: var(--nude); }
+.bg-cream { background-color: var(--cream); }
+.bg-rose-pale { background-color: var(--rose-pale); }
+.border-rose { border-color: var(--rose); }
+.border-gold { border-color: var(--gold); }
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(212, 114, 106, 0.15);
+}
+
+/* Gradient dividers */
+.divider-rose {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--rose-light), transparent);
+}
+
+/* Star rating */
+.stars { color: var(--gold); }
