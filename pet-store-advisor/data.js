@@ -2209,4 +2209,110 @@ const NOTES = [
       ],
     },
   },
+
+  {
+    id: 'dieta-i-zywienie-krolikow',
+    title: 'Dieta królika – 70% siano, 30% reszta, i czego KATEGORYCZNIE nie dawać',
+    category: 'Gryzonie i ptaki',
+    tags: ['króliki', 'gryzonie', 'dieta', 'siano', 'żywienie', 'warzywa', 'owoce', 'zioła'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [
+        { level: 'red', text: 'KATEGORYCZNE NIE dla niezdrowego żywienia królików! Mieszanki karmowe (kolorowe granulki) zawierają barwniki, sól, sztuczne dodatki i produkty szkodliwe dla królików: zboża, wyroby piekarnicze – w ich składzie nie ma składników bogatych we włóknik, których królik potrzebuje. Kolby, dropsy i inne "przysmaki" ze sklepów to przede wszystkim zboża, kolorowe dodatki, produkty piekarnicze i mleczarskie oraz słodkie lepiki – niczego z tego królik jeść nie powinien.' },
+      ],
+      najwazniejsze: [
+        { text: 'Dieta królika powinna składać się w ok. 70% z siana i traw – to absolutna podstawa żywienia, zapewniająca niezbędne włókno i ścieranie stale rosnących zębów.', source: 'training' },
+        { text: 'Pozostałe ok. 30% diety to: warzywa (podawane codziennie), owoce (tylko jako przysmak, 2–3 razy w tygodniu), gałązki (do gryzienia i ścierania zębów) oraz zielone i suszone zioła.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Siano i trawy (70% diety): powinny być dostępne non-stop, w nieograniczonej ilości. Siano jest kluczowe dla prawidłowej pracy przewodu pokarmowego królika i dla ścierania zębów, które rosną przez całe życie.', source: 'training' },
+        { text: 'Warzywa: podawane codziennie – np. marchew, pietruszka, seler naciowy, brokuły, szpinak (w małych ilościach), papryka, koper, sałata (nie lodowa). Niektóre warzywa mogą być podawane w dużych ilościach (np. siano traw), inne z umiarem.', source: 'extra' },
+        { text: 'Owoce: traktowane jako przysmak, 2–3 razy w tygodniu w małych porcjach – np. jabłko, gruszka, truskawki, maliny, jagody. Ze względu na zawartość cukru nie powinny stanowić dużej części diety.', source: 'training' },
+        { text: 'Gałązki: jabłoń, grusza, leszczyna, wierzba – do gryzienia, wspomagają ścieranie zębów i zapewniają rozrywkę.', source: 'extra' },
+        { text: 'Zielone i suszone zioła: np. koper, bazylia, mięta, rumianek, mniszek lekarski (mlecz), pokrzywa (suszona), babka lancetowata – mogą być podawane codziennie jako urozmaicenie diety i naturalne wsparcie zdrowia.', source: 'extra' },
+        { text: 'CZEGO NIE DAWAĆ: mieszanek karmowych "kolorowych" (granulki z barwnikami, zbożami, cukrem, solą), kolb zbożowych, dropsów, chrupek, chleba/bułek/ciastek, produktów mleczarskich, czekolady, cebuli, czosnku, ziemniaków, fasoli. Wszystkie te produkty mogą powodować problemy trawienne, otyłość lub poważne choroby u królika.', source: 'training' },
+        { text: 'Więcej informacji o żywieniu królików: www.kroliki.net (polecane w materiałach szkoleniowych).', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Kupuję karmę z kolorowymi granulkami, bo królik je zjada" — Doradca: "To zrozumiałe, ale niestety takie mieszanki zawierają głównie zboża, cukier, barwniki i sól – składniki, które królik nie powinien jeść. Podstawą diety królika jest siano (70%) i świeże warzywa (codziennie). Zamiast kolorowych granulek polecam dobrą karmę ziołową/sianową bez zbóż."', source: 'extra' },
+        { text: 'Klient: "Królik kocha kolby i dropsy ze sklepu" — Doradca: "Kolby, dropsy i podobne \'przysmaki\' to głównie zboża, produkty piekarnicze i mleczarskie z kolorowymi dodatkami – niestety dla królika to jak fast food. Lepszym przysmakiem jest kawałek jabłka, marchewki lub suszone zioła."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czym obecnie jest karmiony królik – czy ma stały dostęp do siana?', source: 'extra' },
+        { text: 'Czy królik dostaje kolorowe mieszanki, kolby lub dropsy (jeśli tak – warto zaproponować stopniową zmianę diety)?', source: 'extra' },
+        { text: 'Czy królik dostaje codziennie świeże warzywa i ma dostęp do gałązek do gryzienia?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż kolorowych mieszanek karmowych jako "pełnowartościowej karmy dla królika" – to produkt szkodliwy, nie powinien stanowić podstawy żywienia.', source: 'training' },
+        { text: 'Polecanie kolb zbożowych i dropsów jako "przysmaków" – to odpowiedniki słodyczy i fast foodu dla królika, mogą powodować otyłość, problemy z zębami i trawienne.', source: 'training' },
+        { text: 'Brak pytania o siano – jeśli klient kupuje tylko suchą karmę, warto dopytać, czy królik ma stały dostęp do siana (to 70% diety!).', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: 'Dieta królika: 70% siano i trawy (non-stop), 30% warzywa (codziennie) + owoce (2–3x/tydzień jako przysmak) + gałązki + zioła.', source: 'training' },
+        { text: 'KATEGORYCZNE NIE: kolorowe mieszanki karmowe, kolby, dropsy, zboża, chleb, produkty mleczarskie, słodkie lepiki.', source: 'training' },
+        { text: 'Strona www.kroliki.net – dodatkowe źródło wiedzy o żywieniu królików.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Temat "czego nie dawać królikowi" to silny argument sprzedażowy przy zamianie kolorowych mieszanek na karmę sianową/ziołową – klient doceni edukację, a sklep zwiększy sprzedaż lepszych produktów.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'kociak-niezbednik-i-pierwsze-kroki',
+    title: 'Niezbędnik dla kociaka – co kupić, jak przygotować dom i zadbać o zdrowie',
+    category: 'Koty',
+    tags: ['koty', 'kociaki', 'checklist', 'niezbędnik', 'pierwsze kroki', 'szczepienia', 'bezpieczeństwo', 'kuweta', 'obsługa klienta'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Szczepienia ochronne kociaka powinny być rozpoczęte już od ok. 8. tygodnia życia (tzw. "program startowy"). Klient powinien skonsultować się z weterynarzem w sprawie zalecanego schematu szczepień – jest to kluczowe zwłaszcza w pierwszych miesiącach życia kociaka.' },
+      ],
+      najwazniejsze: [
+        { text: 'Na kilka dni przed przybyciem kociaka do domu należy przygotować wszystko, co będzie potrzebne: legowisko, miski na jedzenie i wodę, kuwetę z żwirkiem i kilka zabawek. To też idealna okazja do zakupów w Maxi Zoo – klient kupuje cały zestaw startowy naraz.', source: 'training' },
+        { text: 'Checklist "Niezbędnik dla kociaka" obejmuje 6 kategorii: Jedzenie i picie, Higiena i pielęgnacja, Odpoczynek i sen, Zabawa i trening, Bezpieczeństwo i podróże, Drapanie.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Jedzenie i picie: karma odpowiednia dla kociąt (kitten), miska na karmę, miska na wodę, przysmaki dla kociąt.', source: 'training' },
+        { text: 'Higiena i pielęgnacja: szczotka/grzebień do sierści, środki na pchły i kleszcze (odpowiednie dla kociąt!), produkty do pielęgnacji uszu, nożyczki do pazurków, kuweta, łopatka do kuwety, żwirek.', source: 'training' },
+        { text: 'Odpoczynek i sen: legowisko, koc, domek/kryjówka (kocięta potrzebują spokojnego miejsca, gdzie mogą się schować i czuć bezpiecznie).', source: 'training' },
+        { text: 'Zabawa i trening: hamak na kaloryfer/parapet, wędka dla kota, zabawki interaktywne, tunel, drapak (kocięta uczą się drapania od małego – lepiej, żeby drapały drapak niż meble).', source: 'training' },
+        { text: 'Bezpieczeństwo i podróże: obroża/szelki, smycz, kojec/transporter, siatka ochronna na okno lub balkon (kluczowe – kocięta są ciekawskie i mogą wypaść!), zabawki do transportera.', source: 'training' },
+        { text: 'Drapanie: wieża do drapania, mata do drapania, drapak-słupek – kocięta muszą mieć miejsce do drapania od pierwszego dnia, żeby nie przyzwyczaiły się do drapania mebli.', source: 'training' },
+        { text: '6 porad na dobry początek kociaka w nowym domu: 1) Pozwól kociakowi poznać nowe otoczenie we własnym tempie – nie zmuszaj go do eksploracji. 2) Wyznacz mu spokojne, ciche miejsce na start (np. jeden pokój). 3) Nie zmuszaj do kontaktu – niech kociak sam podejdzie, gdy będzie gotowy. 4) Zadbaj o prawidłowe żywienie karmą kitten. 5) Regularnie czyść kuwetę (kocięta mogą odmówić korzystania z brudnej kuwety). 6) Zabezpiecz dom – okna, balkony, kable, rośliny trujące, drobne przedmioty do połknięcia.', source: 'training' },
+        { text: 'Optymalne "miejsce ustronne" (kuweta): kuwetę umieść w spokojnym, łatwo dostępnym miejscu, z dala od misek na jedzenie i wodę. Koty nie lubią załatwiać się w pobliżu miejsca, gdzie jedzą. Kuweta powinna być wystarczająco duża i czyściona regularnie – minimum raz dziennie usuwanie zbrylonych odchodów.', source: 'training' },
+        { text: 'Zdrowie kociaka: szczepionki pomagają chronić kocięta przed wieloma groźnymi chorobami – program szczepień podstawowych ("program startowy") można rozpocząć już od ok. 8. tygodnia życia. Warto też zaplanować regularne wizyty kontrolne u weterynarza w pierwszych miesiącach oraz zadbać o odrobaczanie i profilaktykę przeciwpasożytniczą (odpowiednimi preparatami dla kociąt).', source: 'training' },
+        { text: 'Bezpieczne dorastanie: zabezpiecz okna i balkony siatkami ochronnymi (kocięta są ciekawskie i mogą wypaść), usuń lub zabezpiecz rośliny trujące dla kotów (np. lilia, filodendron, aloes), schowaj kable elektryczne, drobne przedmioty do połknięcia (gumki, sznurki, spinacze) oraz środki chemiczne.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Kupuję pierwszego kota – co będę potrzebować?" — Doradca: "Mam gotową checklistę – przejdźmy przez 6 kategorii: jedzenie (karma kitten + miski), higiena (kuweta, żwirek, szczotka, nożyczki do pazurków), odpoczynek (legowisko, koc), zabawa (wędka, piłki, tunel), bezpieczeństwo (transporter, siatki na okna/balkon) i koniecznie drapak – od pierwszego dnia."', source: 'extra' },
+        { text: 'Klient: "Kociak się chowa i nie chce wyjść" — Doradca: "To zupełnie normalne w pierwszych dniach – kociak potrzebuje czasu, żeby oswoić się z nowym otoczeniem. Najlepiej zostawić go w jednym pokoju z legowiskiem, miskami, kuwetą i zabawką, i pozwolić mu wyjść, gdy sam będzie gotowy."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy to pierwszy kot klienta (jeśli tak, warto przejść całą checklistę i zaoferować zestaw startowy)?', source: 'extra' },
+        { text: 'Czy klient ma zabezpieczone okna i balkon siatkami ochronnymi?', source: 'extra' },
+        { text: 'Czy kociak ma już wyznaczony termin wizyty u weterynarza / szczepień?', source: 'extra' },
+        { text: 'W jakim wieku jest kociak i jaką karmą był dotychczas karmiony (ważne przy doborze karmy kitten)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż karmy "adult" dla kociaka – kocięta mają inne potrzeby żywieniowe niż dorosłe koty, potrzebują karmy "kitten" z wyższą zawartością białka i energii.', source: 'extra' },
+        { text: 'Pomijanie siatek na okna/balkon w rozmowie z klientem – to najczęstsza przyczyna urazów i śmierci młodych kotów w mieszkaniach.', source: 'extra' },
+        { text: 'Nieprzypomnienie o drapaku – kociak bez drapaka od pierwszego dnia szybko przyzwyczai się do drapania mebli i tapicerki.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: '6 kategorii niezbędnika: jedzenie i picie, higiena i pielęgnacja, odpoczynek i sen, zabawa i trening, bezpieczeństwo i podróże, drapanie.', source: 'training' },
+        { text: '6 porad na start: pozwól poznać otoczenie we własnym tempie, spokojne miejsce na start, nie zmuszaj do kontaktu, karma kitten, czysta kuweta, zabezpiecz dom.', source: 'training' },
+        { text: 'Kuweta z dala od misek, czyściona min. 1x/dzień.', source: 'training' },
+        { text: 'Szczepienia od ok. 8. tygodnia życia – skierować klienta do weterynarza.', source: 'training' },
+        { text: 'Siatki na okna/balkon = KONIECZNOŚĆ przy kociaku.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Klient kupujący pierwszego kota to najlepsza okazja do cross-sellingu w całym sklepie – checklist obejmuje produkty z kilku działów (karma, akcesoria, higiena, zabawki, bezpieczeństwo, drapaki). Warto przejść z klientem przez wszystkie 6 kategorii.', source: 'extra' },
+      ],
+    },
+  },
 ];
