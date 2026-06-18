@@ -2315,4 +2315,59 @@ const NOTES = [
       ],
     },
   },
+
+  {
+    id: 'szczeniak-niezbednik-i-pierwsze-kroki',
+    title: 'Niezbędnik dla szczeniaka – checklist, pierwsze kroki, spacery, zdrowie i budowanie więzi',
+    category: 'Psy',
+    tags: ['psy', 'szczeniaki', 'checklist', 'niezbędnik', 'pierwsze kroki', 'szczepienia', 'spacery', 'więź', 'żywienie', 'obsługa klienta'],
+    updated: '2026-06-15',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Koniecznie skontaktuj się z lekarzem weterynarii, jeśli u szczeniaka zauważysz: utratę łaknienia lub wzmożony apetyt, chudnięcie/częste wymioty/nagły przyrost masy ciała, brak wypróżnień lub biegunkę trwającą dłużej niż kilka dni, wyciek wydzieliny z nosa, zaczerwienione powieki lub oczy, uporczywy kaszel/odruch wymiotny, lub wzrost temperatury ciała powyżej 39,5°C.' },
+      ],
+      najwazniejsze: [
+        { text: 'Checklist "Niezbędnik dla szczeniaka" obejmuje 6 kategorii: Jedzenie i picie (karma sucha i mokra dla szczeniąt, miski, przysmaki), Higiena i pielęgnacja (szczotka, podkładki higieniczne, nożyczki do pazurków, środki na pchły/kleszcze), Odpoczynek i sen (legowisko/domek, poduszka, koc), Zabawa i trening (zabawki interaktywne, gryzaki, akcesoria treningowe), Bezpieczeństwo (obroża, smycz, adresówka, akcesoria odblaskowe), Spacery i podróże (transporter, mata samochodowa, pas bezpieczeństwa, bariarka).', source: 'training' },
+        { text: 'Trafiając do nowego domu, mały szczeniak musi stopniowo pogodzić się z separacją od swojej psiej rodziny – a jednocześnie zacząć od nowa budować więź emocjonalną z nowym opiekunem i resztą domowników. To kluczowy moment, który wymaga cierpliwości i odpowiedniego przygotowania.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: '7 porad na dobry początek ze szczeniakiem: 1) Pozwól mu poznawać pomieszczenia nowego domu we własnym tempie – w pierwszych dniach unikaj zbyt wielu odwiedzin i zgiełku. 2) Maluch nie powinien spędzać samotnie pierwszych nocy. 3) Zapewnij przytulne legowisko – szczenię może potrzebować nawet do 18h snu/dobę. 4) Wykorzystuj czas na wspólną zabawę, żeby wzmacniać więź i pozbyć się nadmiaru energii. 5) Na początku podawaj karmę, którą szczeniak znał z poprzedniego domu. 6) Zadbaj o dobrą atmosferę przy pierwszym spotkaniu z innymi zwierzętami w domu. 7) Zabezpiecz dom: usuń trujące rośliny, schowaj środki czyszczące/lekarstwa/drobne elementy, sprawdź ogrodzenie i zabezpiecz oczka wodne.', source: 'training' },
+        { text: 'Wspólne spacery: małego szczeniaka trzeba dość często wyprowadzać – z początku na krótki czas – zawsze po przebudzeniu lub po wspólnej zabawie. Planuj 4–5 spacerów dziennie. Pupil musi mieć też możliwość załatwiania się w nocy, gdy się obudzi. Od samego początku przed każdym wyjściem zakładaj szelki i smycz, żeby maluch przyzwyczajał się do rutyny.', source: 'training' },
+        { text: 'Zdrowe żywienie szczeniąt: szczenięta rosną bardzo szybko – psy małych ras osiągają dorosłe rozmiary nawet w 8. miesiącu życia, a duże rasy dopiero ok. 2. roku życia. Maluchy mają zwiększone zapotrzebowanie na energię i składniki odżywcze, dlatego warto podawać im karmy specjalnie dla szczeniąt, dostosowane do docelowej wielkości psa i jego potrzeb żywieniowych w fazie wzrostu. Warto regularnie monitorować masę ciała i dostosowywać porcje.', source: 'training' },
+        { text: 'Zdrowie pupila: regularne kontrole stanu zdrowia, rutynowe szczepienia i zabiegi przeciwpasożytnicze to dobre praktyki dające szansę na długie i zdrowe życie. Warto mieć jednego wybranego i zaufanego lekarza weterynaryjnego od samego początku.', source: 'training' },
+        { text: 'Budowanie trwałej więzi: od pierwszego dnia pracuj nad nawiązaniem emocjonalnej więzi ze szczeniakiem. Podstawa to zdobycie jego zaufania oraz życzliwa konsekwencja w wychowaniu – ustal zasady i konsekwentnie je egzekwuj, bez stosowania jakiejkolwiek przemocy. Pracę nad więzią zacznij od wspólnych ćwiczeń i zabaw, nagradzając pupila smakołykiem lub pochwałą – w ten sposób uczysz psa koncentrować uwagę na Tobie.', source: 'training' },
+        { text: '3 zasady budowania silnej więzi: 1) Spędzaj ze szczeniakiem jak najwięcej czasu – jeśli to możliwe, zaplanuj urlop na pierwsze tygodnie; na samym początku szczeniaka nie wolno zostawiać bez opieki. 2) Bądź konsekwentny i pewny siebie – pies oczekuje klarownych zasad; ani nadmierny rygor, ani zbytnia pobłażliwość nie budują zaufania. 3) Z radością i spokojem towarzysz pupilowi w odkrywaniu świata – niech każda wspólna aktywność umacnia więź między Wami.', source: 'training' },
+        { text: 'Połączenie aktywności zawodowej z posiadaniem psa jest jak najbardziej możliwe, o ile uda się zorganizować odpowiednią opiekę. Nie warto jednak robić tego ani zbyt wcześnie, ani zbyt często – pierwsze tygodnie są kluczowe dla zbudowania trwałej więzi z pupilem.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Kupuję pierwszego psa – szczeniaka. Co będę potrzebować?" — Doradca: "Mam gotową checklistę! Przejdźmy przez 6 kategorii: karma junior/puppy + miski, higiena (podkładki, szczotka, nożyczki do pazurków), legowisko i koc, zabawki i gryzaki, obroża/szelki/smycz z adresówką i odblaskami, oraz akcesoria do podróży (transporter lub mata samochodowa). Przede wszystkim pamiętaj: pierwsze dni to karmienie tym, co szczeniak już znał, cierpliwość i dużo wspólnego czasu."', source: 'extra' },
+        { text: 'Klient: "Jak często mam wyprowadzać szczeniaka?" — Doradca: "Na początku 4–5 razy dziennie, na krótkie spacery – zawsze po przebudzeniu i po zabawie. W nocy też dawaj mu możliwość wyjścia, gdy się obudzi. Z czasem spacery będą dłuższe, a częstotliwość mniejsza."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy to pierwszy pies klienta (pełna checklist + porady na start)?', source: 'extra' },
+        { text: 'Jaką karmą szczeniak był dotychczas karmiony w hodowli/schronisku (na początku kontynuować tę samą)?', source: 'extra' },
+        { text: 'Jaka rasa i docelowy rozmiar psa (wpływa na dobór karmy junior, rozmiaru szelek/obroży, legowiska)?', source: 'extra' },
+        { text: 'Czy klient ma inne zwierzęta w domu (ważne przy planowaniu pierwszego spotkania)?', source: 'extra' },
+        { text: 'Czy klient planuje podróżować ze szczeniakiem samochodem (transporter, mata, pas bezpieczeństwa)?', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż karmy "adult" szczeniakowi – szczenięta mają inne potrzeby żywieniowe (więcej energii, białka, składników odżywczych) i potrzebują karmy "puppy/junior" dostosowanej do ich docelowej wielkości.', source: 'extra' },
+        { text: 'Pominięcie podkładek higienicznych w zestawie startowym – szczeniaki uczą się czystości i na początku potrzebują podkładek w domu.', source: 'extra' },
+        { text: 'Brak pytania o bezpieczeństwo w domu – trujące rośliny, otwarte oczka wodne, drobne elementy do połknięcia to realne zagrożenia dla szczeniaka.', source: 'extra' },
+        { text: 'Doradzanie zbyt długich, intensywnych spacerów na początku – młody szczeniak potrzebuje krótkich, częstych wyjść, nie jednego długiego marszu.', source: 'extra' },
+      ],
+      dodatkowe: [],
+      powtorka: [
+        { text: '6 kategorii niezbędnika: jedzenie, higiena, odpoczynek, zabawa/trening, bezpieczeństwo, spacery/podróże.', source: 'training' },
+        { text: '7 porad na start: poznawanie domu we własnym tempie, nie samotne noce, legowisko i do 18h snu, wspólna zabawa, kontynuacja znanej karmy, spokojne spotkanie z innymi zwierzętami, zabezpieczenie domu.', source: 'training' },
+        { text: 'Spacery: 4–5x dziennie, krótkie, po przebudzeniu i po zabawie; w nocy też umożliwić wyjście.', source: 'training' },
+        { text: 'Budowanie więzi: konsekwencja bez przemocy, wspólny czas, nagrody za pożądane zachowania, nie zostawiać bez opieki w pierwszych tygodniach.', source: 'training' },
+        { text: 'Objawy wymagające wizyty u weterynarza: utrata apetytu, wymioty, biegunka >kilka dni, wyciek z nosa/oczu, kaszel, temp. >39,5°C.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Klient kupujący pierwszego szczeniaka to najlepsza okazja do cross-sellingu w całym sklepie – checklist obejmuje produkty z kilku działów (karma puppy/junior, miski, legowisko, zabawki/gryzaki, obroża/szelki/smycz, podkładki, transporter). Warto przejść z klientem przez wszystkie kategorie i pomóc skompletować pełny zestaw startowy.', source: 'extra' },
+      ],
+    },
+  },
 ];
