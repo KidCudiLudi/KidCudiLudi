@@ -2516,6 +2516,57 @@ const NOTES = [
   },
 
   {
+    id: 'biologia-kota-anatomia',
+    title: 'Biologia kota – anatomia, zmysły i budowa ciała (uszy, oczy, nos)',
+    category: 'Koty',
+    tags: ['koty', 'biologia', 'anatomia', 'zmysły', 'uszy', 'oczy', 'nos', 'węch', 'wzrok', 'słuch', 'narząd Jacobsona'],
+    updated: '2026-07-08',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Zdrowe koty ZAWSZE mają stojące uszy. Uszy spłaszczone do tyłu lub skulone to sygnał strachu, agresji lub bólu – nie wahania. Jeśli klient skarży się, że kot stale ma nienatural­nie ułożone uszy, warto zasugerować wizytę u weterynarza.' },
+        { level: 'green', text: 'Wiedza o anatomii kota pozwala profesjonalnie tłumaczyć klientom zachowania ich zwierząt i lepiej dobierać produkty (np. karmy o intensywnym zapachu dla kota z osłabionym węchem, zabawki angażujące słuch i wzrok).' },
+      ],
+      najwazniejsze: [
+        { text: 'Moduł "Biologia kota" z platformy Maxi Zoo Academy. Części ciała kota omawiane w module: Uszy, Oczy, Nos, Pysk, Włoski czuciowe, Skóra/okrywa włosowa, Układ szkieletowy, Narządy, Mięśnie, Ogon.', source: 'training' },
+        { text: 'Trzy najważniejsze zmysły kota: WĘCH (bardzo silny, decyduje o akceptacji jedzenia), SŁUCH (bardzo czuły, uszy ruchome we wszystkich kierunkach), WZROK (doskonały w słabym świetle dzięki "tęczówce").', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: '👂 USZY: Koty poruszają uszami na niesamowicie wiele sposobów – stawiają je, kładą po sobie i obracają we wszystkich kierunkach. Umożliwiają to mięśnie w okolicy głowy. Dzięki temu kot nie tylko lepiej słyszy i lokalizuje dźwięki, ale też komunikuje się – uszy są ważnym elementem mimiki i ekspresji kota (w komunikacji z innymi kotami i z człowiekiem). ZDROWE KOTY ZAWSZE MAJĄ STOJĄCE USZY.', source: 'training' },
+        { text: '👁️ OCZY (1) – widzenie w ciemności: Oczy kota "świecą" w ciemności – to efekt działania tzw. "tęczówki" (tapetum lucidum) znajdującej się w tylnej części oka. Tęczówka odbija docierające do niej światło i jest o wiele większa niż u ludzi. Dzięki temu koty widzą bardzo dobrze nawet przy słabym oświetleniu – są nocnymi myśliwymi.', source: 'training' },
+        { text: '👁️ OCZY (2) – źrenice: Podczas gdy rozszerzone źrenice kota są okrągłe (przy słabym świetle), przy dużej ilości światła przybierają szczelinopodobny kształt (pionowa szpara). To naturalny mechanizm regulacji ilości wpadającego światła – szerzej niż u ludzi.', source: 'training' },
+        { text: '👃 NOS (1) – budowa: Nos kota składa się z nozdrzy prowadzących do jamy nosowej oraz zatok, oddzielonych od siebie przegrodą nosową z kości i chrząstek. Jama nosowa ograniczona jest od dołu kością podniebienną i pokryta błoną śluzową. Za zmysł węchu odpowiedzialny jest konkretny obszar tej błony śluzowej. Kanał łzowy łączy oko kota z jego nosem.', source: 'training' },
+        { text: '👃 NOS (2) – funkcja: Dzięki zmysłowi węchu kot jest w stanie określić jakość karmy, np. rozpoznać zepsute pożywienie. Zmysł węchu kota jest bezpośrednio związany z jego zmysłem smaku – dlatego jedzenie musi dobrze pachnieć, żeby kot je zaakceptował. Widoczny z zewnątrz garb nosa (zbudowany z kości) umieszczony jest przed jamą nosową.', source: 'training' },
+        { text: '👃 NOS (3) – Narząd Jacobsona: Poza właściwym narządem węchu (na podniebieniu górnym) u wielu zwierząt, w tym kotów, występuje "narząd Jacobsona" (narząd przylemieszowy / vomeronasal). Służy do analizy specyficznych zapachów – np. feromonów. Gdy kot wącha coś intensywnie z otwartą pyszczkiem i charakterystyczną "głupią miną" (reakcja Flehmena) – właśnie używa narządu Jacobsona.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Dlaczego mój kot odmawia jedzenia, gdy pokarm wygląda normalnie?" — Doradca: "Kot ocenia jedzenie GŁÓWNIE przez węch, nie wzrok ani smak. Jeśli karma nie ma odpowiedniego zapachu (np. jest za zimna, za długo stała, lub lekko sfermentowała), kot jej odmówi. Spróbuj podgrzać karmę do temperatury ciała – intensywniej pachnie i jest bardziej apetyczna dla kota."', source: 'extra' },
+        { text: 'Klient: "Mój kot wącha rzeczy z dziwną miną, jakby coś śmierdziało" — Doradca: "To normalne i fascynujące zachowanie! Kat używa wtedy narządu Jacobsona – specjalnego dodatkowego organu węchu, który analizuje feromony i specyficzne zapachy. Ta "głupia mina" to tzw. reakcja Flehmena."', source: 'extra' },
+        { text: 'Klient: "Dlaczego mój kot widzi dobrze w nocy?" — Doradca: "Koty mają w oku specjalną warstwę odbijającą światło – tzw. tęczówkę (tapetum lucidum). Dlatego też oczy kota "świecą" w ciemności gdy świeci na nie latarka. Ta warstwa odbija i wzmacnia nawet minimalne ilości światła, co czyni koty świetnymi nocnymi myśliwymi."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy kot akceptuje karmę – czy może jest podawana za zimna? (węch decyduje, zimna karma słabiej pachnie)', source: 'extra' },
+        { text: 'Czy uszy kota są zawsze stojące? (spłaszczone permanentnie = sygnał problemu)', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Serwowanie karmy prosto z lodówki – zimna karma słabiej pachnie, a kot decyduje o jedzeniu przez węch. Zawsze podgrzewać do temperatury pokojowej lub ciała (~37°C).', source: 'extra' },
+        { text: 'Mylenie reakcji Flehmena z problemem zdrowotnym – "dziwna mina" przy wąchaniu to normalne użycie narządu Jacobsona, nie oznaka choroby.', source: 'extra' },
+        { text: 'Ignorowanie trwale spłaszczonych uszu – to ważny sygnał komunikacyjny kota (strach, ból, agresja). Klientowi warto zwrócić uwagę na język ciała kota.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Uszy: ruchome we wszystkich kierunkach (mięśnie w głowie) → słuch + ekspresja/mimika. Stojące uszy = zdrowy, spokojny kot.', source: 'training' },
+        { text: 'Oczy: tęczówka (tapetum lucidum) odbija światło → koty świetnie widzą w ciemności. Źrenice: okrągłe w ciemności, szczelinowate przy świetle.', source: 'training' },
+        { text: 'Nos: błona śluzowa → zmysł węchu; węch decyduje o akceptacji jedzenia; węch powiązany ze smakiem.', source: 'training' },
+        { text: 'Narząd Jacobsona (vomeronasal) = dodatkowy narząd węchu na podniebieniu → analiza feromonów → "głupia mina" (reakcja Flehmena) = normalne zachowanie!', source: 'training' },
+        { text: 'Karma musi pachnieć → podawać w temp. pokojowej/ciała, nie prosto z lodówki.', source: 'extra' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Wiedza o anatomii zmysłów kota to świetne narzędzie rozmowy z klientem. Tłumaczy: dlaczego kot odmawia zimnej karmy (węch), dlaczego reaguje na ruch za rogiem (oczy w słabym świetle), dlaczego węszy wszystko dokładnie przed jedzeniem (narząd Jacobsona). Klient, który to rozumie, chętniej kupuje produkty odpowiednio dobrane do natury kota.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
     id: 'biologia-i-ewolucja-kota',
     title: 'Kot i jego dzicy przodkowie – biologia, ewolucja, cechy odziedziczone po przodkach',
     category: 'Koty',
