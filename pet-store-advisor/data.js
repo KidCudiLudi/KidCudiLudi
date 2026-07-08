@@ -2547,6 +2547,8 @@ const NOTES = [
         { text: '🫀 NARZĄDY – układy: Wnętrze kota zawiera te same narządy co człowiek. Układ nerwowy: mózg i rdzeń kręgowy łączą całe ciało. Układ sercowo-naczyniowy: serce i płuca zaopatrują ciało w krew i tlen. Układ moczowy: nerki filtrują krew i transportują niepożądane substancje do pęcherza moczowego → wydalanie. Układ trawienny: przełyk, żołądek, jelita, trzustka, wątroba. (Szczegóły trawienia – osobny kurs: "Ogólne informacje dotyczące odżywiania się kotów")', source: 'training' },
         { text: '🐾 OGON – równowaga i komunikacja: Ogon zapewnia stabilizację i równowagę podczas skoków i chodzenia. Jest też kluczowym narzędziem KOMUNIKACJI – ruch i położenie ogona wiele mówią o nastroju kota: Ogon WYPROSTOWANY, skierowany w dół = zaciekawiony; końcówka lub tylna część ciała drga = przygotowanie do skoku. Ogon SPOKOJNY, czubek powoli kołysze się w przód i tył = zaniepokojony lub przestraszony.', source: 'training' },
         { text: '💪 MIĘŚNIE: U kotów krótkowłosych o dobrze rozwiniętej muskulaturze mięśnie są często bardzo dobrze widoczne pod skórą. Łączą kości, zapewniają stabilizację i umożliwiają ruch. Mięśnie są też w narządach – serce (mięsień sercowy) i przepona to przykłady mięśni wewnętrznych.', source: 'training' },
+        { text: '🐾 ŁAPY I PAZURY: Łapy kotów to ich "ręce i nogi". Każda łapa posiada 4 palce. Wszystkie pazury są zaopatrywane za pomocą naczyń krwionośnych. Do wspinaczki i polowania koty zawsze potrzebują ostrych pazurów – ponieważ jednak przeszkadzałyby w biegu, koty mogą niemal całkowicie WCIĄGNĄĆ swoje pazury (są wciągane). W ten sposób koty poruszają się praktycznie BEZSZELESTNIE, ale w razie potrzeby mogą błyskawicznie wystawić pazury. To doskonała adaptacja łowieckiego drapieżnika.', source: 'training' },
+        { text: '🔬 PODSUMOWANIE biologii kota: Z biologicznego punktu widzenia kot domowy i jego dzicy przodkowie mają tylko PODOBIEŃSTWA – różnice pojawiają się jedynie w skrajnych przypadkach, np. w wyniku hodowli jakościowej (rasy). Nie porównujemy kota do przodka żeby szukać różnic – bo biologicznie kot jest wciąż bardzo blisko swojego dzikiego pierwowzoru.', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient: "Dlaczego mój kot odmawia jedzenia, gdy pokarm wygląda normalnie?" — Doradca: "Kot ocenia jedzenie GŁÓWNIE przez węch, nie wzrok ani smak. Jeśli karma nie ma odpowiedniego zapachu (np. jest za zimna, za długo stała, lub lekko sfermentowała), kot jej odmówi. Spróbuj podgrzać karmę do temperatury ciała – intensywniej pachnie i jest bardziej apetyczna dla kota."', source: 'extra' },
@@ -2585,6 +2587,8 @@ const NOTES = [
         { text: 'Gruczoły potowe na łapach = głównie komunikacja (zapach przy drapaniu = znakowanie terytorium), nie termoregulacja.', source: 'training' },
         { text: 'Szkielet kota = taki sam jak człowieka (ssak), tylko na czworakach. Kręgosłup od głowy do ogona. Klatkę piersiową tworzą żebra (serce + płuca w środku).', source: 'training' },
         { text: 'Ogon wyprostowany/skierowany w dół + drżąca końcówka = zaciekawiony/przed skokiem. Ogon spokojny, powoli kołysze się = zaniepokojony/przestraszony.', source: 'training' },
+        { text: 'Łapy: 4 palce każda, pazury na naczyniach krwionośnych, WCIĄGANE (chowane) → bezszelestny ruch + błyskawiczne użycie w razie potrzeby.', source: 'training' },
+        { text: 'Biologia kota: kot domowy i dziki przodek = biologicznie prawie identyczni. Różnice tylko w skrajnych przypadkach (hodowla rasowa).', source: 'training' },
       ],
       kartaProduktu: null,
       zapamietaj: [
@@ -2934,6 +2938,47 @@ const NOTES = [
       kartaProduktu: null,
       zapamietaj: [
         { text: 'Podściółka i ściółka uzupełniająca = produkty kupowane regularnie, co kilka tygodni. Przy zakupie podściółki zawsze proponuj ściółkę uzupełniającą (inna funkcja, inny produkt) oraz sianko. To naturalny cross-sell dla każdego klienta z gryzoniem.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'select-gold-psy-marka',
+    title: 'FRESSNAPF SELECT GOLD dla psów – marka, pozycjonowanie, filozofia (Super Premium)',
+    category: 'Psy',
+    tags: ['psy', 'karma', 'SELECT GOLD', 'FRESSNAPF', 'Super Premium', 'marka własna', 'pozycjonowanie', 'premium', 'filozofia marki', 'opakowanie'],
+    updated: '2026-07-08',
+    sections: {
+      ostrzezenia: [
+        { level: 'green', text: 'SELECT GOLD to marka własna Fressnapf (segment Super Premium) – warto ją aktywnie polecać klientom szukającym wysokiej jakości karmy, bo łączy jakość premium z dostępną ceną i dostępnością tylko w Maxi Zoo / Fressnapf.' },
+      ],
+      najwazniejsze: [
+        { text: 'FRESSNAPF SELECT GOLD to marka własna sieci Fressnapf / Maxi Zoo w klasie SUPER PREMIUM. Pozycjonowana jako karma wysokiej jakości dla klientów, którzy chcą "rozpieszczać" swoje zwierzęta najlepszą karmą.', source: 'training' },
+        { text: 'Cel kursu: znać pozycjonowanie SELECT GOLD na rynku, porównywalne marki konkurencji, grupę docelową klientów, asortyment produktów, filozofię i koncepcję marki, właściwości opakowań, oferowaną jakość.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'POZYCJONOWANIE: Klienci pragną, aby ich zwierzęta były zdrowe i szczęśliwe, i aby mogli je rozpieszczać wysokiej jakości karmą. Fressnapf spełnia różne życzenia i potrzeby klientów za pomocą swojej różnorodnej oferty. Ze względu na wysoką jakość i funkcjonalność SELECT GOLD zalicza się do klasy produktów SUPER PREMIUM.', source: 'training' },
+        { text: 'FILOZOFIA MARKI: SELECT GOLD jest marką własną Fressnapf. Marka powstała z myślą o klientach, którzy traktują swoje zwierzęta jak członków rodziny i chcą dla nich najlepszego – bez kompromisów w kwestii jakości składników, smaku i funkcjonalności.', source: 'training' },
+        { text: 'TEMATY KURSU (18 stron, ok. 20 min): 1. Witamy, 2. Cele kursu, 3. Pozycjonowanie, 4. Porównywalne marki (konkurencja), 5. Grupa docelowa, 6. Filozofia i koncepcja marki, 7. Asortyment produktów, 8. Właściwości opakowań, 9. Oferowana jakość. (Kolejne moduły do uzupełnienia po dalszych szkoleniach.)', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Czym SELECT GOLD różni się od zwykłych karm?" — Doradca: "SELECT GOLD to nasza marka w klasie Super Premium – najwyższy segment karm. Wyróżnia się jakością składników, recepturami i funkcjonalnością. To karma dla klientów, którzy chcą dla swojego psa (lub kota) naprawdę najlepszego."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy klient szuka karmy premium / Super Premium? (→ SELECT GOLD jako pierwsza propozycja)', source: 'extra' },
+        { text: 'Czy klient "traktuje zwierzę jak członka rodziny"? (→ filozofia SELECT GOLD idealnie rezonuje z takim klientem)', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Mylenie SELECT GOLD z innymi markami własnymi Fressnapf – SELECT GOLD to wyraźnie segment Super Premium, nie standard.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'SELECT GOLD = marka własna Fressnapf, klasa Super Premium.', source: 'training' },
+        { text: 'Filozofia: zdrowe i szczęśliwe zwierzę, rozpieszczane wysokiej jakości karmą – klient traktujący zwierzę jak członka rodziny.', source: 'training' },
+        { text: 'Kurs obejmuje: pozycjonowanie, marki porównywalne, grupę docelową, asortyment, filozofię/koncepcję marki, opakowania, jakość (18 stron, 20 min).', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'To wstępne informacje z pierwszych stron kursu (IMG_0265-IMG_0267). Kolejne zdjęcia szkolenia uzupełnią szczegółowy asortyment, właściwości opakowań i porównywalne marki.', source: 'training' },
       ],
     },
   },
