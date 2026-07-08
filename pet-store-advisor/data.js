@@ -2516,6 +2516,57 @@ const NOTES = [
   },
 
   {
+    id: 'biologia-i-ewolucja-kota',
+    title: 'Kot i jego dzicy przodkowie – biologia, ewolucja, cechy odziedziczone po przodkach',
+    category: 'Koty',
+    tags: ['koty', 'biologia', 'ewolucja', 'udomowienie', 'żbik afrykański', 'Felis silvestris lybica', 'węch', 'smak', 'zachowanie', 'odżywianie', 'przemiana materii'],
+    updated: '2026-07-08',
+    sections: {
+      ostrzezenia: [
+        { level: 'green', text: 'Znajomość biologii i ewolucji kota pomaga zrozumieć i wytłumaczyć klientom wiele zachowań kota (wybredność, węszenie jedzenia, potrzeba kontaktu z innymi kotami), co buduje zaufanie i ułatwia doradzanie w zakresie żywienia i dobrostanu.' },
+      ],
+      najwazniejsze: [
+        { text: 'Przodkiem kota domowego jest KOT NUBIJSKI, inaczej żbik afrykański (Felis silvestris lybica). To ważna informacja – nie lew, nie tygrys, lecz stosunkowo niewielki dziki kot z Afryki Północnej i Półwyspu Arabskiego.', source: 'training' },
+        { text: 'Udomowienie kota rozpoczęło się ponad 8000 lat temu – około 6000 lat p.n.e. Mimo tak długiego czasu kot pozostał w wielu kwestiach bardzo podobny do swych dzikich przodków – również pod względem nawyków żywieniowych. To tłumaczy wybredność kotów i ich instynkty łowieckie.', source: 'training' },
+        { text: 'Udomowienie = stopniowy proces przekształcania dzikiego gatunku zwierząt w gatunek oswojony. Może dojść do znacznych zmian u udomowionego gatunku w porównaniu do gatunku dzikiego pod względem wyglądu, wielkości i zachowania – ale u kota te zmiany są mniejsze niż u psa.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'KOT NUBIJSKI (Felis silvestris lybica) – dziki przodek kota domowego. Pochodzi z Afryki Północnej i Półwyspu Arabskiego. Występuje na niemal wszystkich suchych obszarach: półpustynie, busz, tereny uprawne, otwarte tereny skaliste. Nie spotykamy go w lasach tropikalnych ani na pustyniach. Jest znacznie bardziej samotniczy niż kot domowy.', source: 'training' },
+        { text: '4 CECHY WSPÓLNE kota domowego i kota nubijskiego:', source: 'training' },
+        { text: '1. ZMYSŁ WĘCHU I SMAKU: Zmysł węchu jest znacznie silniej wykształcony u kota niż u człowieka. Służy do wyczuwania i sprawdzania źródeł pożywienia, otoczenia, osobników tego samego gatunku oraz innych żywych organizmów. Natomiast ZMYSŁ SMAKU jest słabo rozwinięty – niemożliwe jest np. rozpoznanie smaku słodkiego. Decyzja o zjedzeniu pożywienia zapada głównie w oparciu o WĘCH, nie smak.', source: 'training' },
+        { text: '2. ZACHOWANIE SPOŁECZNE: Kot nubijski i kot domowy są raczej samotnikami. Niektóre koty nubijskie decydują się na długoterminowe lub tymczasowe towarzystwo innych wybranych osobników. Młode pozostają przy matce nawet przez 12 miesięcy. Koty domowe są o wiele bardziej towarzyskie niż dzicy przodkowie – jako partnerów społecznych postrzegają nie tylko inne koty, ale też ludzi. Dlatego należy im zapewnić codzienny kontakt z osobnikami tego samego gatunku – innymi zwierzętami w domu lub kotami z sąsiedztwa na wspólnych wyjściach.', source: 'training' },
+        { text: '3. SPOSÓB ODŻYWIANIA: (wynika z kolejnych modułów szkolenia – informacje o żywieniu kota jako obligatoryjnego mięsożercy zawarte w notatce o diecie BARF dla kotów).', source: 'training' },
+        { text: '4. PRZEMIANA MATERII: (wynika z kolejnych modułów szkolenia – informacje o specyficznej przemianie materii kota zawarte w notatce o diecie BARF dla kotów).', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Dlaczego mój kot wącha jedzenie i odchodzi, choć jest głodny?" — Doradca: "Kot decyduje o zjedzeniu pokarmu głównie na podstawie węchu, nie smaku. Jeśli karma nie pachnie odpowiednio (np. jest za zimna, podgrzana, lub już lekko zepsuta), kot jej odmówi – nawet jeśli jest głodny. Spróbuj podawać karmę w temperaturze pokojowej lub lekko podgrzaną."', source: 'extra' },
+        { text: 'Klient: "Kot jest wybredny i ciągle chce zmian" — Doradca: "To normalne dla gatunku – kot nubijski jako dziki przodek polował na różne zdobycze, więc urozmaicenie diety jest wpisane w jego naturę. Rotacja smaków i rodzajów karmy jest zdrowa."', source: 'extra' },
+        { text: 'Klient: "Czy kot potrzebuje towarzystwa?" — Doradca: "Koty są bardziej towarzyskie niż się wydaje – to mit, że są całkowicie samotnikami. Kot domowy odziedziczył część instynktów dzikiego przodka (samotnictwo), ale jednocześnie jest o wiele bardziej uspołeczniony. Potrzebuje codziennego kontaktu – z innymi zwierzętami lub z ludźmi."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy klient wie, że kot decyduje o jedzeniu głównie na podstawie węchu? (tłumaczy wybredność)', source: 'extra' },
+        { text: 'Czy klient zapewnia kotu kontakt społeczny? (kot to nie stuprocentowy samotnik)', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Serwowanie karmy prosto z lodówki – zimna karma słabiej pachnie, kot może odmówić jedzenia. Zawsze podawać w temperaturze pokojowej lub lekko podgrzaną.', source: 'extra' },
+        { text: 'Przekonanie, że "kot jest zupełnie niezależny i nie potrzebuje towarzystwa" – koty domowe potrzebują kontaktu społecznego, inaczej cierpią na samotność i nudę.', source: 'extra' },
+        { text: 'Zostawianie mokrej karmy na cały dzień – kot, który ma stały dostęp do lekko zepsutej karmy, może odmawiać jedzenia (wrażliwy węch wyczuwa zmianę zapachu).', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Przodek kota domowego → KOT NUBIJSKI / żbik afrykański (Felis silvestris lybica), Afryka Północna i Półwysep Arabski.', source: 'training' },
+        { text: 'Udomowienie kota → ponad 8000 lat temu (~6000 lat p.n.e.).', source: 'training' },
+        { text: 'Węch SILNY (decyduje o jedzeniu), smak SŁABY (nie czuje słodkiego).', source: 'training' },
+        { text: 'Zachowanie: raczej samotnik z natury, ale kot DOMOWY jest bardziej towarzyski niż dziki przodek – potrzebuje kontaktu społecznego.', source: 'training' },
+        { text: 'Karma: podawać w temp. pokojowej lub podgrzaną – zimna słabiej pachnie, kot może odmówić.', source: 'extra' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Wiedza o ewolucji kota to świetne narzędzie sprzedażowe – tłumaczy klientom zachowania kota (wybredność, węszenie, potrzeba rotacji smaków) i uzasadnia rekomendacje produktowe. Klient, który rozumie DLACZEGO kot zachowuje się tak, a nie inaczej, chętniej kupuje odpowiednie produkty.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
     id: 'siano-dla-malych-zwierzat',
     title: 'Siano dla małych zwierząt – rodzaje, marki, różnice (MultiFit, REAL NATURE, FIT+FUN)',
     category: 'Gryzonie i ptaki',
