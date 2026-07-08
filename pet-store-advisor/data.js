@@ -2519,7 +2519,7 @@ const NOTES = [
     id: 'biologia-kota-anatomia',
     title: 'Biologia kota – anatomia, zmysły i budowa ciała (uszy, oczy, nos)',
     category: 'Koty',
-    tags: ['koty', 'biologia', 'anatomia', 'zmysły', 'uszy', 'oczy', 'nos', 'węch', 'wzrok', 'słuch', 'narząd Jacobsona'],
+    tags: ['koty', 'biologia', 'anatomia', 'zmysły', 'uszy', 'oczy', 'nos', 'węch', 'wzrok', 'słuch', 'narząd Jacobsona', 'wąsy', 'włoski czuciowe', 'zęby', 'sierść', 'podszerstek'],
     updated: '2026-07-08',
     sections: {
       ostrzezenia: [
@@ -2537,11 +2537,19 @@ const NOTES = [
         { text: '👃 NOS (1) – budowa: Nos kota składa się z nozdrzy prowadzących do jamy nosowej oraz zatok, oddzielonych od siebie przegrodą nosową z kości i chrząstek. Jama nosowa ograniczona jest od dołu kością podniebienną i pokryta błoną śluzową. Za zmysł węchu odpowiedzialny jest konkretny obszar tej błony śluzowej. Kanał łzowy łączy oko kota z jego nosem.', source: 'training' },
         { text: '👃 NOS (2) – funkcja: Dzięki zmysłowi węchu kot jest w stanie określić jakość karmy, np. rozpoznać zepsute pożywienie. Zmysł węchu kota jest bezpośrednio związany z jego zmysłem smaku – dlatego jedzenie musi dobrze pachnieć, żeby kot je zaakceptował. Widoczny z zewnątrz garb nosa (zbudowany z kości) umieszczony jest przed jamą nosową.', source: 'training' },
         { text: '👃 NOS (3) – Narząd Jacobsona: Poza właściwym narządem węchu (na podniebieniu górnym) u wielu zwierząt, w tym kotów, występuje "narząd Jacobsona" (narząd przylemieszowy / vomeronasal). Służy do analizy specyficznych zapachów – np. feromonów. Gdy kot wącha coś intensywnie z otwartą pyszczkiem i charakterystyczną "głupią miną" (reakcja Flehmena) – właśnie używa narządu Jacobsona.', source: 'training' },
+        { text: '👃 NOS (4) – fakty praktyczne: Koci nos (w zależności od osobnika ciemny lub różowy) przypomina w dotyku "mięsisty guziczek". Ważne: odcisk nosa kota jest TAK SAMO INDYWIDUALNY jak odcisk palca człowieka! Nos zrelaksowanego kota powinien być CHŁODNY i LEKKO WILGOTNY. Krótkotrwałe wysuszenie lub ocieplenie (po słońcu, zabawie) – normalne. Utrzymujące się dłużej odstępstwo → sygnał do wizyty weterynaryjnej.', source: 'training' },
+        { text: '👃 NOS (5) – koty brachycefaliczne: Skrócenie czaszki w hodowli (np. koty perskie, egzotyczne) doprowadziło do zmian w budowie nosa i podniebienia miękkiego, które UNIEMOŻLIWIAJĄ tym kotom swobodne oddychanie. Często konieczna jest operacja – i to gwarantuje tylko niewielką poprawę. To ważna informacja dla klientów kupujących koty płaskonosne!', source: 'training' },
+        { text: '🐱 WŁOSKI CZUCIOWE (wąsy/wibryssy): Należą do narządów zmysłu – dzięki nim koty mogą lepiej poznać swoje otoczenie. Włoski czuciowe są bezpośrednio połączone z naczyniami krwionośnymi (w przeciwieństwie do zwykłych włosów). Gdy coś dotyka włoska czuciowego, krew wprawiana jest w drgania → zamieniane na elektryczne sygnały nerwowe → mózg. Zmysł ten zapewnia bezpieczne poruszanie się nawet w CAŁKOWITEJ CIEMNOŚCI. Wąsy kota są mniej więcej tak szerokie jak samo ciało – to "linijka", która mówi kotowi czy zmieści się w otworze.', source: 'training' },
+        { text: '🦷 PYSK I ZĘBY: Koty mają zęby drapieżnika – oprócz trzonowców i siekaczy mają KŁY i OSTRE PRZEDTRZONOWCE. Szczęka kota wykonuje TYLKO ruchy horyzontalne (w przód i tył) – NIE może wykonywać ruchów rozcierających jak człowiek. Dlatego koty NIE są przystosowane do żucia pokarmu. Sposób jedzenia kota: odrywa kawałki i połyka je W CAŁOŚCI. To ważne przy wyborze wielkości kęsów w karmie!', source: 'training' },
+        { text: '🐱 SKÓRA I OKRYWA WŁOSOWA – budowa: Futro kota składa się z dwóch warstw: 1) WŁOSY ZEWNĘTRZNE (okrywowe) – dłuższe, twardsze; chronią przed warunkami pogodowymi (wiatr, deszcz). 2) PODSZERSTEK – krótszy, miękki; izoluje przed ciepłem i zimnem. Działa jak "kurtka na każdą pogodę". Gruczoły łojowe dostarczają włosom tłuszczów i minerałów oraz chronią je przed wilgocią. Anatomia futra: naskórek (epiderma) → skóra właściwa → gruczoły łojowe → mięśnie przywłosowe.', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient: "Dlaczego mój kot odmawia jedzenia, gdy pokarm wygląda normalnie?" — Doradca: "Kot ocenia jedzenie GŁÓWNIE przez węch, nie wzrok ani smak. Jeśli karma nie ma odpowiedniego zapachu (np. jest za zimna, za długo stała, lub lekko sfermentowała), kot jej odmówi. Spróbuj podgrzać karmę do temperatury ciała – intensywniej pachnie i jest bardziej apetyczna dla kota."', source: 'extra' },
         { text: 'Klient: "Mój kot wącha rzeczy z dziwną miną, jakby coś śmierdziało" — Doradca: "To normalne i fascynujące zachowanie! Kat używa wtedy narządu Jacobsona – specjalnego dodatkowego organu węchu, który analizuje feromony i specyficzne zapachy. Ta "głupia mina" to tzw. reakcja Flehmena."', source: 'extra' },
-        { text: 'Klient: "Dlaczego mój kot widzi dobrze w nocy?" — Doradca: "Koty mają w oku specjalną warstwę odbijającą światło – tzw. tęczówkę (tapetum lucidum). Dlatego też oczy kota "świecą" w ciemności gdy świeci na nie latarka. Ta warstwa odbija i wzmacnia nawet minimalne ilości światła, co czyni koty świetnymi nocnymi myśliwymi."', source: 'extra' },
+        { text: 'Klient: "Dlaczego mój kot widzi dobrze w nocy?" — Doradca: "Koty mają w oku specjalną warstwę odbijającą światło – tzw. tapetum lucidum. Dlatego też oczy kota "świecą" w ciemności gdy świeci na nie latarka. Ta warstwa odbija i wzmacnia nawet minimalne ilości światła, co czyni koty świetnymi nocnymi myśliwymi."', source: 'extra' },
+        { text: 'Klient: "Czy mogę przyciąć kotu wąsy?" — Doradca: "Absolutnie nie! Wąsy (włoski czuciowe) to organ zmysłu połączony bezpośrednio z układem nerwowym. Kot używa ich do orientacji w przestrzeni – dosłownie czuje nimi powietrze i otoczenie. Przycinanie wąsów to jak odebranie kotu zmysłu dotyku i orientacji przestrzennej."', source: 'extra' },
+        { text: 'Klient z kotem perskim: "Mój kot ciągle chrapie / ma problemy z oddychaniem" — Doradca: "To niestety bardzo częsty problem u kotów płaskonosnych (perskie, egzotyczne). Skrócona czaszka wynikająca z hodowli powoduje deformację nosa i podniebienia, które utrudniają swobodne oddychanie. Warto skonsultować się z weterynarzem – niekiedy konieczna jest operacja korygująca."', source: 'extra' },
+        { text: 'Klient: "Dlaczego mój kot łyka jedzenie bez żucia?" — Doradca: "To zupełnie normalne dla kota! Szczęka kota może wykonywać tylko ruchy w przód i tył – nie może rozcierać pokarmu jak my. Koty odrywają kawałki i połykają je w całości. Dlatego przy wyborze karmy mokrej warto zwrócić uwagę na wielkość kawałków – zbyt duże mogą być trudniejsze do przełknięcia."', source: 'extra' },
       ],
       pytania: [
         { text: 'Czy kot akceptuje karmę – czy może jest podawana za zimna? (węch decyduje, zimna karma słabiej pachnie)', source: 'extra' },
@@ -2551,6 +2559,9 @@ const NOTES = [
         { text: 'Serwowanie karmy prosto z lodówki – zimna karma słabiej pachnie, a kot decyduje o jedzeniu przez węch. Zawsze podgrzewać do temperatury pokojowej lub ciała (~37°C).', source: 'extra' },
         { text: 'Mylenie reakcji Flehmena z problemem zdrowotnym – "dziwna mina" przy wąchaniu to normalne użycie narządu Jacobsona, nie oznaka choroby.', source: 'extra' },
         { text: 'Ignorowanie trwale spłaszczonych uszu – to ważny sygnał komunikacyjny kota (strach, ból, agresja). Klientowi warto zwrócić uwagę na język ciała kota.', source: 'extra' },
+        { text: 'Przycinanie wąsów kotu – wąsy to narząd zmysłu (włoski czuciowe połączone z naczyniami krwionośnymi i układem nerwowym). NIE wolno ich przycinać!', source: 'extra' },
+        { text: 'Bagatelizowanie problemów z oddychaniem u kotów płaskonosnych (perskie, egzotyczne) – brachycefalia to poważna wada budowy wymagająca konsultacji weterynaryjnej.', source: 'extra' },
+        { text: 'Nos długo ciepły i suchy (nie chwilowo po zabawie/słońcu) – sygnał możliwej choroby; warto polecić wizytę u weterynarza.', source: 'training' },
       ],
       powtorka: [
         { text: 'Uszy: ruchome we wszystkich kierunkach (mięśnie w głowie) → słuch + ekspresja/mimika. Stojące uszy = zdrowy, spokojny kot.', source: 'training' },
@@ -2558,6 +2569,12 @@ const NOTES = [
         { text: 'Nos: błona śluzowa → zmysł węchu; węch decyduje o akceptacji jedzenia; węch powiązany ze smakiem.', source: 'training' },
         { text: 'Narząd Jacobsona (vomeronasal) = dodatkowy narząd węchu na podniebieniu → analiza feromonów → "głupia mina" (reakcja Flehmena) = normalne zachowanie!', source: 'training' },
         { text: 'Karma musi pachnieć → podawać w temp. pokojowej/ciała, nie prosto z lodówki.', source: 'extra' },
+        { text: 'Nos zrelaksowanego kota = chłodny i lekko wilgotny. Długo ciepły/suchy → weterynarz.', source: 'training' },
+        { text: 'Odcisk nosa kota = indywidualny jak odcisk palca człowieka.', source: 'training' },
+        { text: 'Włoski czuciowe (wąsy) = organ zmysłu; połączone z naczyniami krwionośnymi → sygnały nerwowe; umożliwiają orientację w ciemności. NIE przycinać!', source: 'training' },
+        { text: 'Pysk: zęby drapieżnika (kły + przedtrzonowce); szczęka TYLKO poziomo → brak żucia → kot odrywa i połyka w całości.', source: 'training' },
+        { text: 'Sierść: włosy okrywowe (ochrona przed pogodą) + podszerstek (izolacja termiczna). Gruczoły łojowe = tłuszcz i minerały, ochrona przed wilgocią.', source: 'training' },
+        { text: 'Koty brachycefaliczne (perskie, egzotyczne) – deformacja nosa i podniebienia z hodowli → problemy z oddychaniem → często konieczna operacja.', source: 'training' },
       ],
       kartaProduktu: null,
       zapamietaj: [
