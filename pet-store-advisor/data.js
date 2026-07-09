@@ -3024,4 +3024,68 @@ const NOTES = [
       ],
     },
   },
+
+  {
+    id: 'flawitol-suplementy-dla-psow',
+    title: 'dr Seidel FLAWITOL – suplementy dla psów (sierść, stawy, odporność, wiek, DEO)',
+    category: 'Zdrowie',
+    tags: ['psy', 'suplementy', 'FLAWITOL', 'dr Seidel', 'flawonoidy', 'aronia', 'stawy', 'sierść', 'skóra', 'szczenięta', 'senior', 'FEDIAF', 'glukozamina', 'chondroityna', 'HMB', 'kolagen', 'kwas hialuronowy'],
+    updated: '2026-07-09',
+    sections: {
+      ostrzezenia: [
+        { level: 'green', text: 'Linia FLAWITOL opracowana zgodnie z wytycznymi żywieniowymi FEDIAF (Europejska Federacja Producentów Karmy dla Zwierząt Domowych) – europejski standard naukowy uznawany przez organy regulacyjne i weterynarzy. Dobry argument dla klientów pytających o wiarygodność suplementów.' },
+        { level: 'yellow', text: 'FLAWITOL DEO: dawkowanie = 1 tabletka / 1 kg masy ciała (nie 1/10 kg jak reszta linii!). Znacznie większa porcja – pilnować przy rekomendacji.' },
+        { level: 'yellow', text: 'FLAWITOL dla Szczeniąt ≠ FLAWITOL dla Szczeniąt Dużych Ras – to dwa RÓŻNE produkty. Duże rasy wymagają zwiększonej zawartości miedzi i żelaza dla szybko rosnących kości. Zawsze pytać o rasę/wielkość szczeniaka!' },
+      ],
+      najwazniejsze: [
+        { text: 'FLAWONOIDY Z ARONII = unikatowy, wspólny składnik CAŁEJ linii FLAWITOL. 4 korzyści: 1) Chronią SERCE i MÓZG (krążenie, pamięć, koncentracja). 2) Zwalczają WOLNE RODNIKI (opóźniają starzenie, profilaktyka nowotworowa). 3) Wspierają ODPORNOŚĆ (mechanizmy obronne, kondycja). 4) Wspierają ZDROWE JELITA (flora bakteryjna, układ pokarmowy).', source: 'training' },
+        { text: 'FEDIAF = Europejska Federacja Producentów Karmy dla Zwierząt Domowych. Wyznacza żywieniowe standardy dla zwierząt domowych w Europie. Receptury FLAWITOL opracowane wg FEDIAF = najnowsza wiedza naukowa, uznawana przez weterynarzy i organy regulacyjne.', source: 'training' },
+        { text: 'Producent: Laboratorium DermaPharm Sp. z o.o., Warszawa. www.drseidel.pl', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'FLAWITOL NA ZDROWĄ SKÓRĘ I PIĘKNĄ SIERŚĆ (psy i koty): Wspomaga regenerację skóry, zapobiega wysuszeniu i łuszczeniu; przywraca połysk sierści; chroni przed wolnymi rodnikami. Stosować przy suchej/łuszczącej się skórze, matowej sierści i w czasie linienia. Składniki: Aronia azurowa, L-metionina, L-cysteina, Kolagen, Kwas hialuronowy. Formy: Tabletki 60/200 szt. (1 tab/10 kg) | Proszek 400 g (10 g/10 kg).', source: 'training' },
+        { text: 'FLAWITOL ARTRO (profilaktyka stawów): Kolagen + glukozamina + chondroityna wspomagają pracę stawów i naturalną regenerację chrząstek. Flawonoidy z aronii chronią tkankę łączną przed stresem oksydacyjnym i starzeniem. Zachowuje elastyczność stawów, sprzyja komfortowi ruchu. Składniki: Aronia azurowa, Wit. C, Glukozamina, Chondroityna. Formy: Tabletki 60/180 szt. (1 tab/10 kg).', source: 'training' },
+        { text: 'FLAWITOL DEO (neutralizacja nieprzyjemnych zapachów): Chlorofillina neutralizuje zapachy oddechu, ciała i odchodów od wewnątrz. Synergia z Yucca Schidigera wzmacnia efekt dezodorujący. Stosować też podczas cieczki/rui – neutralizuje zapachy hormonalne. Składniki: Aronia azurowa, Yucca Schidigera, Chlorofillina. Forma: Tabletki 60 szt. (1 tab/1 kg – inna dawka niż reszta!).', source: 'training' },
+        { text: 'FLAWITOL DLA SZCZENIĄT (małe i średnie rasy + suki ciężarne/karmiące): Dostosowany do potrzeb rosnącego organizmu. Chroni przed wolnymi rodnikami, zwiększa naturalną odporność. Składniki: Żelazo, Miedź, Kwas foliowy, Wit. A, E. Formy: Tabletki 120 szt. (1 tab/1 kg) | Proszek 400 g (3 g/10 kg).', source: 'training' },
+        { text: 'FLAWITOL DLA SZCZENIĄT DUŻYCH RAS (+ suki ciężarne/karmiące dużych ras): Zwiększona zawartość miedzi i żelaza → wspiera syntezę kolagenu, kluczowego dla szybko rosnących kości. Składniki: Żelazo, Miedź, Kwas foliowy, Wit. A, E. Formy: Tabletki 60/200 szt. (1 tab/1 kg) | Proszek 400 g (3 g/10 kg).', source: 'training' },
+        { text: 'FLAWITOL DLA DOROSŁYCH PSÓW: Witaminy, flawonoidy, mikro- i makroelementy. Wspiera utrzymanie zdrowia i dobrej kondycji. Codzienne uzupełnienie diety. Składniki: Aronia azurowa, kompleks witamin B. Formy: Tabletki 60/200 szt. (1 tab/10 kg) | Proszek 400 g (10 g/10 kg).', source: 'training' },
+        { text: 'FLAWITOL DLA PSÓW SENIORÓW (powyżej 7 roku życia): Wspiera kondycję i sprawność stawów; wzmacnia bariery ochronne przed stresem oksydacyjnym; pomaga spowalniać procesy starzenia. Składniki: Aronia azurowa, Lecytyna, HMB, Glukozamina, L-karnityna. Formy: Tabletki 60/200 szt. (1 tab/10 kg) | Proszek 400 g (10 g/10 kg).', source: 'training' },
+        { text: 'FLAWITOL DLA PSÓW AKTYWNYCH Z HMB: Wspiera kondycję podczas wzmożonej aktywności fizycznej, ułatwia odbudowę po wysiłku. HMB pomaga budować masę i wytrzymałość mięśni → prawidłowa sylwetka. Dla psów aktywnych, pracujących i o masywnej budowie ciała. Składniki: Aronia azurowa, L-karnityna, HMB, Wit. B1, B2, B12. Forma: Proszek 400 g (10 g/10 kg).', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Dlaczego FLAWITOL?" — Doradca: "FLAWITOL to linia opracowana zgodnie z wytycznymi FEDIAF – europejski standard żywieniowy, uznawany przez weterynarzy w całej Europie. Unikatem linii są flawonoidy z aronii – naturalny składnik, który jednocześnie chroni serce, mózg, stawy i jelita, zwalczając wolne rodniki."', source: 'extra' },
+        { text: 'Klient: "Mój pies ma matową sierść i łuszczącą się skórę" — Doradca: "FLAWITOL na Zdrową Skórę i Piękną Sierść – kolagen, kwas hialuronowy, L-cysteina i L-metionina regenerują skórę i przywracają połysk sierści. Dostępny w tabletkach i proszku."', source: 'extra' },
+        { text: 'Klient: "Pies kuleje, ma problemy ze stawami" — Doradca: "FLAWITOL ARTRO – glukozamina i chondroityna odbudowują chrząstkę, kolagen utrzymuje elastyczność stawów. Flawonoidy z aronii chronią tkankę łączną przed starzeniem. Przy regularnym stosowaniu pies porusza się znacznie swobodniej."', source: 'extra' },
+        { text: 'Klient: "Pies ma starszy wiek, chcę go wesprzeć" — Doradca: "FLAWITOL dla Psów Seniorów – specjalnie dla psów 7+. Zawiera HMB (mięśnie), glukozaminę (stawy), lecytynę (mózg), L-karnitynę (energia) i flawonoidy spowalniające starzenie."', source: 'extra' },
+        { text: 'Klient ze szczeniakiem dużej rasy: "Co dla szczeniaka owczarka/labradora?" — Doradca: "Koniecznie FLAWITOL dla Szczeniąt DUŻYCH RAS – nie zwykły FLAWITOL dla szczeniąt! Duże rasy rosną szybko i potrzebują więcej miedzi i żelaza do prawidłowej budowy kości. To osobny produkt."', source: 'extra' },
+        { text: 'Klient: "Pies śmierdzi z pyska i ma nieprzyjemny zapach ciała" — Doradca: "FLAWITOL DEO – chlorofillina i Yucca Schidigera neutralizują zapachy od wewnątrz: oddech, ciało, odchody. Dawkowanie: 1 tabletka na każdy kilogram wagi – więc uwaga, porcja jest wyższa niż w innych produktach linii."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki wiek psa? (szczenię małe/średnie / szczenię dużej rasy / dorosły / senior 7+)', source: 'extra' },
+        { text: 'Jaki problem główny? (sierść/skóra / stawy / zapachy / kondycja / aktywność / odporność)', source: 'extra' },
+        { text: 'Czy to duża rasa? (szczenięta dużych ras = INNY produkt z więcej Cu+Fe)', source: 'extra' },
+        { text: 'Czy pies jest aktywny fizycznie / pies pracujący? (→ FLAWITOL Aktywnych z HMB)', source: 'extra' },
+        { text: 'Czy suczka / kotka jest w cieczce? (→ FLAWITOL DEO też na zapachy hormonalne)', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Mylenie FLAWITOL dla Szczeniąt z FLAWITOL dla Szczeniąt Dużych Ras – duże rasy mają inne potrzeby żywieniowe (więcej Cu i Fe dla kości).', source: 'extra' },
+        { text: 'Błędna dawka FLAWITOL DEO: 1 tab/1 kg (nie 1/10 kg jak inne produkty). Przy psie 30 kg = 30 tabletek – nie mylić!', source: 'extra' },
+        { text: 'Traktowanie FLAWITOL ARTRO i FLAWITOL Senior jako zamienników – Senior to wsparcie całego procesu starzenia (HMB, lecytyna, L-karnityna), ARTRO skupia się wyłącznie na stawach i chrząstkach.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Wspólny mianownik całej linii = FLAWONOIDY Z ARONII → serce+mózg, wolne rodniki, odporność, jelita.', source: 'training' },
+        { text: 'Standard FEDIAF = europejskie wytyczne żywieniowe → wiarygodność naukowa receptur.', source: 'training' },
+        { text: 'Skóra/sierść → Skóra i Sierść (kolagen, kwas hialuronowy, L-cysteina) | 1 tab/10 kg', source: 'training' },
+        { text: 'Stawy → ARTRO (glukozamina + chondroityna + kolagen) | 1 tab/10 kg', source: 'training' },
+        { text: 'Zapachy → DEO (chlorofillina + Yucca) | UWAGA: 1 tab/1 kg!', source: 'training' },
+        { text: 'Szczenię małe/średnie → Dla Szczeniąt | Szczenię dużej rasy → Dużych Ras (więcej Cu+Fe)', source: 'training' },
+        { text: 'Dorosły → Dla Dorosłych | Senior 7+ → Dla Seniorów (HMB, lecytyna, glukozamina, L-karnityna)', source: 'training' },
+        { text: 'Aktywny/pracujący → Aktywnych z HMB (masa i wytrzymałość mięśni) | tylko proszek', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'FLAWITOL pokrywa cały cykl życia psa i kluczowe problemy zdrowotne jedną linią. Przy każdym kliencie z psem warto zapytać o wiek i aktualny problem – zawsze znajdzie się pasujący produkt. Argument siły: flawonoidy z aronii we wszystkich produktach + zgodność z FEDIAF = przewaga nad losowymi suplementami z internetu.', source: 'extra' },
+      ],
+    },
+  },
 ];
