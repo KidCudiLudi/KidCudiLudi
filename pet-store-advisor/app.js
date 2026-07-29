@@ -79,7 +79,7 @@ function loadCustomNotes() {
 }
 
 function saveCustomNotes(notes) {
-  localStorage.setItem(STORAGE_KEY_NOTES, JSON.stringify(notes));
+  try { localStorage.setItem(STORAGE_KEY_NOTES, JSON.stringify(notes)); } catch (e) {}
 }
 
 let CUSTOM_NOTES = loadCustomNotes();
@@ -97,15 +97,16 @@ function applyTheme(theme) {
 }
 
 function initTheme() {
-  const saved = localStorage.getItem(STORAGE_KEY_THEME) ||
-    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  applyTheme(saved);
+  let saved;
+  try { saved = localStorage.getItem(STORAGE_KEY_THEME); } catch (e) {}
+  const theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  applyTheme(theme);
 }
 
 function toggleTheme() {
   const current = document.documentElement.getAttribute('data-theme');
   const next = current === 'dark' ? 'light' : 'dark';
-  localStorage.setItem(STORAGE_KEY_THEME, next);
+  try { localStorage.setItem(STORAGE_KEY_THEME, next); } catch (e) {}
   applyTheme(next);
 }
 
