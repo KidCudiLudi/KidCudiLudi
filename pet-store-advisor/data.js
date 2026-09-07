@@ -3059,6 +3059,50 @@ const NOTES = [
   },
 
   {
+    id: 'siersc-psa-budowa-i-typy',
+    title: 'Sierść psa – budowa anatomiczna i typy sierści (6 typów)',
+    category: 'Pielęgnacja i higiena',
+    tags: ['psy', 'sierść', 'pielęgnacja', 'grooming', 'budowa', 'typy sierści', 'podszerstek', 'włosy okrywowe', 'rasy'],
+    updated: '2026-09-07',
+    sections: {
+      ostrzezenia: [],
+      najwazniejsze: [
+        { text: 'Sierść psa składa się z 2 warstw: 1) WŁOSY OKRYWOWE (ościste) – dłuższe, twardsze, chronią przed warunkami zewnętrznymi (deszcz, słońce, zarysowania). 2) PODSZERSTEK – krótszy, miękki, izoluje od ciepła i zimna. Gruczoł łojowy natłuszcza włos od korzenia.', source: 'training' },
+        { text: 'U psów wyróżniamy 6 typów sierści: podwójna, długa (długa podwójna), gładka, krótka, szorstka, kręcona. Każdy typ wymaga innej pielęgnacji i innych produktów.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Ponad 400 uznanych ras psów różniących się wielkością, budową ciała i owłosieniem – od niemal bezwłosych grzywaczy chińskich do węgierskich puli z "rastalokami".', source: 'training' },
+        { text: '--- BUDOWA ANATOMICZNA SIERŚCI ---', source: 'training' },
+        { text: 'Włosy okrywowe (ościste) – dłuższe, twardsze; ochrona przed zewnętrznymi warunkami pogodowymi (deszcz, wiatr, słońce, tarcie). Podszerstek – krótszy, miękki, gęsty; izolacja termiczna (ciepło i zimno). Gruczoł łojowy – natłuszcza włosy, chroni skórę. Mięsień prostujący włos – unosi włos (np. przy agresji/strachu).', source: 'training' },
+        { text: '--- 1. SIERŚĆ PODWÓJNA ---', source: 'training' },
+        { text: 'Sierść podwójna – pierwotny, naturalny rodzaj sierści, który występuje również u wilków. Składa się ze średniodługich, gładko przylegających włosów ościstych z gęstym, krótszym podszerstkiem. Sezonowość: jesienią (zwłaszcza u psów zewnętrznych) tworzy się więcej podszerstka jako izolacja na zimę → wiosną podszerstek wypada KĘPKAMI (intensywne linienie = norma!). Rasy: Owczarek niemiecki, Labrador, Husky, Malamut.', source: 'training' },
+        { text: '--- 2. SIERŚĆ DŁUGA (długa podwójna) ---', source: 'training' },
+        { text: 'Sierść długa / sierść długa podwójna – dłuższe włosy ościste z gęstym podszerstkiem. Dwa warianty: A) SIERŚĆ DŁUGA PODWÓJNA – włosy okrywowe długie, miękkie i nieprzylegające; dłuższe włosy ("chorągiewki") na uszach i nogach; kępiaste "spodnie" na tylnych łapach; bujny ogon; na głowie, wewnątrz ucha, na przednich łapach i palcach włosy krótkie; na szyi dłuższe i gęstsze, niemal tworzące grzywę. Rasy: Golden Retriever, Collie. B) DŁUGIE WŁOSY NA CAŁYM CIELE – długie włosy na całym ciele łącznie z pyskiem, gdzie tworzą wyraźną brodę.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient: "Dlaczego mój Husky tak bardzo linieje wiosną?" — Doradca: "To całkowicie normalne – Husky ma sierść podwójną: gęsty podszerstek izolujący zimą jest intensywnie wyrzucany wiosną, kiedy pies „wymienia" zimowe futro. To tzw. linienie sezonowe. Polecam szczotki do podszerstka (np. furminator lub rake) i regularne szczotkowanie – to skróci okres linienia."', source: 'extra' },
+        { text: 'Klient pyta czym różni się pielęgnacja Labradora od Golden Retrievera: — Doradca: "Oba mają sierść podwójną, ale Golden ma długą podwójną – dodatkowe chorągiewki na uszach, ogonie i nogach wymagają częstszego rozczesywania, żeby nie tworzyły się kołtuny. Labrador ma krótszą wersję podwójnej – łatwiejszy w pielęgnacji, ale intensywnie linieje."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaka rasa i jaki typ sierści? (podwójna / długa / gładka / krótka / szorstka / kręcona) – od tego zależy dobór szczotki, grzebienia i szamponu.', source: 'extra' },
+        { text: 'Czy pies ma podszerstek? (→ tak: rake/furminator do wyczesywania; nie: standardowa szczotka/rękawica)', source: 'extra' },
+        { text: 'Czy jest sezon linienia? (wiosna/jesień u ras z podszerstkiem → intensywna pielęgnacja, więcej szczotkowania)', source: 'extra' },
+      ],
+      bledy: [],
+      powtorka: [
+        { text: 'Budowa sierści: włosy okrywowe (ochrona) + podszerstek (izolacja) + gruczoł łojowy (natłuszczanie).', source: 'training' },
+        { text: 'Sierść podwójna: owczarek niemiecki, Labrador, Husky, Malamut. Wiosenne linienie kępkami = norma.', source: 'training' },
+        { text: 'Sierść długa podwójna: Golden Retriever, Collie – chorągiewki na uszach/nogach, spodnie na tylnych łapach.', source: 'training' },
+        { text: '6 typów sierści: podwójna / długa / gładka / krótka / szorstka / kręcona. Kurs w toku – więcej typów do dodania.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Znajomość typów sierści = podstawa doradzania przy szczotkach, grzebieniach, szamponach i odżywkach. Zawsze pytaj o rasę i typ sierści przed rekomendacją produktu pielęgnacyjnego.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
     id: 'flawitol-suplementy-dla-psow',
     title: 'dr Seidel FLAWITOL – suplementy dla psów (sierść, stawy, odporność, wiek, DEO)',
     category: 'Zdrowie',
