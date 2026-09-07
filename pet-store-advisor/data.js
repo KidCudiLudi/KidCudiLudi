@@ -3077,7 +3077,9 @@ const NOTES = [
         { text: '--- 1. SIERŚĆ PODWÓJNA ---', source: 'training' },
         { text: 'Sierść podwójna – pierwotny, naturalny rodzaj sierści, który występuje również u wilków. Składa się ze średniodługich, gładko przylegających włosów ościstych z gęstym, krótszym podszerstkiem. Sezonowość: jesienią (zwłaszcza u psów zewnętrznych) tworzy się więcej podszerstka jako izolacja na zimę → wiosną podszerstek wypada KĘPKAMI (intensywne linienie = norma!). Rasy: Owczarek niemiecki, Labrador, Husky, Malamut.', source: 'training' },
         { text: '--- 2. SIERŚĆ DŁUGA (długa podwójna) ---', source: 'training' },
-        { text: 'Sierść długa / sierść długa podwójna – dłuższe włosy ościste z gęstym podszerstkiem. Dwa warianty: A) SIERŚĆ DŁUGA PODWÓJNA – włosy okrywowe długie, miękkie i nieprzylegające; dłuższe włosy ("chorągiewki") na uszach i nogach; kępiaste "spodnie" na tylnych łapach; bujny ogon; na głowie, wewnątrz ucha, na przednich łapach i palcach włosy krótkie; na szyi dłuższe i gęstsze, niemal tworzące grzywę. Rasy: Golden Retriever, Collie. B) DŁUGIE WŁOSY NA CAŁYM CIELE – długie włosy na całym ciele łącznie z pyskiem, gdzie tworzą wyraźną brodę.', source: 'training' },
+        { text: 'Sierść długa / sierść długa podwójna – dłuższe włosy ościste z gęstym podszerstkiem. Dwa warianty: A) SIERŚĆ DŁUGA PODWÓJNA – włosy okrywowe długie, miękkie i nieprzylegające; dłuższe włosy ("chorągiewki") na uszach i nogach; kępiaste "spodnie" na tylnych łapach; bujny ogon z chorągiewkami w dół; na głowie, wewnątrz ucha, na przednich łapach i palcach włosy krótkie; na szyi dłuższe i gęstsze, niemal tworzące grzywę. Rasy: Golden Retriever, Owczarek australijski, Border Collie, Berneński pies pasterski, Szpic, Leonberger, Eurasier, Owczarek długowłosy Collie. B) DŁUGIE WŁOSY NA CAŁYM CIELE – długie włosy na całym ciele łącznie z pyskiem, gdzie tworzą wyraźną brodę; sierść również dwuwarstwowa z gęstym podszerstkiem. Rasy: Owczarek staroangielski (bobtail), Owczarek francuski briard, Terier tybetański.', source: 'training' },
+        { text: '--- 3. SIERŚĆ GŁADKA ---', source: 'training' },
+        { text: 'Sierść gładka – psy gładkowłose mają długie włosy okrywowe, ale w przeciwieństwie do psów długowłosych NIE MAJĄ PODSZERSTKA. Ich sierść przypomina w dotyku ludzkie włosy. Dwa warianty: A) krótsze włosy na pysku, grzbiecie i przednich stronach nóg; B) gładkie włosy na całym ciele łącznie z wyraźną brodą i długimi brwiami. Rasy: Seter irlandzki, Chart afgański, Cocker Spaniel, Yorkshire Terrier, Maltańczyk, Shih Tzu.', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient: "Dlaczego mój Husky tak bardzo linieje wiosną?" — Doradca: "To całkowicie normalne – Husky ma sierść podwójną: gęsty podszerstek izolujący zimą jest intensywnie wyrzucany wiosną, kiedy pies „wymienia" zimowe futro. To tzw. linienie sezonowe. Polecam szczotki do podszerstka (np. furminator lub rake) i regularne szczotkowanie – to skróci okres linienia."', source: 'extra' },
@@ -3092,8 +3094,10 @@ const NOTES = [
       powtorka: [
         { text: 'Budowa sierści: włosy okrywowe (ochrona) + podszerstek (izolacja) + gruczoł łojowy (natłuszczanie).', source: 'training' },
         { text: 'Sierść podwójna: owczarek niemiecki, Labrador, Husky, Malamut. Wiosenne linienie kępkami = norma.', source: 'training' },
-        { text: 'Sierść długa podwójna: Golden Retriever, Collie – chorągiewki na uszach/nogach, spodnie na tylnych łapach.', source: 'training' },
-        { text: '6 typów sierści: podwójna / długa / gładka / krótka / szorstka / kręcona. Kurs w toku – więcej typów do dodania.', source: 'training' },
+        { text: 'Sierść długa podwójna: Golden, Owczarek australijski, Border Collie, Berneński, Szpic, Leonberger, Eurasier, Collie – chorągiewki, spodnie, grzywa.', source: 'training' },
+        { text: 'Sierść długa (całe ciało): Bobtail, Briard, Terier tybetański – broda, dwuwarstwowa z podszerstkiem.', source: 'training' },
+        { text: 'Sierść gładka: BEZ podszerstka. Rasy: Seter irlandzki, Chart afgański, Cocker Spaniel, Yorkshire Terrier, Maltańczyk, Shih Tzu.', source: 'training' },
+        { text: '6 typów sierści: podwójna / długa / gładka / krótka / szorstka / kręcona. Kurs w toku – typy 4–6 do dodania.', source: 'training' },
       ],
       kartaProduktu: null,
       zapamietaj: [
