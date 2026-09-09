@@ -3407,6 +3407,10 @@ const NOTES = [
         { text: 'JELITO CIENKIE (etap 3): Wchodzą tu wyjścia trzustki i pęcherzyka żółciowego → wydzielają niezbędne enzymy trawienne. Tu następuje rozkład i WCHŁANIANIE substancji odżywczych z pożywienia.', source: 'training' },
         { text: 'JELITO GRUBE (etap 4): Po wchłonięciu składników w jelicie cienkim masa pokarmowa trafia tu. Usuwana jest woda i zagęszczana masa kałowa. JELITO ŚLEPE (uwypuklenie jelita grubego) = kluczowa rola u ROŚLINOŻERCÓW: większość składników pokarmu roślinnego jest DOPIERO TUTAJ rozkładana i wykorzystywana przez bakterie i pierwotniaki (mikrobiom!).', source: 'training' },
         { text: 'ODBYTNICA (etap 5): Niestrawna część pokarmu zagęszczona przez odwodnienie i uformowana w kał → trafia do odbytnicy → wydalana w kontrolowany sposób.', source: 'training' },
+        { text: 'CECHY ZĘBÓW – ROZRÓŻNIENIE GRYZONI I ZAJĄCZAKOWATYCH: Króliki = zajączakowate (NIE gryzonie!). Różnica w uzębieniu: TYLKO królik ma dodatkowo zęby kołkowe (peg teeth). Obie grupy: siekacze rosną przez całe życie. U królika siekacze = tylko do CIĘCIA, nie do gryzienia. Zęby trzonowe rosną przez całe życie u: królików, świnek morskich, koszatniczek i szynszyli.', source: 'training' },
+        { text: 'ZĘBY ROŚLINOŻERCÓW: Siekacze i zęby policzkowe BEZ KORZENI = stale rosnące. Muszą być regularnie ścierane przez tarcie o siebie zębów. Dieta bogata w błonnik wymusza przeżuwanie = naturalne ścieranie. BRAK KŁÓW. Duże powierzchnie żucia zębów policzkowych = mechaniczne rozdrabnianie roślin. Zwierzęta roślinożerne wiele godzin dziennie jedzą → naturalne zużycie zębów. BEZ ODPOWIEDNIEJ DIETY → przerost zębów = poważny problem zdrowotny.', source: 'training' },
+        { text: 'ZĘBY WSZYSTKOŻERCÓW (np. szczur, chomik): Siekacze BEZ KORZENI (stale rosnące) + BRAK KŁÓW = cechy roślinożerców. Zęby policzkowe Z KORZENIAMI (nieodrastające) = cechy mięsożerców. Duże powierzchnie żucia do rozdrabniania mieszanego pokarmu.', source: 'training' },
+        { text: 'ZĘBY MIĘSOŻERCÓW (np. fretka): Jak psy i koty – do chwytania i rozdrabniania zdobytego pokarmu. DŁUGIE KŁY + zęby policzkowe dostosowane do ROZCINANIA. Mięsożercy połykają pokarm w większych kawałkach → zęby policzkowe MAŁE powierzchnie żucia (w przeciwieństwie do roślinożerców).', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Dlaczego siano jest tak ważne dla królika/świnki morskiej? "Ich układ trawienny ewolucyjnie przystosował się do diety bogatej w błonnik. Siano dostarcza włókna, które ściera stale rosnące zęby i karmi mikrobiom jelitowy – bez niego królik nie może prawidłowo trawić."', source: 'extra' },
@@ -3428,6 +3432,10 @@ const NOTES = [
         { text: 'Jelito grube: odwodnienie masy kałowej. JELITO ŚLEPE = mikrobiom roślinożerców → rozkład celulozy przez bakterie i pierwotniaki', source: 'training' },
         { text: 'Odbytnica: zagęszczenie + wydalanie kału', source: 'training' },
         { text: 'Zęby: stale rosnące (bez korzenia) vs. nieodrastające (z korzeniem) – gryzonie i króliki mają zęby stale rosnące!', source: 'training' },
+        { text: 'Roślinożercy: siekacze + zęby policzkowe bez korzeni, brak kłów, duże powierzchnie żucia, dieta błonnikowa ściera zęby naturalnie', source: 'training' },
+        { text: 'Wszystkożercy: siekacze bez korzeni (jak roślinożercy) + zęby policzkowe Z korzeniami (jak mięsożercy)', source: 'training' },
+        { text: 'Mięsożercy: długie kły + zęby policzkowe do rozcinania, MAŁE powierzchnie żucia (połykają w kawałkach)', source: 'training' },
+        { text: 'Królik ≠ gryzoń! Królik = zajączakowate. Odróżnienie: królik ma ZĘBY KOŁKOWE (peg teeth), siekacze tylko do cięcia', source: 'training' },
       ],
       kartaProduktu: null,
       zapamietaj: [
