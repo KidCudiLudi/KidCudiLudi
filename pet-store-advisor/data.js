@@ -3381,4 +3381,52 @@ const NOTES = [
       ],
     },
   },
+
+  {
+    id: 'male-ssaki-trawienie',
+    title: 'Małe ssaki – fizjologia trawienia (układ trawienny)',
+    category: 'Małe zwierzęta',
+    tags: ['małe ssaki', 'trawienie', 'układ trawienny', 'roślinożercy', 'mięsożercy', 'celuloza', 'błonnik', 'jama ustna', 'żołądek', 'zęby', 'ślina'],
+    updated: '2026-09-09',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Układ trawienny różnych gatunków małych ssaków WYRAŹNIE się od siebie różni – ewolucyjnie dostosowany do rodzaju pożywienia. Karma dla jednego gatunku może być nieodpowiednia lub szkodliwa dla innego.' },
+        { level: 'green', text: 'Roślinożercy (króliki, świnki, szynszyle) potrzebują mikrobiomu jelitowego do trawienia celulozy – stąd kluczowa rola błonnika/siana w diecie. Bez niego mikrobiom ginie i zwierzę choruje.' },
+      ],
+      najwazniejsze: [
+        { text: 'ROŚLINOŻERCY – pokarm bogaty w błonnik surowy (celuloza), ubogi w składniki odżywcze → układ trawienny musi "wycisnąć" składniki z ubogiego pożywienia. Wymaga mikrobiomu (bakterie + jednokomórkowce) do rozkładu celulozy.', source: 'training' },
+        { text: 'MIĘSOŻERCY – pokarm bogaty w białko, znacznie więcej składników odżywczych, łatwiejszy do przyswojenia → krótszy, prostszy układ trawienny.', source: 'training' },
+        { text: 'CELULOZA: cukier złożony (węglowodan), główny składnik ścian komórkowych roślin = włókno surowe. NIE jest rozkładana przez enzymy trawienne w jelicie – rozkłada ją MIKROBIOM (bakterie i jednokomórkowce). Bez mikrobiomu roślinożerca nie przeżyje.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'PROCES TRAWIENIA: Organizm małego ssaka = minifabryka. Pożywienie zostaje maksymalnie rozdrobnione na kolejnych etapach układu trawiennego. Każdy etap: jama ustna → żołądek → jelito cienkie → jelito grube.', source: 'training' },
+        { text: 'JAMA USTNA (etap 1): Pokarm pobierany wargami, językiem i zębami. Trzy funkcje: 1) Mechaniczne rozdrobnienie pokarmu. 2) Zmieszanie ze śliną (pokarm ślizki + wstępnie strawiony). 3) Sprawdzenie smaku = informacja o składnikach odżywczych.', source: 'training' },
+        { text: 'ŚLINA: Zawiera enzymy biorące udział we wstępnym trawieniu (nie tylko nawilżenie!). Zmysł smaku pełni kluczową rolę przy wyborze pożywienia – stąd małe ssaki często odrzucają nieznane jedzenie.', source: 'training' },
+        { text: 'ZĘBY – dwa rodzaje: 1) ZĘBY BEZ KORZENIA = stale rosnące (u gryzoni, królików – siekacze). Muszą być ścierane przez twardy pokarm/siano. Zbyt miękka dieta → przerośnięte zęby → problemy zdrowotne. 2) ZĘBY Z KORZENIEM = nieodrastające.', source: 'training' },
+        { text: 'ŻOŁĄDEK (etap 2): Funkcje: 1) Magazynowanie i wstępne rozdrabnianie. 2) Trawienie białek. Gruczoły śluzówki wytwarzają kwas solny: a) Dezynfekcja (zabija bakterie z pożywienia). b) Zmiana struktury białek → łatwiejszy rozpad i trawienie. Standardowy żołądek = silnie umięśniony, aktywne skurcze mieszają masę pokarmową → następnie do jelita cienkiego. U KRÓLIKÓW: żołądek słabo umięśniony (specyfika gatunku).', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Dlaczego siano jest tak ważne dla królika/świnki morskiej? "Ich układ trawienny ewolucyjnie przystosował się do diety bogatej w błonnik. Siano dostarcza włókna, które ściera stale rosnące zęby i karmi mikrobiom jelitowy – bez niego królik nie może prawidłowo trawić."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy zwierzę je regularnie siano? (kluczowe dla roślinożerców)' },
+        { text: 'Czy zauważył/a coś niepokojącego przy jedzeniu – zrzucanie pokarmu, ślinienie?' },
+      ],
+      bledy: [
+        { text: 'Dawanie roślinożercom karmy zbyt ubogiej w błonnik (np. same ziarna) – niszczy mikrobiom jelitowy.', source: 'extra' },
+        { text: 'Myślenie, że "zęby same się ścierają" – bez odpowiednio twardego pokarmu (siano, gałązki) gryzonie i króliki mają problemy z przerostem zębów.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Roślinożercy: błonnik surowy + celuloza → mikrobiom → stale rosnące zęby wymagają ścierania', source: 'training' },
+        { text: 'Mięsożercy: białko → więcej składników, łatwiejsze trawienie → krótszy układ trawienny', source: 'training' },
+        { text: 'Celuloza = włókno surowe, NIE trawi się enzymami → potrzebny mikrobiom (bakterie)', source: 'training' },
+        { text: 'Jama ustna: rozdrobnienie + ślina (enzymy) + smak. Żołądek: kwas solny → dezynfekcja + trawienie białek', source: 'training' },
+        { text: 'Zęby: stale rosnące (bez korzenia) vs. nieodrastające (z korzeniem) – gryzonie i króliki mają zęby stale rosnące!', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Wiedza o trawieniu roślinożerców to silny argument sprzedażowy dla siana i pelletu (nie mieszanek ziarnistych). Klient, który rozumie, że mikrobiom jelitowy jego świnki morskiej zależy od błonnika, chętniej kupi dobrej jakości siano – nawet jeśli jest droższe.', source: 'extra' },
+      ],
+    },
+  },
 ];
