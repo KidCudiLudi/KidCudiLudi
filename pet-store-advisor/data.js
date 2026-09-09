@@ -3443,4 +3443,61 @@ const NOTES = [
       ],
     },
   },
+
+  {
+    id: 'male-ssaki-zywienie-roslinozerne',
+    title: 'Małe ssaki – żywienie roślinożerców (króliki, świnki, szynszyle, koszatniczki)',
+    category: 'Małe zwierzęta',
+    tags: ['małe ssaki', 'żywienie', 'roślinożercy', 'królik', 'świnka morska', 'szynszyla', 'koszatniczka', 'siano', 'błonnik', 'witamina C', 'skrobia', 'węglowodany'],
+    updated: '2026-09-09',
+    sections: {
+      ostrzezenia: [
+        { level: 'red', text: 'SKROBIA I CUKIER = ŚMIERTELNE ZAGROŻENIE dla roślinożerców! Zbożowa sucha karma, owoce, chleb, groszek, tłuste przysmaki → poważne zaburzenia trawienne, mogą być ŚMIERTELNE. Bezwzględnie unikać!' },
+        { level: 'red', text: 'Marchew, buraki i inne warzywa bogate w skrobię → RZADKO i w małych ilościach. NIE jako stały element diety.' },
+        { level: 'yellow', text: 'ŚWINKA MORSKA: NIE wytwarza witaminy C (jak ludzie!) → musi otrzymywać ją z pożywienia, zwłaszcza świeżego. Niedobór witaminy C = szkorbut u świnki morskiej.' },
+        { level: 'yellow', text: 'UWAGA na zioła bogate w wapń (podawane w nadmiarze) → sprzyja tworzeniu się kamieni moczowych.' },
+        { level: 'yellow', text: 'GĘSTOŚĆ ENERGETYCZNA: Im wyższa gęstość energetyczna pokarmu, tym mniej zwierzę przeżuwa → niedostateczne ścieranie stale rosnących zębów → wady zgryzu. Dlatego roślinożercy potrzebują diety niskoenergetycznej, bogatej w błonnik.' },
+      ],
+      najwazniejsze: [
+        { text: 'ZASADA ŻYWIENIA roślinożerców: Bogata w SUROWY BŁONNIK + NISKOENERGETYCZNA dieta = świeża karma + SIANO (nieograniczone). Siano = podstawa, NIE dodatek!', source: 'training' },
+        { text: 'PRZYKŁADOWY SKŁAD ŚWIEŻEJ PORCJI: 80% świeżej roślinności łąkowej (trawy i zioła) + 20% warzyw (sałata, koper włoski, papryka, seler, ogórek) + Dodatkowo łodygi i gałązki do gryzienia (wierzba, topola, drzewa owocowe i orzechowe).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Roślinożercy (króliki, świnki morskie, koszatniczki, szynszyle) spożywają przede wszystkim trawy i zioła. Każdy z tych typów żywieniowych wymaga optymalnie dostosowanego pokarmu, by uniknąć niedoborów i chorób.', source: 'training' },
+        { text: 'SPECYFIKA ŚWINKI MORSKIEJ: Jedyny (oprócz ludzi) ssak, który NIE potrafi wytwarzać witaminy C w organizmie. Musi ją przyswajać z pożywienia – zwłaszcza świeżego (papryka, pietruszka, koper włoski są bogate w vit. C). Przy niedoborze → objawy szkorbutu.', source: 'training' },
+        { text: 'SPECYFIKA KOSZATNICZKI: Należy podawać również mieszanki nasion traw (oprócz standardowej diety roślinożercy).', source: 'training' },
+        { text: 'SPECYFIKA SZYNSZYLI: Lubią pokarm również w suchej formie – siano lub suszone zioła. Świeże warzywa dawać ostrożnie i stopniowo.', source: 'training' },
+        { text: 'CO DAWAĆ RZADKO: Marchew, buraki i inne warzywa bogate w skrobię. Sucha karma jako rzadki dodatek (nie podstawa).', source: 'training' },
+        { text: 'CZEGO NIE DAWAĆ WCALE: Zbożowa sucha karma, owoce, chleb, groszek, tłuste przysmaki. Produkty bogate w skrobię i cukier → zaburzenia trawienne mogące być śmiertelne!', source: 'training' },
+        { text: 'ŁODYGI I GAŁĄZKI: Wierzba, topola, drzewa owocowe i orzechowe. Funkcja: mechaniczne ścieranie stale rosnących zębów + wzbogacenie środowiska.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: '"Siano to nie urozmaicenie – to PODSTAWA diety świnki morskiej i królika. Bez nieograniczonego dostępu do siana ich układ trawienny nie działa prawidłowo, a zęby przerastają."', source: 'extra' },
+        { text: '"Marchewka to przysmak, nie codzienna karma. Dla królika czy świnki morskiej to jak cukierki dla dziecka."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Co teraz stanowi podstawę diety? (siano, mieszanka, sucha karma – diagnoza problemu)' },
+        { text: 'Czy świnka morska dostaje świeże produkty bogate w witaminę C? (papryka, pietruszka)' },
+        { text: 'Czy zwierzę ma nieograniczony dostęp do siana?' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż kolorowych mieszanek ziarnistych jako "pełnowartościowej karmy" dla królika/świnki – zbyt bogata w skrobię i cukry.', source: 'extra' },
+        { text: 'Podawanie marchewki codziennie jako głównego warzywa – marchewka jest bogata w skrobię, powinna być rzadkim przysmakiem.', source: 'extra' },
+        { text: 'Brak gałązek/łodyg do gryzienia → przerost zębów u królika lub świnki morskiej.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Roślinożercy: 80% roślinność łąkowa + 20% warzywa + gałązki/łodygi + SIANO nieograniczone', source: 'training' },
+        { text: 'ABSOLUTNIE UNIKAĆ: skrobia, cukier, zbożowa sucha karma, owoce, chleb, groszek, tłuste przysmaki → mogą być śmiertelne', source: 'training' },
+        { text: 'RZADKO: marchew, buraki (bogate w skrobię), sucha karma', source: 'training' },
+        { text: 'Świnka morska: NIE wytwarza vit. C → obowiązkowe świeże produkty (papryka, pietruszka)', source: 'training' },
+        { text: 'Koszatniczka: + mieszanki nasion traw. Szynszyla: lubi suchą formę (siano, suszone zioła)', source: 'training' },
+        { text: 'Gęstość energetyczna ↑ → przeżuwanie ↓ → zęby nie ścierane → wady zgryzu', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Wiedza o śmiertelności skrobi/cukru dla roślinożerców to kluczowy argument przy rozmowie o zmianie diety z mieszanki ziarnistej na siano+pellety. Klient, który rozumie biologię swojego zwierzęcia, jest gotowy wydać więcej na właściwą karmę.', source: 'extra' },
+        { text: 'Cross-sell przy zakupie siana: świeże zioła, gałązki wierzbowe/owocowe, witamina C w kroplach lub tabletkach dla świnki morskiej.', source: 'extra' },
+      ],
+    },
+  },
 ];
