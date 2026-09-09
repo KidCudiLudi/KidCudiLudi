@@ -3255,7 +3255,15 @@ const NOTES = [
         { text: 'Szczotka MORE soft: miętowa strona (codzienne) + czarna strona (kołtuny, NIE codziennie). Elastyczna główka. Degażówka kręcona: przejścia między częściami ciała o różnej długości.', source: 'training' },
         { text: 'Każdy typ sierści = inne narzędzia. Zawsze pytaj o typ sierści przed rekomendacją.', source: 'training' },
       ],
-      kartaProduktu: null,
+      kartaProduktu: {
+        tytul: 'Doradztwo – Bobby, owczarek, szczeniak',
+        opis: 'Klientka przychodzi ze szczeniakiem owczarka (Bobby). Pyta o szczotkowanie.',
+        kroki: [
+          { etap: 'Pytanie o zwierzaka', tresc: 'Rasa: owczarek → sierść PODWÓJNA. Wiek: szczeniak → trzeba przyzwyczajać od małego. Cel: pierwsze doświadczenia z pielęgnacją muszą być pozytywne.' },
+          { etap: 'Rekomendacja dla szczeniaka', tresc: 'Szczotka dla szczeniąt i kociąt TAKE CARE (zestaw z grzebieniem). Miękkie włosie = delikatne dla skóry szczeniaka. Dobre pierwsze doświadczenia = mniej oporu przy kolejnych sesjach. Mniejsze swędzenie podczas szczotkowania.' },
+          { etap: 'Perspektywa dorosłości', tresc: 'Gdy Bobby dorośnie → sierść podwójna wymaga: Filcak do podszerstka, Szczotka do podszerstka TAKE CARE L, Grzebień do podszerstka TAKE CARE. Przy kąpielach: Deshedder, Szampon dopasowany do sierści, Ręcznik dla psów.' },
+        ],
+      },
       zapamietaj: [
         { text: 'Szczotka/grzebień to regularny zakup i naturalny cross-sell przy każdym psie. Do szczotki zawsze proponuj: szampon dopasowany do sierści, spray do rozczesywania, chusteczki pielęgnacyjne.', source: 'extra' },
       ],
@@ -3322,6 +3330,52 @@ const NOTES = [
       kartaProduktu: null,
       zapamietaj: [
         { text: 'FLAWITOL pokrywa cały cykl życia psa i kluczowe problemy zdrowotne jedną linią. Przy każdym kliencie z psem warto zapytać o wiek i aktualny problem – zawsze znajdzie się pasujący produkt. Argument siły: flawonoidy z aronii we wszystkich produktach + zgodność z FEDIAF = przewaga nad losowymi suplementami z internetu.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'male-ssaki-wprowadzenie',
+    title: 'Małe ssaki – wprowadzenie (odżywianie i grupy zwierząt)',
+    category: 'Małe zwierzęta',
+    tags: ['małe ssaki', 'gryzonie', 'świnki morskie', 'myszy', 'chomiki', 'zajączki', 'owadożerne', 'łasicowate', 'odżywianie'],
+    updated: '2026-09-09',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Każdy gatunek małego ssaka ma INNE wymagania żywieniowe. Nie wolno uogólniać – karma dla chomika ≠ karma dla świnki morskiej.' },
+        { level: 'green', text: 'Małe ssaki to różnorodna grupa – gryzonie, zajączki, owadożerne i łasicowate mają różną biologię. Zawsze pytaj o konkretny gatunek przed rekomendacją.' },
+      ],
+      najwazniejsze: [
+        { text: 'Małe ssaki = NIE jeden gatunek. To zbiorcza nazwa dla bardzo różnych zwierząt z różnymi potrzebami żywieniowymi i behawioralnymi.', source: 'training' },
+        { text: 'Grupy małych ssaków: GRYZONIE (świnki morskie, myszy, chomiki, szczury, myszoskoczki, koszatniczki, szynszyle), ZAJĄCZKI (króliki, zające), OWADOŻERNE (jeże afrykańskie), ŁASICOWATE (fretki).', source: 'training' },
+        { text: 'Każdy gatunek wymaga indywidualnie dopasowanej diety i produktów pielęgnacyjnych.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'GRYZONIE: świnki morskie, myszy, chomiki, szczury, myszoskoczki (gerbile), koszatniczki, szynszyle. Duża różnorodność potrzeb w tej grupie – nawet wewnątrz grupy gryzoni każdy gatunek ma swoje specyficzne wymagania.', source: 'training' },
+        { text: 'ZAJĄCZKI: króliki, zające. Dieta oparta głównie na sianie + uzupełniana pelletem i warzywami. Króliki to temat osobny – mają bogaty kurs w bazie.', source: 'training' },
+        { text: 'OWADOŻERNE: jeże afrykańskie. Owadożerne = dieta oparta na owadach/białku zwierzęcym. Specjalistyczna karma dla jeży (nie mylić z karmą dla kotów).', source: 'training' },
+        { text: 'ŁASICOWATE: fretki. Mięsożerne, wymagają diety bogatej w białko i tłuszcz zwierzęcy. Odrębne karmy dla fretek.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klientowi: "Każdy gatunek ma inne potrzeby. Proszę mi powiedzieć, jakiego zwierzątka szukamy karmy – pokażę dokładnie dopasowany produkt."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki gatunek? (świnka morska, chomik, mysz, szczur, szynszyla, koszatniczka, myszoskoczek, jeż, fretka, królik?)' },
+        { text: 'Wiek zwierzęcia? (młode / dorosłe)' },
+        { text: 'Jaką karmę stosuje teraz? Czy zwierzę ma jakieś problemy zdrowotne?' },
+      ],
+      bledy: [
+        { text: 'Sprzedaż karmy "ogólnie dla gryzoni" bez pytania o gatunek – każdy gatunek ma inne wymagania.', source: 'extra' },
+        { text: 'Mylenie potrzeb fretek (mięsożerne) z gryzoniami (roślinożerne/wszystkożerne).', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Małe ssaki = 4 grupy: GRYZONIE / ZAJĄCZKI / OWADOŻERNE (jeże) / ŁASICOWATE (fretki)', source: 'training' },
+        { text: 'Gryzonie: świnka, mysz, chomik, szczur, myszoskoczek, koszatniczka, szynszyla', source: 'training' },
+        { text: 'Każdy gatunek = inne wymagania żywieniowe → zawsze pytaj o gatunek!', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Małe ssaki to rosnący segment klientów – właściciele świnek morskich, szynszyli czy fretek często szukają specjalistycznej wiedzy. Bycie ekspertem w tym temacie buduje zaufanie i lojalność klientów, których inne sklepy obsługują słabiej.', source: 'extra' },
       ],
     },
   },
