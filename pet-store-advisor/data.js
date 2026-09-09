@@ -3347,14 +3347,15 @@ const NOTES = [
       ],
       najwazniejsze: [
         { text: 'Małe ssaki = NIE jeden gatunek. To zbiorcza nazwa dla bardzo różnych zwierząt z różnymi potrzebami żywieniowymi i behawioralnymi.', source: 'training' },
-        { text: 'Grupy małych ssaków: GRYZONIE (świnki morskie, myszy, chomiki, szczury, myszoskoczki, koszatniczki, szynszyle), ZAJĄCZKI (króliki, zające), OWADOŻERNE (jeże afrykańskie), ŁASICOWATE (fretki).', source: 'training' },
+        { text: 'TRZY TYPY ŻYWIENIOWE: ROŚLINOŻERCY (herbivore) | WSZYSTKOŻERCY (omnivore) | MIĘSO- i OWADOŻERCY (carni-/insectivore). Każdy typ = zupełnie inne produkty żywieniowe!', source: 'training' },
+        { text: 'ROŚLINOŻERCY = króliki, świnki, szynszyle, koszatniczki → foliofagi, surowy błonnik. WSZYSTKOŻERCY = chomik, szczur, mysz, myszoskoczek, pręgowiec → nasiona + białko zwierzęce. MIĘSO-/OWADOŻERCY = fretka (mięsożerna), jeż/tenrek/afrojeż (owadożerne) → głównie białko zwierzęce.', source: 'training' },
         { text: 'Każdy gatunek wymaga indywidualnie dopasowanej diety i produktów pielęgnacyjnych.', source: 'training' },
       ],
       coWiedziec: [
-        { text: 'GRYZONIE: świnki morskie, myszy, chomiki, szczury, myszoskoczki (gerbile), koszatniczki, szynszyle. Duża różnorodność potrzeb w tej grupie – nawet wewnątrz grupy gryzoni każdy gatunek ma swoje specyficzne wymagania.', source: 'training' },
-        { text: 'ZAJĄCZKI: króliki, zające. Dieta oparta głównie na sianie + uzupełniana pelletem i warzywami. Króliki to temat osobny – mają bogaty kurs w bazie.', source: 'training' },
-        { text: 'OWADOŻERNE: jeże afrykańskie. Owadożerne = dieta oparta na owadach/białku zwierzęcym. Specjalistyczna karma dla jeży (nie mylić z karmą dla kotów).', source: 'training' },
-        { text: 'ŁASICOWATE: fretki. Mięsożerne, wymagają diety bogatej w białko i tłuszcz zwierzęcy. Odrębne karmy dla fretek.', source: 'training' },
+        { text: 'TRZY TYPY ŻYWIENIOWE małych ssaków: 1) ROŚLINOŻERCY (herbivore: herba=rośliny, vorare=połykać) 2) WSZYSTKOŻERCY (omnivore: omni=wszystko, vorare=połykać) 3) MIĘSO- I OWADOŻERCY (carni-/insectivore: carnis=mięso, vorare=połykać)', source: 'training' },
+        { text: 'ROŚLINOŻERCY – szczegóły: Króliki, świnki morskie, szynszyle i koszatniczki. Należą głównie do FOLIOFAGÓW = żywią się przede wszystkim LIŚĆMI (zieloną częścią roślin). Obok traw i ziół do tej kategorii należy np. marchew. Dieta niskoenergetyczna, bardzo bogata w SUROWY BŁONNIK. Do tej grupy doskonale przystosowane anatomicznie.', source: 'training' },
+        { text: 'WSZYSTKOŻERCY – szczegóły: Chomik standardowy i karłowaty, szczur, mysz, myszoskoczek i pręgowiec. Bardzo zróżnicowana dieta: nasiona, ziarna, zielona i świeża pasza + BIAŁKO ZWIERZĘCE. Nie można karmić ich wyłącznie pokarmem roślinnym.', source: 'training' },
+        { text: 'MIĘSO- I OWADOŻERCY – szczegóły: W diecie: małe kręgowce, gady/płazy, bezkręgowce (owady, robaki, ślimaki). Preferencje żywieniowe płynne – małe drapieżniki nie gardzą żadnym białkiem. FRETKA = najbardziej znany mięsożerny ssak z hodowli domowych. OWADOŻERNE egzotyczne: tenrek mniejszy, ryjkonos, afrojeż białobrzuchy. UWAGA: większość mięso-/owadożernych małych ssaków to mało udomowione zwierzęta egzotyczne – wyjątkowo trudne w hodowli i żywieniu.', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Klientowi: "Każdy gatunek ma inne potrzeby. Proszę mi powiedzieć, jakiego zwierzątka szukamy karmy – pokażę dokładnie dopasowany produkt."', source: 'extra' },
@@ -3369,9 +3370,10 @@ const NOTES = [
         { text: 'Mylenie potrzeb fretek (mięsożerne) z gryzoniami (roślinożerne/wszystkożerne).', source: 'extra' },
       ],
       powtorka: [
-        { text: 'Małe ssaki = 4 grupy: GRYZONIE / ZAJĄCZKI / OWADOŻERNE (jeże) / ŁASICOWATE (fretki)', source: 'training' },
-        { text: 'Gryzonie: świnka, mysz, chomik, szczur, myszoskoczek, koszatniczka, szynszyla', source: 'training' },
-        { text: 'Każdy gatunek = inne wymagania żywieniowe → zawsze pytaj o gatunek!', source: 'training' },
+        { text: 'ROŚLINOŻERCY (herbivore) = króliki, świnki morskie, szynszyle, koszatniczki → foliofagi → niskoenergetyczna dieta bogata w surowy błonnik', source: 'training' },
+        { text: 'WSZYSTKOŻERCY (omnivore) = chomik std/karłowaty, szczur, mysz, myszoskoczek, pręgowiec → nasiona + ziarna + pasza + białko zwierzęce', source: 'training' },
+        { text: 'MIĘSO-/OWADOŻERCY (carni-/insectivore) = fretka (mięsożerna) + jeż/tenrek/ryjkonos/afrojeż białobrzuchy (owadożerne) → głównie białko zwierzęce', source: 'training' },
+        { text: 'Typ żywieniowy → dobór karmy. Zawsze pytaj: jaki gatunek?', source: 'training' },
       ],
       kartaProduktu: null,
       zapamietaj: [
