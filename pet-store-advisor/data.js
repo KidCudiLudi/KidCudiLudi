@@ -3132,6 +3132,7 @@ const NOTES = [
       najwazniejsze: [
         { text: 'Pielęgnacja sierści = pielęgnacja SKÓRY. Zdrowa skóra i zdrowe włosy są podstawą dobrego samopoczucia psa. Szczotkowanie usuwa martwe włosy, łuszczącą się skórę i zapobiega kołtunieniu. Każdy typ sierści wymaga innych narzędzi.', source: 'training' },
         { text: 'Procedura pielęgnacji sierści krótkiej (3 kroki): 1) RĘKAWICA 2w1 (masaż okrężny – usuwa włosy i łuszczącą się skórę). 2) SZCZOTKA IONIC (wyczesywanie w kierunku wzrostu sierści). 3) WILGOTNA ŚCIERECZKA (ostatni szlif – usuwa ostatnie włoski i cząsteczki brudu).', source: 'training' },
+        { text: 'Procedura pielęgnacji sierści podwójnej (3 kroki): 1) FILCAK do podszerstka (usuwa martwy podszerstek). 2) SZCZOTKA do podszerstka (usuwa luźne włosy + masuje). 3) GRZEBIEŃ do podszerstka (rozplątuje kołtuny + usuwa martwy podszerstek). Tip: podczas wymiany sierści warto 1-2x wykąpać psa – brud i łój zostają usunięte, włosy stają się luźniejsze.', source: 'training' },
       ],
       coWiedziec: [
         { text: '--- ZNACZENIE PIELĘGNACJI SIERŚCI ---', source: 'training' },
@@ -3143,10 +3144,19 @@ const NOTES = [
         { text: 'Krok 3 – WILGOTNA ŚCIERECZKA: ostatni szlif, usuwanie ostatnich włosków i cząsteczek brudu.', source: 'training' },
         { text: '--- PRODUKT: Rękawica pielęgnacyjna TAKE CARE 2w1 ---', source: 'training' },
         { text: 'Rękawica TAKE CARE 2w1 – do sierści krótkiej. Dwustronna: strona z wypustkami = delikatny masaż i czyszczenie (usuwa martwe włosy i łuszczącą się skórę); strona z welurkiem = usuwanie luźnych włosów. Nadaje się do prania (wielorazowa). Masowanie ruchami okrężnymi po całym ciele.', source: 'training' },
+        { text: '--- PRODUKT: Szczotka TAKE CARE Ionic ---', source: 'training' },
+        { text: 'Szczotka TAKE CARE Ionic – do ras krótkowłosych. BUDOWA: wewnętrzna warstwa = włosie z brązu naładowane jonami dodatnimi (+) → usuwa martwe włosy i łuszczącą się skórę; zewnętrzna warstwa = szczecina dzika → wygładza sierść i nadaje połysk. Rączka z drewna bukowego z certyfikatem FSC. Użycie: wyczesywanie w kierunku wzrostu sierści (krok 2 po rękawicy).', source: 'training' },
+        { text: '--- PRODUKTY: Pielęgnacja sierści podwójnej (3 narzędzia) ---', source: 'training' },
+        { text: 'FILCAK DO PODSZERSTKA TAKE CARE (krok 1): obracające się zaokrąglone igły z metalu, dwurzędowe = maksymalne usuwanie podszerstka w krótkim czasie. Do bardzo gęstego podszerstka. Dla kotów i psów. Żelowy uchwyt dopasowujący się do dłoni.', source: 'training' },
+        { text: 'SZCZOTKA DO PODSZERSTKA TAKE CARE L (krok 2): zaokrąglone igły ze stali nierdzewnej + włosie naturalne. Do codziennej pielęgnacji kotów i psów, wszystkie typy sierści. Usuwa kurz i martwe włosy, nadaje jedwabisty połysk, masuje i pobudza krążenie krwi. Elastyczna część ugina się pod naciskiem – bezpieczna dla skóry.', source: 'training' },
+        { text: 'GRZEBIEŃ DO PODSZERSTKA (krok 3): rozplątuje kołtuny i usuwa martwy podszerstek.', source: 'training' },
+        { text: 'TIP: Podczas wymiany sierści warto 1-2x wykąpać psa – usuwa brud i łój, a włosy stają się luźniejsze i łatwiej je wyczesać.', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: 'Klient z psem krótkowłosym: "Nie muszę nic szczotkować, prawda?" — Doradca: "Nawet krótkowłose psy wymagają pielęgnacji, bo pielęgnacja sierści to też pielęgnacja skóry. Dwa razy w roku intensywnie linieje – wtedy szczotkowanie bardzo pomaga. Polecam rękawicę TAKE CARE 2w1: masuje ruchami okrężnymi, usuwa martwe włosy i łuszczącą się skórę, a do tego możesz ją prać."', source: 'training' },
         { text: 'Klient pyta o szczotkę dla psa: — Doradca: "Zanim polecę konkretną szczotkę, powiedz mi jaką rasę masz i jaki typ sierści? (krótka, długa, szorstka, kręcona?) – od tego zależy wszystko." → następnie dobieraj narzędzie do typu.', source: 'extra' },
+        { text: 'Klient z Labradorem/Husky/Golden: "Pies gubi dużo sierści" — Doradca: "To pies z podszerstkiem – potrzebujesz zestawu 3 narzędzi: filcak do podszerstka (usuwa martwy podszerstek), szczotka do podszerstka TAKE CARE L (masaż i luźne włosy), grzebień (rozplątuje kołtuny). Podczas linienia warto też 1-2x wykąpać psa – po kąpieli włosy łatwiej wyczesać."', source: 'extra' },
+        { text: 'Klient pyta o Szczotkę Ionic: "Co to za złote włosie w tej szczotce?" — Doradca: "To włosie z brązu naładowane jonami dodatnimi – jony przyciągają martwe włosy i łuszczącą się skórę jak magnes. Zewnętrzna warstwa ze szczeciny dzika jednocześnie wygładza i nabłyszcza sierść. Idealna do ras krótkowłosych."', source: 'extra' },
       ],
       pytania: [
         { text: 'Jaki typ sierści ma pies? (krótka/długa podwójna/gładka/szorstka/kręcona) – podstawa doboru szczotki.', source: 'extra' },
@@ -3160,8 +3170,12 @@ const NOTES = [
       ],
       powtorka: [
         { text: 'Sierść krótka – 3 kroki: 1) Rękawica 2w1 (okrężnie, cały pies). 2) Szczotka Ionic (zgodnie z kierunkiem wzrostu). 3) Wilgotna ściereczka (ostatni szlif).', source: 'training' },
+        { text: 'Sierść podwójna – 3 kroki: 1) Filcak do podszerstka (martwy podszerstek). 2) Szczotka do podszerstka TAKE CARE L (luźne włosy + masaż). 3) Grzebień do podszerstka (kołtuny + martwy podszerstek). + podczas linienia: kąpiel 1-2x.', source: 'training' },
         { text: 'TAKE CARE 2w1: wypustki (masaż+czyszczenie) + welur (luźne włosy). Do prania.', source: 'training' },
-        { text: 'Każdy typ sierści = inne narzędzia. Zawsze pytaj o typ sierści przed rekomendacją. Kurs w toku – więcej typów do dodania.', source: 'training' },
+        { text: 'Szczotka Ionic: brąz (jony+, martwe włosy) + szczecina dzika (połysk). FSC drewno bukowe. Do ras krótkich.', source: 'training' },
+        { text: 'Filcak TAKE CARE: obracające się zaokrąglone igły metalowe, dwurzędowe, bardzo gęsty podszerstek, koty i psy, żelowy uchwyt.', source: 'training' },
+        { text: 'Szczotka do podszerstka TAKE CARE L: zaokrąglone igły (stal nierdzewna) + włosie naturalne, elastyczna podkładka, jedwabisty połysk, masaż + krążenie.', source: 'training' },
+        { text: 'Każdy typ sierści = inne narzędzia. Zawsze pytaj o typ sierści przed rekomendacją.', source: 'training' },
       ],
       kartaProduktu: null,
       zapamietaj: [
