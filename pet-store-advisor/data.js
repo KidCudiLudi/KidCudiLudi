@@ -3083,7 +3083,7 @@ const NOTES = [
         { text: '--- 5. SIERŚĆ SZORSTKA ---', source: 'training' },
         { text: 'Sierść szorstka – składa się z dłuższych, twardych włosów ościstych z gęstym, krótkim podszerstkiem. WAŻNE: ani włosy ościste, ani podszerstek NIE WYPADAJĄ SAMORZUTNIE – psy szorstkowłose potrzebują szczególnej formy pielęgnacji (np. trymowanie). Charakterystyczna cecha: broda na pysku. Rasy: Jamnik szorstkowłosy, Foksterier, Airedale Terrier, Sznaucer, Wyżeł niemiecki szorstkowłosy.', source: 'training' },
         { text: '--- 6. SIERŚĆ KRĘCONA ---', source: 'training' },
-        { text: 'Sierść kręcona – występuje tylko u nielicznych ras. Składa się najczęściej z drobnego, ZAWSZE ROSNĄCEGO podszerstka BEZ włosów ościstych. Ze względu na kręconą strukturę sierść ta jest łatwa w modelowaniu (przykład: różne strzyżenia pudli). Nie linieje w sposób naturalny – wymaga regularnego strzyżenia. Rasy: Pudel (i jego odmiany), Lagotto Romagnolo i inne.', source: 'training' },
+        { text: 'Sierść kręcona – występuje tylko u nielicznych ras. Składa się najczęściej z drobnego, ZAWSZE ROSNĄCEGO podszerstka BEZ włosów ościstych. Ze względu na kręconą strukturę sierść ta jest łatwa w modelowaniu (przykład: różne strzyżenia pudli). Nie linieje w sposób naturalny – wymaga regularnego strzyżenia. Rasy: Pudel, Puli, Portugalski pies wodny, Komondor, Bichon frisé, Lagotto Romagnolo.', source: 'training' },
         { text: '--- 3. SIERŚĆ GŁADKA ---', source: 'training' },
         { text: 'Sierść gładka – psy gładkowłose mają długie włosy okrywowe, ale w przeciwieństwie do psów długowłosych NIE MAJĄ PODSZERSTKA. Ich sierść przypomina w dotyku ludzkie włosy. Dwa warianty: A) krótsze włosy na pysku, grzbiecie i przednich stronach nóg; B) gładkie włosy na całym ciele łącznie z wyraźną brodą i długimi brwiami. Rasy: Seter irlandzki, Chart afgański, Cocker Spaniel, Yorkshire Terrier, Maltańczyk, Shih Tzu.', source: 'training' },
       ],
@@ -3113,6 +3113,59 @@ const NOTES = [
       kartaProduktu: null,
       zapamietaj: [
         { text: 'Znajomość typów sierści = podstawa doradzania przy szczotkach, grzebieniach, szamponach i odżywkach. Zawsze pytaj o rasę i typ sierści przed rekomendacją produktu pielęgnacyjnego.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'szczotki-grzebienie-psy',
+    title: 'Szczotki i grzebienie dla psów – pielęgnacja sierści wg typu (TAKE CARE, Ionic)',
+    category: 'Pielęgnacja i higiena',
+    tags: ['psy', 'pielęgnacja', 'szczotka', 'grzebień', 'sierść', 'grooming', 'TAKE CARE', 'Ionic', 'rękawica', 'furminator', 'linienie', 'kołtuny'],
+    updated: '2026-09-09',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Pielęgnacja sierści krótkiej wygląda łatwo, ale zaniedbana prowadzi do problemów skórnych. Krótkowłose psy gubią martwe włosy i 2x w roku przechodzą intensywną wymianę sierści – regularne szczotkowanie jest konieczne.' },
+        { level: 'yellow', text: 'Psy szorstkowłose (Jamnik, Sznaucer, Airedale) – ich sierść NIE wypada samorzutnie. Bez trymowania lub cuppingu martwe włosy zalegają i uciskają skórę. Standardowa szczotka nie wystarczy – konieczny trymer lub wizyta u groomera.' },
+        { level: 'green', text: 'Rękawica do pielęgnacji 2w1 TAKE CARE – idealna do wprowadzenia w rozmowie z właścicielem psa krótkowłosego. Masuje, usuwa martwe włosy i łuszczącą się skórę. Nadaje się do prania, wielorazowa.' },
+      ],
+      najwazniejsze: [
+        { text: 'Pielęgnacja sierści = pielęgnacja SKÓRY. Zdrowa skóra i zdrowe włosy są podstawą dobrego samopoczucia psa. Szczotkowanie usuwa martwe włosy, łuszczącą się skórę i zapobiega kołtunieniu. Każdy typ sierści wymaga innych narzędzi.', source: 'training' },
+        { text: 'Procedura pielęgnacji sierści krótkiej (3 kroki): 1) RĘKAWICA 2w1 (masaż okrężny – usuwa włosy i łuszczącą się skórę). 2) SZCZOTKA IONIC (wyczesywanie w kierunku wzrostu sierści). 3) WILGOTNA ŚCIERECZKA (ostatni szlif – usuwa ostatnie włoski i cząsteczki brudu).', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: '--- ZNACZENIE PIELĘGNACJI SIERŚCI ---', source: 'training' },
+        { text: 'Pielęgnacja sierści może i powinna być u większości psów wspomagana w celu: usuwania łuszczącej się skóry i martwych włosów, zapobiegania plątaniu i kołtunieniu. Do tego celu istnieje szereg różnych szczotek i grzebieni dopasowanych do typów sierści.', source: 'training' },
+        { text: '--- PIELĘGNACJA SIERŚCI KRÓTKIEJ ---', source: 'training' },
+        { text: 'Sierść krótka – na pierwszy rzut oka wydaje się łatwa w pielęgnacji, ale kwestii "pielęgnacji" nie należy zaniedbywać, bo obejmuje ona też pielęgnację skóry. Krótkowłose psy gubią martwe włosy i 2x w roku przechodzą wymianę sierści.', source: 'training' },
+        { text: 'Krok 1 – RĘKAWICA DO PIELĘGNACJI 2w1: masowanie psiej sierści na całym ciele ruchami okrężnymi → wypadają martwe włosy i łuszcząca się skóra.', source: 'training' },
+        { text: 'Krok 2 – SZCZOTKA IONIC: wyczesywanie sierści w kierunku wzrostu włosów.', source: 'training' },
+        { text: 'Krok 3 – WILGOTNA ŚCIERECZKA: ostatni szlif, usuwanie ostatnich włosków i cząsteczek brudu.', source: 'training' },
+        { text: '--- PRODUKT: Rękawica pielęgnacyjna TAKE CARE 2w1 ---', source: 'training' },
+        { text: 'Rękawica TAKE CARE 2w1 – do sierści krótkiej. Dwustronna: strona z wypustkami = delikatny masaż i czyszczenie (usuwa martwe włosy i łuszczącą się skórę); strona z welurkiem = usuwanie luźnych włosów. Nadaje się do prania (wielorazowa). Masowanie ruchami okrężnymi po całym ciele.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: 'Klient z psem krótkowłosym: "Nie muszę nic szczotkować, prawda?" — Doradca: "Nawet krótkowłose psy wymagają pielęgnacji, bo pielęgnacja sierści to też pielęgnacja skóry. Dwa razy w roku intensywnie linieje – wtedy szczotkowanie bardzo pomaga. Polecam rękawicę TAKE CARE 2w1: masuje ruchami okrężnymi, usuwa martwe włosy i łuszczącą się skórę, a do tego możesz ją prać."', source: 'training' },
+        { text: 'Klient pyta o szczotkę dla psa: — Doradca: "Zanim polecę konkretną szczotkę, powiedz mi jaką rasę masz i jaki typ sierści? (krótka, długa, szorstka, kręcona?) – od tego zależy wszystko." → następnie dobieraj narzędzie do typu.', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki typ sierści ma pies? (krótka/długa podwójna/gładka/szorstka/kręcona) – podstawa doboru szczotki.', source: 'extra' },
+        { text: 'Czy pies ma podszerstek? (→ tak: rake/furminator/szczotka do podszerstka; nie: rękawica lub miękka szczotka)', source: 'extra' },
+        { text: 'Czy jest problem z kołtunami? (→ grzebień rozplątujący, krem/spray do rozczesywania)', source: 'extra' },
+        { text: 'Czy pies traci dużo sierści? (intensywne linienie → furminator lub rake do podszerstka)', source: 'extra' },
+      ],
+      bledy: [
+        { text: 'Polecanie standardowej szczotki do psów szorstkowłosych – ich sierść nie wypada sama, wymaga trymowania. Szczotka nie rozwiąże problemu, może wręcz uszkodzić strukturę sierści.', source: 'extra' },
+        { text: 'Ignorowanie pielęgnacji u krótkowłosych psów – klienci często myślą, że krótka sierść = zero pielęgnacji. Trzeba edukować, że to pielęgnacja skóry, nie tylko sierści.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Sierść krótka – 3 kroki: 1) Rękawica 2w1 (okrężnie, cały pies). 2) Szczotka Ionic (zgodnie z kierunkiem wzrostu). 3) Wilgotna ściereczka (ostatni szlif).', source: 'training' },
+        { text: 'TAKE CARE 2w1: wypustki (masaż+czyszczenie) + welur (luźne włosy). Do prania.', source: 'training' },
+        { text: 'Każdy typ sierści = inne narzędzia. Zawsze pytaj o typ sierści przed rekomendacją. Kurs w toku – więcej typów do dodania.', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Szczotka/grzebień to regularny zakup i naturalny cross-sell przy każdym psie. Do szczotki zawsze proponuj: szampon dopasowany do sierści, spray do rozczesywania, chusteczki pielęgnacyjne.', source: 'extra' },
       ],
     },
   },
