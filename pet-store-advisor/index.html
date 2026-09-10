@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0d9488" />
+  <title>Baza wiedzy doradcy klienta – Maxi Zoo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🐾 Baza wiedzy doradcy klienta</h1>
+      <div class="subtitle">Maxi Zoo – centrum wiedzy budowane na podstawie materiałów szkoleniowych</div>
+    </div>
+    <input type="text" id="searchInput" placeholder="Szukaj produktu, marki, składnika, choroby, pasożyta... (/)" />
+    <button class="btn-review" id="reviewBtn">✅ Szybka powtórka</button>
+    <button class="btn-new" id="newNoteBtn">➕ Nowy temat</button>
+    <button class="btn-theme" id="themeToggle">🌙 Ciemny</button>
+  </header>
+
+  <nav class="category-bar" id="categoryBar"></nav>
+
+  <div class="tag-bar">
+    <button class="tag-toggle" id="tagToggle">🏷️ Tagi <span class="tag-toggle-arrow">▾</span></button>
+    <div class="tag-cloud" id="tagCloud" hidden></div>
+  </div>
+
+  <div class="layout">
+    <main>
+      <div id="mainContent"></div>
+    </main>
+  </div>
+
+  <div class="modal-overlay" id="noteModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="noteModalTitle">➕ Nowy temat</h2>
+        <button class="modal-close" id="noteModalClose">✕</button>
+      </div>
+      <div class="modal-body" id="noteModalBody"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
