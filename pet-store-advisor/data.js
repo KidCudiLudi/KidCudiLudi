@@ -3406,6 +3406,9 @@ const NOTES = [
         { text: 'ŻOŁĄDEK (etap 2): Funkcje: 1) Magazynowanie i wstępne rozdrabnianie. 2) Trawienie białek. Gruczoły śluzówki wytwarzają kwas solny: a) Dezynfekcja (zabija bakterie z pożywienia). b) Zmiana struktury białek → łatwiejszy rozpad i trawienie. Standardowy żołądek = silnie umięśniony, aktywne skurcze mieszają masę pokarmową → następnie do jelita cienkiego. U KRÓLIKÓW: żołądek słabo umięśniony (specyfika gatunku).', source: 'training' },
         { text: 'JELITO CIENKIE (etap 3): Wchodzą tu wyjścia trzustki i pęcherzyka żółciowego → wydzielają niezbędne enzymy trawienne. Tu następuje rozkład i WCHŁANIANIE substancji odżywczych z pożywienia.', source: 'training' },
         { text: 'JELITO GRUBE (etap 4): Po wchłonięciu składników w jelicie cienkim masa pokarmowa trafia tu. Usuwana jest woda i zagęszczana masa kałowa. JELITO ŚLEPE (uwypuklenie jelita grubego) = kluczowa rola u ROŚLINOŻERCÓW: większość składników pokarmu roślinnego jest DOPIERO TUTAJ rozkładana i wykorzystywana przez bakterie i pierwotniaki (mikrobiom!).', source: 'training' },
+        { text: 'JELITO ŚLEPE jako KOMORA FERMENTACYJNA (roślinożercy): U małych ssaków roślinożernych jelito ślepe jest znacznie bardziej rozwinięte niż u mięsożerców. Tutaj następuje RZECZYWISTE przyswajanie pokarmu roślinnego – zwierzęta nie są w stanie rozłożyć celulozy własnymi enzymami. Mikroorganizmy (bakterie i pierwotniaki) rozkładają niestrawną celulozę, uwalniając zawarte w niej składniki odżywcze.', source: 'training' },
+        { text: 'ŻOŁĄDEK ROŚLINOŻERCÓW – szczególna cecha: Króliki i świnki morskie mają CIENKOŚCIENNY żołądek, słabo umięśniony (inaczej niż standardowy). Pokarm NIE jest aktywnie transportowany przez skurcze mięśni. KLUCZOWE: zwierzęta muszą STALE przyjmować niewielkie ilości pokarmu – nowa masa pokarmowa przesuwa dotychczasową do jelita. Dlatego ZAWSZE muszą mieć dostęp do SIANA I WODY!', source: 'training' },
+        { text: 'CEKOTROFIA: Specjalny mechanizm adaptacyjny roślinożerców (króliki, świnki, szynszyle, koszatniczki). Składniki odżywcze przetworzone przez mikrobiom jelita ślepego mogą być wchłonięte TYLKO w jelicie ślepym → zwierzęta zjadają wydalony specjalny kał formowany w jelicie ślepym zwany CETROTROFEM. Wygląd cekotrof: pokryty śluzem (śluz = szybki transport z jelita ślepego do odbytu) – często mylony z biegunką! Zjedzenie cekotrof → wchłonięcie składników odżywczych w jelicie cienkim.', source: 'training' },
         { text: 'ODBYTNICA (etap 5): Niestrawna część pokarmu zagęszczona przez odwodnienie i uformowana w kał → trafia do odbytnicy → wydalana w kontrolowany sposób.', source: 'training' },
         { text: 'CECHY ZĘBÓW – ROZRÓŻNIENIE GRYZONI I ZAJĄCZAKOWATYCH: Króliki = zajączakowate (NIE gryzonie!). Różnica w uzębieniu: TYLKO królik ma dodatkowo zęby kołkowe (peg teeth). Obie grupy: siekacze rosną przez całe życie. U królika siekacze = tylko do CIĘCIA, nie do gryzienia. Zęby trzonowe rosną przez całe życie u: królików, świnek morskich, koszatniczek i szynszyli.', source: 'training' },
         { text: 'ZĘBY ROŚLINOŻERCÓW: Siekacze i zęby policzkowe BEZ KORZENI = stale rosnące. Muszą być regularnie ścierane przez tarcie o siebie zębów. Dieta bogata w błonnik wymusza przeżuwanie = naturalne ścieranie. BRAK KŁÓW. Duże powierzchnie żucia zębów policzkowych = mechaniczne rozdrabnianie roślin. Zwierzęta roślinożerne wiele godzin dziennie jedzą → naturalne zużycie zębów. BEZ ODPOWIEDNIEJ DIETY → przerost zębów = poważny problem zdrowotny.', source: 'training' },
@@ -3429,7 +3432,9 @@ const NOTES = [
         { text: 'Celuloza = włókno surowe, NIE trawi się enzymami → potrzebny mikrobiom (bakterie)', source: 'training' },
         { text: 'Jama ustna: rozdrobnienie + ślina (enzymy) + smak. Żołądek: kwas solny → dezynfekcja + trawienie białek', source: 'training' },
         { text: 'Jelito cienkie: enzymy trzustki + żółć → wchłanianie składników odżywczych', source: 'training' },
-        { text: 'Jelito grube: odwodnienie masy kałowej. JELITO ŚLEPE = mikrobiom roślinożerców → rozkład celulozy przez bakterie i pierwotniaki', source: 'training' },
+        { text: 'Jelito grube: odwodnienie masy kałowej. JELITO ŚLEPE = komora fermentacyjna u roślinożerców → bakterie i pierwotniaki rozkładają celulozę', source: 'training' },
+        { text: 'Żołądek roślinożerców (królik, świnka): cienkościenny, słabo umięśniony → pokarm nie transportowany skurczami → MUSZĄ jeść ciągle małe porcje + zawsze dostęp do siana i wody!', source: 'training' },
+        { text: 'CEKOTROFIA: roślinożercy zjadają cekotrof (kał z jelita ślepego, pokryty śluzem) → wchłonięcie składników odżywczych. NIE mylić z biegunką!', source: 'training' },
         { text: 'Odbytnica: zagęszczenie + wydalanie kału', source: 'training' },
         { text: 'Zęby: stale rosnące (bez korzenia) vs. nieodrastające (z korzeniem) – gryzonie i króliki mają zęby stale rosnące!', source: 'training' },
         { text: 'Roślinożercy: siekacze + zęby policzkowe bez korzeni, brak kłów, duże powierzchnie żucia, dieta błonnikowa ściera zęby naturalnie', source: 'training' },
@@ -3500,6 +3505,50 @@ const NOTES = [
       zapamietaj: [
         { text: 'Wiedza o śmiertelności skrobi/cukru dla roślinożerców to kluczowy argument przy rozmowie o zmianie diety z mieszanki ziarnistej na siano+pellety. Klient, który rozumie biologię swojego zwierzęcia, jest gotowy wydać więcej na właściwą karmę.', source: 'extra' },
         { text: 'Cross-sell przy zakupie siana: świeże zioła, gałązki wierzbowe/owocowe, witamina C w kroplach lub tabletkach dla świnki morskiej.', source: 'extra' },
+        { text: 'CEKOTROFIA: właściciel zgłaszający "biegunkę u królika" – zapytaj jak wygląda. Cekotrof jest pokryty śluzem i miękki – to normalne! Prawdziwa biegunka to kał wodny i brak cekotrofów.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'male-ssaki-zywienie-miesozerne',
+    title: 'Małe ssaki – żywienie mięso- i owadożernych (fretka, jeż, tenrek)',
+    category: 'Małe zwierzęta',
+    tags: ['małe ssaki', 'żywienie', 'mięsożercy', 'owadożercy', 'fretka', 'jeż', 'tenrek', 'owady', 'mięso', 'suplementacja'],
+    updated: '2026-09-10',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Skład pokarmu mięso-/owadożernych jest BARDZO RÓŻNY w zależności od gatunku. Zawsze dopasuj dietę gatunkowo – karma dla fretki ≠ karma dla jeża ≠ karma dla tenreka.' },
+        { level: 'yellow', text: 'Zawsze zwracaj uwagę na ZRÓWNOWAŻONY skład pożywienia odpowiedni dla danego gatunku. W razie potrzeby zdecydować się na SUPLEMENTACJĘ.' },
+      ],
+      najwazniejsze: [
+        { text: 'Mięso-/owadożerne małe ssaki: skład pokarmu bardzo zróżnicowany gatunkowo. Podstawa = karma sucha lub mokra typowa dla gatunku + świeże produkty zwierzęce (mrożone myszy/kurczęta lub mięso/ryby) + owady, larwy, robaki i ślimaki.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'FRETKA (mięsożerna): Dieta oparta na mięsie/rybach. Karma sucha lub mokra dla fretek (wysoka zawartość białka zwierzęcego). Można dodawać świeże mięso, drób. Fretek NIE wolno karmić karmą dla gryzoni/królików (dieta roślinożerców) – są obligatoryjnymi mięsożercami.', source: 'training' },
+        { text: 'JEŻ AFRYKAŃSKI (owadożerny): Podstawa – owady (mącznik, świerszcze, zofobas). Sucha karma dla jeży lub karma dla kotów jako uzupełnienie. Świeże mięso/drób. Owoce i warzywa w niewielkich ilościach jako uzupełnienie.', source: 'training' },
+        { text: 'TENREK (owadożerny/egzotyczny): Mało udomowiony, wyjątkowo trudny w żywieniu. Dieta: owady + inne bezkręgowce. Zalecana konsultacja ze specjalistą.', source: 'training' },
+        { text: 'OGÓLNIE mięso-/owadożercy: Oprócz typowej karmy suchej/mokrej – świeże produkty zwierzęce (mrożone myszy i kurczęta lub mięso/ryby) + owady, larwy, robaki i ślimaki.', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: '"Fretka to prawdziwy mięsożerca – jak kot, tylko bardziej wymagający. Karma dla gryzoni jej zaszkodzi, potrzebuje diety opartej na białku zwierzęcym."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Jaki konkretnie gatunek? (fretka, jeż, tenrek – każdy inne wymagania)' },
+        { text: 'Czy właściciel ma dostęp do owadów karmowych lub wie, gdzie je kupić?' },
+      ],
+      bledy: [
+        { text: 'Karmienie fretki karmą dla gryzoni lub roślinożerców – fretka jest obligatoryjnym mięsożercą, może zachorować.', source: 'extra' },
+        { text: 'Brak suplementacji przy niezbilansowanej diecie mięso-/owadożernych – te gatunki są szczególnie wrażliwe na niedobory.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Mięso-/owadożercy: karma sucha/mokra gatunkowa + świeże mięso/mrożone myszy/kurczęta/ryby + owady/larwy/robaki/ślimaki', source: 'training' },
+        { text: 'Skład bardzo różny gatunkowo! Zawsze dopasuj do gatunku i suplementuj w razie potrzeby', source: 'training' },
+        { text: 'Fretka = obligatoryjny mięsożerca (jak kot). Jeż/tenrek = owadożerne (egzotyczne, trudne)', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Właściciel fretki, jeża czy tenreka to klient szukający specjalistycznej wiedzy, której nie znajdzie wszędzie. Produkty: owady karmowe (mącznik, świerszcze), suplementy witaminowo-mineralne, karma gatunkowa. To segment z potencjałem lojalnościowym – klienci z egzotycznymi zwierzętami wracają regularnie.', source: 'extra' },
       ],
     },
   },
