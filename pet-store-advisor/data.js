@@ -3457,6 +3457,7 @@ const NOTES = [
         { level: 'yellow', text: 'ŚWINKA MORSKA: NIE wytwarza witaminy C (jak ludzie!) → musi otrzymywać ją z pożywienia, zwłaszcza świeżego. Niedobór witaminy C = szkorbut u świnki morskiej.' },
         { level: 'yellow', text: 'UWAGA na zioła bogate w wapń (podawane w nadmiarze) → sprzyja tworzeniu się kamieni moczowych.' },
         { level: 'yellow', text: 'GĘSTOŚĆ ENERGETYCZNA: Im wyższa gęstość energetyczna pokarmu, tym mniej zwierzę przeżuwa → niedostateczne ścieranie stale rosnących zębów → wady zgryzu. Dlatego roślinożercy potrzebują diety niskoenergetycznej, bogatej w błonnik.' },
+        { level: 'red', text: 'DYSBAKTERIOZA: Za dużo węglowodanów w diecie roślinożercy → mnożą się niepożądane bakterie tworzące gazy w jelicie ślepym → gazy + niewłaściwa fermentacja = dysbakterioza. Może być śmiertelna!' },
       ],
       najwazniejsze: [
         { text: 'ZASADA ŻYWIENIA roślinożerców: Bogata w SUROWY BŁONNIK + NISKOENERGETYCZNA dieta = świeża karma + SIANO (nieograniczone). Siano = podstawa, NIE dodatek!', source: 'training' },
@@ -3470,6 +3471,8 @@ const NOTES = [
         { text: 'CO DAWAĆ RZADKO: Marchew, buraki i inne warzywa bogate w skrobię. Sucha karma jako rzadki dodatek (nie podstawa).', source: 'training' },
         { text: 'CZEGO NIE DAWAĆ WCALE: Zbożowa sucha karma, owoce, chleb, groszek, tłuste przysmaki. Produkty bogate w skrobię i cukier → zaburzenia trawienne mogące być śmiertelne!', source: 'training' },
         { text: 'ŁODYGI I GAŁĄZKI: Wierzba, topola, drzewa owocowe i orzechowe. Funkcja: mechaniczne ścieranie stale rosnących zębów + wzbogacenie środowiska.', source: 'training' },
+        { text: 'SUCHA KARMA dla roślinożerców: Zasadniczo NIE jest konieczna. Jeśli podawana – tylko oparta na roślinności łąkowej: wyłącznie składniki roślinne + wysoka zawartość błonnika surowego. NIGDY ze zbożem/ziarnami. Podawać bardzo oszczędnie.', source: 'training' },
+        { text: 'DYSBAKTERIOZA: Jelito ślepe roślinożerców pełne mikroorganizmów wyspecjalizowanych w trawieniu błonnika o niskiej zawartości węglowodanów. Nadmiar węglowodanów → mnożenie się złych bakterii tworzących gazy → gazy + niewłaściwa fermentacja = DYSBAKTERIOZA (zaburzenie flory jelitowej). Może być śmiertelna.', source: 'training' },
       ],
       jakWytlumaczyc: [
         { text: '"Siano to nie urozmaicenie – to PODSTAWA diety świnki morskiej i królika. Bez nieograniczonego dostępu do siana ich układ trawienny nie działa prawidłowo, a zęby przerastają."', source: 'extra' },
@@ -3497,6 +3500,51 @@ const NOTES = [
       zapamietaj: [
         { text: 'Wiedza o śmiertelności skrobi/cukru dla roślinożerców to kluczowy argument przy rozmowie o zmianie diety z mieszanki ziarnistej na siano+pellety. Klient, który rozumie biologię swojego zwierzęcia, jest gotowy wydać więcej na właściwą karmę.', source: 'extra' },
         { text: 'Cross-sell przy zakupie siana: świeże zioła, gałązki wierzbowe/owocowe, witamina C w kroplach lub tabletkach dla świnki morskiej.', source: 'extra' },
+      ],
+    },
+  },
+
+  {
+    id: 'male-ssaki-zywienie-wszystkozerne',
+    title: 'Małe ssaki – żywienie wszystkożerców (chomiki, myszy, szczury)',
+    category: 'Małe zwierzęta',
+    tags: ['małe ssaki', 'żywienie', 'wszystkożercy', 'chomik', 'mysz', 'szczur', 'nasiona', 'białko zwierzęce', 'owady'],
+    updated: '2026-09-10',
+    sections: {
+      ostrzezenia: [
+        { level: 'yellow', text: 'Warzywa bogate w skrobię (marchew, buraki, groszek) oraz nasiona tłuste (słonecznik, pestki dyni, orzechy) → RZADKO. Zbyt dużo tłuszczu i skrobi = otyłość i zaburzenia metaboliczne.' },
+        { level: 'yellow', text: 'UNIKAĆ: owoce, chleb, groszek, inne słodkie/skrobiowe produkty. WYJĄTEK: myszy i szczury mogą dostawać niewielką ilość owoców.' },
+      ],
+      najwazniejsze: [
+        { text: 'PODSTAWA DIETY wszystkożerców: Niskotłuszczowe, odpowiedniej wielkości NASIONA + BIAŁKO ZWIERZĘCE + świeży pokarm (warzywa i zioła) + łodygi/gałązki + siano.', source: 'training' },
+        { text: 'BIAŁKO ZWIERZĘCE (niezbędne!): owady, jajka, sucha karma dla kotów/psów (jako źródło białka), różne produkty mleczne.', source: 'training' },
+      ],
+      coWiedziec: [
+        { text: 'Wszystkożercy (chomik standardowy i karłowaty, mysz, szczur) mają zróżnicowaną dietę: składniki roślinne + zwierzęce w różnych proporcjach w zależności od gatunku i wieku.', source: 'training' },
+        { text: 'SKŁAD DIETY: Przeważnie niskotłuszczowe nasiona odpowiedniej wielkości → uzupełniane białkiem zwierzęcym (owady, jajka, sucha karma dla kotów/psów, produkty mleczne) → świeży pokarm (warzywa, zioła) → łodygi i gałązki do obgryzania (wierzba, topola, drzewa owocowe i orzechowe) → siano.', source: 'training' },
+        { text: 'CO DAWAĆ RZADKO: Marchew, buraki, groszek (skrobiowe), słonecznik, pestki dyni, orzechy (tłuste nasiona).', source: 'training' },
+        { text: 'CZEGO UNIKAĆ: Owoce, chleb, słodkie przysmaki – oprócz myszy i szczurów, które mogą dostać niewielką ilość owoców.', source: 'training' },
+        { text: 'SPECYFIKA MYSZY I SZCZURÓW: Menu można uzupełnić o niewielką ilość owoców (inne chomiki – nie).', source: 'training' },
+      ],
+      jakWytlumaczyc: [
+        { text: '"Chomik to nie roślinożerca – potrzebuje też białka zwierzęcego: owadów, jajka, trochę suchej karmy dla kota. Bez białka ma niedobory i choruje."', source: 'extra' },
+      ],
+      pytania: [
+        { text: 'Czy właściciel podaje tylko mieszankę ziarnistą, czy też świeże pokarmy i białko zwierzęce?' },
+        { text: 'Jaki gatunek: chomik, mysz czy szczur? (różne specyfiki)' },
+      ],
+      bledy: [
+        { text: 'Karmienie wyłącznie ziarnami/mieszanką – brak białka zwierzęcego → niedobory, problemy zdrowotne.', source: 'extra' },
+        { text: 'Za dużo słonecznika lub orzechów – tłuste nasiona szybko prowadzą do otyłości u chomików.', source: 'extra' },
+      ],
+      powtorka: [
+        { text: 'Wszystkożercy: nasiona niskotłuszczowe + białko zwierzęce (owady/jajka/karma kot-pies/nabiał) + warzywa + gałązki + siano', source: 'training' },
+        { text: 'RZADKO: marchew/buraki/groszek (skrobia), słonecznik/dynia/orzechy (tłuszcz)', source: 'training' },
+        { text: 'UNIKAĆ: owoce, chleb, słodkości – WYJĄTEK: myszy i szczury mogą dostawać trochę owoców', source: 'training' },
+      ],
+      kartaProduktu: null,
+      zapamietaj: [
+        { text: 'Chomik/mysz/szczur kupuje się często jako "prosty zwierzak" – a ich dieta wymaga białka zwierzęcego, którego właściciele często nie dostarczają. To dobra okazja do sprzedaży owadów (mącznik, świerszcze) lub specjalistycznej karmy dla gryzoni z białkiem.', source: 'extra' },
       ],
     },
   },
